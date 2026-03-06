@@ -39,15 +39,15 @@
 
 | Addon | Description | Category | Version | Downloads |
 |------|-------------|---------|---------|----------|
-| **WoW Translator** | Real-time chat translation | Gameplay | ![Release](https://img.shields.io/github/v/release/PirsonAddons/WoW-Translator) | ![Downloads](https://cf.waypoint.rocks/api/projects/1431567/downloads.svg) |
-| **RemoveQuestie** | Remove quests quickly from Questie | Gameplay | ![Release](https://img.shields.io/github/v/release/PirsonAddons/RemoveQuestie) | ![Downloads](https://cf.waypoint.rocks/api/projects/1308020/downloads.svg) |
-| **MoveExtraActionButton** | Move Extra Action Button anywhere | UI | ![Release](https://img.shields.io/github/v/release/PirsonAddons/MoveExtraActionButton) | ![Downloads](https://cf.waypoint.rocks/api/projects/1439079/downloads.svg) |
-| **ProspectHelper** | Faster ore prospecting | Professions | ![Release](https://img.shields.io/github/v/release/PirsonAddons/ProspectHelper) | ![Downloads](https://cf.waypoint.rocks/api/projects/1335779/downloads.svg) |
-| **MillHelper** | Faster herb milling | Professions | ![Release](https://img.shields.io/github/v/release/PirsonAddons/MillHelper) | ![Downloads](https://cf.waypoint.rocks/api/projects/1339466/downloads.svg) |
-| **VendorItemFilter** | Filter vendor items easily | Utility | ![Release](https://img.shields.io/github/v/release/PirsonAddons/VendorItemFilter) | ![Downloads](https://cf.waypoint.rocks/api/projects/1343504/downloads.svg) |
-| **LeaveInstanceGroup** | Instantly leave instance groups | Utility | ![Release](https://img.shields.io/github/v/release/PirsonAddons/LeaveInstanceGroup) | ![Downloads](https://cf.waypoint.rocks/api/projects/1349365/downloads.svg) |
-| **HandyNotes: Troves of the Thunder King** | Shows treasures on the map | Map | ![Release](https://img.shields.io/github/v/release/PirsonAddons/HandyNotes_Trove-Thunder-King) | ![Downloads](https://cf.waypoint.rocks/api/projects/1403777/downloads.svg) |
-| **Loot-A-Rang Classic** | Loot-A-Rang support for Classic | QoL | ![Release](https://img.shields.io/github/v/release/PirsonAddons/Loot-A-Rang-Classic) | ![Downloads](https://cf.waypoint.rocks/api/projects/1331866/downloads.svg) |
+| **WoW Translator** | Real-time chat translation | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) | ![Downloads](https://cf.waypoint.rocks/api/projects/1431567/downloads.svg) |
+| **RemoveQuestie** | Remove quests quickly from Questie | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie) | ![Downloads](https://cf.waypoint.rocks/api/projects/1308020/downloads.svg) |
+| **MoveExtraActionButton** | Move Extra Action Button anywhere | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton) | ![Downloads](https://cf.waypoint.rocks/api/projects/1439079/downloads.svg) |
+| **ProspectHelper** | Faster ore prospecting | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper) | ![Downloads](https://cf.waypoint.rocks/api/projects/1335779/downloads.svg) |
+| **MillHelper** | Faster herb milling | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper) | ![Downloads](https://cf.waypoint.rocks/api/projects/1339466/downloads.svg) |
+| **VendorItemFilter** | Filter vendor items easily | Utility | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/VendorItemFilter) | ![Downloads](https://cf.waypoint.rocks/api/projects/1343504/downloads.svg) |
+| **LeaveInstanceGroup** | Instantly leave instance groups | Utility | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/LeaveInstanceGroup) | ![Downloads](https://cf.waypoint.rocks/api/projects/1349365/downloads.svg) |
+| **HandyNotes: Troves of the Thunder King** | Shows treasures on the map | Map | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_Trove-Thunder-King) | ![Downloads](https://cf.waypoint.rocks/api/projects/1403777/downloads.svg) |
+| **Loot-A-Rang Classic** | Loot-A-Rang support for Classic | QoL | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Loot-A-Rang-Classic) | ![Downloads](https://cf.waypoint.rocks/api/projects/1331866/downloads.svg) |
 
 ---
 
@@ -55,7 +55,7 @@
 
 ### GitHub
 Download the latest release and copy to:
-World of Warcraft/classic/Interface/AddOns/
+World of Warcraft/{game_version}/Interface/AddOns/
 
 Restart WoW and enable the addon.
 
