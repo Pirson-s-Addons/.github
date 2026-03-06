@@ -35,15 +35,15 @@
 
 | Addon | Descripción | Categoría | Versión |
 |------|-------------|---------|---------|
-| **WoW Translator** | Traducción automática del chat en tiempo real | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) |
-| **RemoveQuestie** | Elimina misiones rápidamente desde Questie | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie) |
-| **MoveExtraActionButton** | Mueve el botón de acción extra | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton) |
-| **ProspectHelper** | Prospecta minerales más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper) |
-| **MillHelper** | Muele hierbas más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper) |
-| **VendorItemFilter** | Filtra objetos en vendedores | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/VendorItemFilter) |
-| **LeaveInstanceGroup** | Abandonar grupos rápidamente | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/LeaveInstanceGroup) |
-| **HandyNotes: Troves of the Thunder King** | Muestra tesoros en el mapa | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_Trove-Thunder-King) |
-| **Loot-A-Rang Classic** | Funcionalidad Loot-A-Rang para Classic | QoL | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Loot-A-Rang-Classic) |
+| **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Traducción automática del chat en tiempo real | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) |
+| **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Elimina misiones rápidamente desde Questie | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie) |
+| **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Mueve el botón de acción extra | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton) |
+| **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Prospecta minerales más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper) |
+| **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Muele hierbas más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper) |
+| **[Vendor Item Filter](https://github.com/Pirson-s-Addons/VendorItemFilter)** | Filtra objetos en vendedores | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/VendorItemFilter) |
+| **[Leave Instance Group](https://github.com/Pirson-s-Addons/LeaveInstanceGroup)** | Abandonar grupos rápidamente | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/LeaveInstanceGroup) |
+| **[HandyNotes: Troves of the Thunder King](https://github.com/Pirson-s-Addons/HandyNotes_Trove-Thunder-King)** | Muestra tesoros en el mapa | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_Trove-Thunder-King) |
+| **[Loot-A-Rang Classic](https://github.com/Pirson-s-Addons/Loot-A-Rang-Classic)** | Funcionalidad Loot-A-Rang para Classic | QoL | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Loot-A-Rang-Classic) |
 
 ---
 
