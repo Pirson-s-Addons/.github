@@ -1,133 +1,124 @@
 <p align="center">
-  <img src="assets/icon.png" alt="Pirson WoW Addons" width="90"/>
+  <img src="assets/banner.png" alt="Pirson WoW Addons"/>
 </p>
 
 <h1 align="center">Pirson WoW Addons</h1>
 
 <p align="center">
-  <b>Addons de calidad de vida para World of Warcraft Classic y Retail</b><br>
-  Una colección de addons ligeros diseñados para mejorar la jugabilidad, profesiones y la interfaz.
+  <b>Addons de alta calidad para World of Warcraft Classic y Retail</b><br>
+  Herramientas ligeras diseñadas para mejorar la jugabilidad, profesiones y la interfaz.
 </p>
 
 <p align="center">
 
-<a href="LICENSE"><img src="https://img.shields.io/github/license/PirsonAddons/.github?style=for-the-badge" /></a>
-<a href="https://github.com/PirsonAddons"><img src="https://img.shields.io/badge/Addons-9-blue?style=for-the-badge" /></a>
-<a href="https://www.curseforge.com/members/pirson/projects"><img src="https://img.shields.io/badge/CurseForge-Proyectos-orange?style=for-the-badge" /></a>
-<a href="https://github.com/SrPirson"><img src="https://img.shields.io/badge/Developer-Pirson-purple?style=for-the-badge" /></a>
+<a href="LICENSE">
+<img src="https://img.shields.io/github/license/PirsonAddons/.github?style=for-the-badge">
+</a>
+
+<a href="https://github.com/PirsonAddons">
+<img src="https://img.shields.io/badge/Addons-9-blue?style=for-the-badge">
+</a>
+
+<a href="https://www.curseforge.com/members/pirson/projects">
+<img src="https://img.shields.io/badge/CurseForge-Proyectos-orange?style=for-the-badge">
+</a>
+
+<a href="https://github.com/SrPirson?tab=followers">
+<img src="https://img.shields.io/github/followers/SrPirson?style=for-the-badge">
+</a>
 
 </p>
 
 <p align="center">
-  <a href="README.md">English version</a>
+<a href="README.md">🇬🇧 English</a>
 </p>
 
 ---
 
-# Acerca del proyecto
+# Sobre el proyecto
 
-**Pirson WoW Addons** es una colección de **addons de calidad de vida** creados para mejorar la experiencia en **World of Warcraft Classic y Retail**.
+**Pirson WoW Addons** es una colección de **addons de calidad de vida** desarrollados para **World of Warcraft Classic y Retail**.
 
-Estos addons se centran en:
+El objetivo de estos addons es:
 
-- Mejoras de jugabilidad
-- Automatización de profesiones
-- Mejoras de interfaz
-- Utilidades para el mapa
-- Herramientas que simplifican el gameplay diario
+- Mejorar la experiencia de juego
+- Reducir tareas repetitivas
+- Mejorar la interfaz del usuario
+- Añadir herramientas útiles para profesiones
+- Ofrecer soluciones ligeras sin afectar al rendimiento
 
 Todos los addons están diseñados para ser:
 
-- Ligeros
-- Fáciles de instalar
-- Optimizados en rendimiento
-- Compatibles con WoW Classic
+✔ Ligeros  
+✔ Rápidos  
+✔ Fáciles de instalar  
+✔ Compatibles con WoW Classic
 
 ---
 
-# Addons
+# Colección de Addons
 
-## Jugabilidad
-
-### WoW Translator
-Traducción automática del chat entre diferentes idiomas en tiempo real.
-
-### RemoveQuestie
-Permite eliminar misiones rápidamente desde Questie.
-
-### MoveExtraActionButton
-Permite mover el botón de acción extra a cualquier lugar de la pantalla.
-
----
-
-## Profesiones
-
-### ProspectHelper
-Ayuda a los joyeros a prospectar minerales de forma más rápida.
-
-### MillHelper
-Simplifica el proceso de moler hierbas para inscripción.
-
----
-
-## Utilidades
-
-### VendorItemFilter
-Añade filtros a las ventanas de vendedores.
-
-### LeaveInstanceGroup
-Permite abandonar rápidamente grupos de mazmorras o bandas.
-
----
-
-## Addons de mapa
-
-### HandyNotes: Troves of the Thunder King
-Añade localizaciones de tesoros en el mapa utilizando HandyNotes.
-
----
-
-## Diversión / QoL
-
-### Loot-A-Rang Classic
-Añade soporte para la funcionalidad de Loot-A-Rang en WoW Classic.
+| Addon | Descripción | Categoría |
+|------|-------------|---------|
+| **WoW Translator** | Traducción automática del chat en tiempo real | Jugabilidad |
+| **RemoveQuestie** | Permite eliminar misiones rápidamente desde Questie | Jugabilidad |
+| **MoveExtraActionButton** | Permite mover el botón de acción extra | Interfaz |
+| **ProspectHelper** | Prospectar minerales más rápido | Profesiones |
+| **MillHelper** | Moler hierbas más rápido | Profesiones |
+| **VendorItemFilter** | Filtrar objetos en vendedores | Utilidades |
+| **LeaveInstanceGroup** | Abandonar grupos de mazmorra o banda rápidamente | Utilidades |
+| **HandyNotes: Troves of the Thunder King** | Muestra tesoros en el mapa | Mapas |
+| **Loot-A-Rang Classic** | Funcionalidad Loot-A-Rang para Classic | QoL |
 
 ---
 
 # Instalación
 
+## GitHub
+
+1 Descargar el repositorio  
+2 Extraer la carpeta  
+3 Copiar en: World of Warcraft/_classic_/Interface/AddOns/
+
+Reiniciar el juego y activar el addon.
+
+---
+
+## CurseForge
+
 Puedes instalar los addons desde:
-
-### GitHub
-
-Descargando la última versión desde la sección **Releases**.
-
-### CurseForge
 
 https://www.curseforge.com/members/pirson/projects
 
 ---
 
-# Contribuciones
+# Roadmap
 
-Las pull requests son bienvenidas.
+Mejoras futuras:
 
-Si quieres mejorar algún addon:
-
-1. Haz un Fork del repositorio
-2. Crea una nueva rama
-3. Envía una Pull Request
+- Publicaciones automáticas en CurseForge
+- Integración con Wago
+- Paneles de configuración
+- Optimización de rendimiento
+- Nuevos addons para profesiones
 
 ---
 
-# Autor
+# Desarrollador
 
-Creado y mantenido por
+<p align="center">
+
+<img src="https://avatars.githubusercontent.com/u/61068761?v=4" width="90">
+
+</p>
+
+<p align="center">
 
 **Pirson**
 
-GitHub  
-https://github.com/SrPirson
+Desarrollador Full-Stack y creador de addons para World of Warcraft.
+
+</p>
 
 ---
 
