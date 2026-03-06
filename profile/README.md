@@ -11,10 +11,6 @@
 
 <p align="center">
 
-<a href="LICENSE">
-<img src="https://img.shields.io/github/license/PirsonAddons/.github?style=for-the-badge">
-</a>
-
 <a href="https://github.com/PirsonAddons">
 <img src="https://img.shields.io/badge/Addons-9-blue?style=for-the-badge">
 </a>
