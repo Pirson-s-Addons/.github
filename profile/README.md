@@ -46,7 +46,7 @@ Collection of quality-of-life addons for **World of Warcraft Classic and Retail*
 Download addons from:
 
 - GitHub Releases
-- ![CurseForge](https://www.curseforge.com/members/pirson/projects)
+- [CurseForge](https://www.curseforge.com/members/pirson/projects)
 
 ---
 
