@@ -12,6 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Create ZIP of addon
+        run: |
+          ADDON_NAME=$(basename $GITHUB_REPOSITORY)
+          zip -r "${ADDON_NAME}-${GITHUB_REF_NAME}.zip" "${ADDON_NAME}/"
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
@@ -19,9 +24,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload zip
+      - name: Upload ZIP
         uses: softprops/action-gh-release@v1
         with:
-          files: '*.zip'
+          files: "${{ github.repository }}-${{ github.ref_name }}.zip"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
