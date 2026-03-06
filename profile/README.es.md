@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Pirson WoW Addons"/>
+  <img src="assets/banner.jpg" alt="Pirson WoW Addons"/>
 </p>
 
 <h1 align="center">Pirson WoW Addons</h1>
@@ -33,17 +33,17 @@
 
 # Colección de Addons
 
-| Addon | Descripción | Categoría | Versión | Descargas |
-|------|-------------|---------|---------|----------|
-| **WoW Translator** | Traducción automática del chat en tiempo real | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) | ![Downloads](https://cf.waypoint.rocks/api/projects/1431567/downloads.svg) |
-| **RemoveQuestie** | Elimina misiones rápidamente desde Questie | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie) | ![Downloads](https://cf.waypoint.rocks/api/projects/1308020/downloads.svg) |
-| **MoveExtraActionButton** | Mueve el botón de acción extra | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton) | ![Downloads](https://cf.waypoint.rocks/api/projects/1439079/downloads.svg) |
-| **ProspectHelper** | Prospecta minerales más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper) | ![Downloads](https://cf.waypoint.rocks/api/projects/1335779/downloads.svg) |
-| **MillHelper** | Muele hierbas más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper) | ![Downloads](https://cf.waypoint.rocks/api/projects/1339466/downloads.svg) |
-| **VendorItemFilter** | Filtra objetos en vendedores | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/VendorItemFilter) | ![Downloads](https://cf.waypoint.rocks/api/projects/1343504/downloads.svg) |
-| **LeaveInstanceGroup** | Abandonar grupos rápidamente | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/LeaveInstanceGroup) | ![Downloads](https://cf.waypoint.rocks/api/projects/1349365/downloads.svg) |
-| **HandyNotes: Troves of the Thunder King** | Muestra tesoros en el mapa | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_Trove-Thunder-King) | ![Downloads](https://cf.waypoint.rocks/api/projects/1403777/downloads.svg) |
-| **Loot-A-Rang Classic** | Funcionalidad Loot-A-Rang para Classic | QoL | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Loot-A-Rang-Classic) | ![Downloads](https://cf.waypoint.rocks/api/projects/1331866/downloads.svg) |
+| Addon | Descripción | Categoría | Versión |
+|------|-------------|---------|---------|
+| **WoW Translator** | Traducción automática del chat en tiempo real | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) |
+| **RemoveQuestie** | Elimina misiones rápidamente desde Questie | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie) |
+| **MoveExtraActionButton** | Mueve el botón de acción extra | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton) |
+| **ProspectHelper** | Prospecta minerales más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper) |
+| **MillHelper** | Muele hierbas más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper) |
+| **VendorItemFilter** | Filtra objetos en vendedores | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/VendorItemFilter) |
+| **LeaveInstanceGroup** | Abandonar grupos rápidamente | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/LeaveInstanceGroup) |
+| **HandyNotes: Troves of the Thunder King** | Muestra tesoros en el mapa | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_Trove-Thunder-King) |
+| **Loot-A-Rang Classic** | Funcionalidad Loot-A-Rang para Classic | QoL | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Loot-A-Rang-Classic) |
 
 ---
 
