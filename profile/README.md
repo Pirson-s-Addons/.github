@@ -35,15 +35,15 @@
 
 | Addon | Description | Category | Version |
 |------|-------------|---------|---------|
-| **WoW Translator** | Real-time chat translation | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) |
-| **RemoveQuestie** | Remove quests quickly from Questie | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie) |
-| **MoveExtraActionButton** | Move Extra Action Button anywhere | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton) |
-| **ProspectHelper** | Faster ore prospecting | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper) |
-| **MillHelper** | Faster herb milling | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper) |
-| **VendorItemFilter** | Filter vendor items easily | Utility | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/VendorItemFilter) |
-| **LeaveInstanceGroup** | Instantly leave instance groups | Utility | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/LeaveInstanceGroup) |
-| **HandyNotes: Troves of the Thunder King** | Shows treasures on the map | Map | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_Trove-Thunder-King) |
-| **Loot-A-Rang Classic** | Loot-A-Rang support for Classic | QoL | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Loot-A-Rang-Classic) |
+| **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Real-time chat translation | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) |
+| **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Remove quests quickly from Questie | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie) |
+| **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Move Extra Action Button anywhere | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton) |
+| **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Faster ore prospecting | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper) |
+| **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Faster herb milling | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper) |
+| **[Vendor Item Filter](https://github.com/Pirson-s-Addons/VendorItemFilter)** | Filter vendor items easily | Utility | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/VendorItemFilter) |
+| **[Leave Instance Group](https://github.com/Pirson-s-Addons/LeaveInstanceGroup)** | Instantly leave instance groups | Utility | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/LeaveInstanceGroup) |
+| **[HandyNotes: Troves of the Thunder King](https://github.com/Pirson-s-Addons/HandyNotes_Trove-Thunder-King)** | Shows treasures on the map | Map | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_Trove-Thunder-King) |
+| **[Loot-A-Rang Classic](https://github.com/Pirson-s-Addons/Loot-A-Rang-Classic)** | Loot-A-Rang support for Classic | QoL | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Loot-A-Rang-Classic) |
 
 ---
 
