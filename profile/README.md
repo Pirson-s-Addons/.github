@@ -35,7 +35,7 @@
 
 | Addon | Description | Category | Version |
 |------|-------------|---------|---------|
-| **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Real-time chat translation | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) |
+| **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Real-time chat translation | Chat & Communication | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) |
 | **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Remove quests quickly from Questie | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie) |
 | **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Move Extra Action Button anywhere | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton) |
 | **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Faster ore prospecting | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper) |
