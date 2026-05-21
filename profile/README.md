@@ -37,7 +37,7 @@
 |------|-------------|---------|---------|
 | **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Real-time chat translation | Chat & Communication | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator) |
 | **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Remove quests quickly from Questie | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie) |
-| **[RGB Cursor](https://github.com/Pirson-s-Addons/RGBCursor)** | RGB Cursor | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RGBCursor) |
+| **[RGB Cursor](https://github.com/Pirson-s-Addons/RGBCursor)** | Adds a glowing aura around the cursor | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RGBCursor) |
 | **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Move Extra Action Button anywhere | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton) |
 | **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Faster ore prospecting | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper) |
 | **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Faster herb milling | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper) |
