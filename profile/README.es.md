@@ -12,7 +12,7 @@
 <p align="center">
 
 <a href="https://github.com/PirsonAddons">
-<img src="https://img.shields.io/badge/Addons-10-C4B5FD?style=for-the-badge">
+<img src="https://img.shields.io/badge/Addons-11-C4B5FD?style=for-the-badge">
 </a>
 
 <a href="https://www.curseforge.com/members/pirson/projects">
@@ -38,6 +38,7 @@
 | **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Traducción automática del chat en tiempo real | Chat & Comunicación | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator?color=A78BFA) |
 | **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Elimina misiones rápidamente desde Questie | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie?color=A78BFA) |
 | **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Añade un aura brillante alrededor del cursor | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
+| **[Health Text Forever](https://github.com/Pirson-s-Addons/HealthTextForever)** | Vida y poder siempre visibles en los marcos del jugador y del objetivo (WoW Forever) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthTextForever?color=A78BFA) |
 | **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Mueve el botón de acción extra | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton?color=A78BFA) |
 | **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Prospecta minerales más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper?color=A78BFA) |
 | **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Muele hierbas más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper?color=A78BFA) |
