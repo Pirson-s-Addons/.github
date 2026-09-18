@@ -12,7 +12,7 @@
 <p align="center">
 
 <a href="https://github.com/PirsonAddons">
-<img src="https://img.shields.io/badge/Addons-12-C4B5FD?style=for-the-badge">
+<img src="https://img.shields.io/badge/Addons-13-C4B5FD?style=for-the-badge">
 </a>
 
 <a href="https://www.curseforge.com/members/pirson/projects">
@@ -40,6 +40,7 @@
 | **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Adds a glowing aura around the cursor | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
 | **[Health Text Forever](https://github.com/Pirson-s-Addons/HealthTextForever)** | Always-visible health and power text on the player and target frames (WoW Forever) | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthTextForever?color=A78BFA) |
 | **[Seal Timers Forever](https://github.com/Pirson-s-Addons/SealTimersForever)** | Your active paladin seal on screen with its remaining time, movable and resizable (WoW Forever) | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/SealTimersForever?color=A78BFA) |
+| **[AnyMove Forever](https://github.com/Pirson-s-Addons/AnyMoveForever)** | Move and resize any window or interface element (WoW Forever) | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/AnyMoveForever?color=A78BFA) |
 | **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Move Extra Action Button anywhere | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton?color=A78BFA) |
 | **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Faster ore prospecting | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper?color=A78BFA) |
 | **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Faster herb milling | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper?color=A78BFA) |

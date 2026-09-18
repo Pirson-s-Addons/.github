@@ -12,7 +12,7 @@
 <p align="center">
 
 <a href="https://github.com/PirsonAddons">
-<img src="https://img.shields.io/badge/Addons-12-C4B5FD?style=for-the-badge">
+<img src="https://img.shields.io/badge/Addons-13-C4B5FD?style=for-the-badge">
 </a>
 
 <a href="https://www.curseforge.com/members/pirson/projects">
@@ -40,6 +40,7 @@
 | **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Añade un aura brillante alrededor del cursor | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
 | **[Health Text Forever](https://github.com/Pirson-s-Addons/HealthTextForever)** | Vida y poder siempre visibles en los marcos del jugador y del objetivo (WoW Forever) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthTextForever?color=A78BFA) |
 | **[Seal Timers Forever](https://github.com/Pirson-s-Addons/SealTimersForever)** | Tu sello de paladín activo en pantalla con su tiempo restante; se mueve y cambia de tamaño (WoW Forever) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/SealTimersForever?color=A78BFA) |
+| **[AnyMove Forever](https://github.com/Pirson-s-Addons/AnyMoveForever)** | Mueve y cambia de tamaño cualquier ventana o elemento de la interfaz (WoW Forever) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/AnyMoveForever?color=A78BFA) |
 | **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Mueve el botón de acción extra | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton?color=A78BFA) |
 | **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Prospecta minerales más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper?color=A78BFA) |
 | **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Muele hierbas más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper?color=A78BFA) |
