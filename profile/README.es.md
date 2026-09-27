@@ -35,7 +35,7 @@
 
 | Addon | Descripción | Categoría | Versión |
 |------|-------------|---------|---------|
-| **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Traducción automática del chat en tiempo real | Chat & Comunicación | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator?color=A78BFA) |
+| **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Traducción automática del chat en tiempo real, también de la jerga en coreano y chino | Chat & Comunicación | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator?color=A78BFA) |
 | **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Elimina misiones rápidamente desde Questie | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie?color=A78BFA) |
 | **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Añade un aura brillante alrededor del cursor | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
 | **[Health Bar Text Forever](https://github.com/Pirson-s-Addons/HealthBarTextForever)** | Vida y poder siempre visibles en los marcos del jugador, la mascota, el objetivo, el foco y el objetivo del objetivo (WoW Forever) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthBarTextForever?color=A78BFA) |
