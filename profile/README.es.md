@@ -12,7 +12,7 @@
 <p align="center">
 
 <a href="https://github.com/PirsonAddons">
-<img src="https://img.shields.io/badge/Addons-15-C4B5FD?style=for-the-badge">
+<img src="https://img.shields.io/badge/Addons-16-C4B5FD?style=for-the-badge">
 </a>
 
 <a href="https://www.curseforge.com/members/pirson/projects">
@@ -42,6 +42,7 @@
 | **[Seal Timers Forever](https://github.com/Pirson-s-Addons/SealTimersForever)** | Tu sello de paladín activo en pantalla con su tiempo restante; se mueve y cambia de tamaño (WoW Forever) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/SealTimersForever?color=A78BFA) |
 | **[AnyMove Forever](https://github.com/Pirson-s-Addons/AnyMoveForever)** | Mueve y cambia de tamaño cualquier ventana o elemento de la interfaz (WoW Forever) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/AnyMoveForever?color=A78BFA) |
 | **[Map Fix Forever](https://github.com/Pirson-s-Addons/MapFixForever)** | Arregla el mapa del mundo verde en clientes que no están en inglés con el arte original del mapa (WoW Forever) | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MapFixForever?color=A78BFA) |
+| **[Dungeon Quest Atlas Forever](https://github.com/Pirson-s-Addons/DungeonQuestAtlas)** | Todas las misiones, jefes y botín de las mazmorras en una ventana estilo Diario de mazmorras, con los iconos de misión del juego, cadenas, recompensas, pines en el mapa y selector de idioma (WoW Forever) | Misiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DungeonQuestAtlas?color=A78BFA) |
 | **[Azeroth TicTacToe](https://github.com/Pirson-s-Addons/AzerothTicTacToe)** | 3 en raya clásico, con fichas que se mueven, contra otros jugadores apostando oro, plata o cobre (WoW Forever) | Juegos | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/AzerothTicTacToe?color=A78BFA) |
 | **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Mueve el botón de acción extra | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton?color=A78BFA) |
 | **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Prospecta minerales más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper?color=A78BFA) |
