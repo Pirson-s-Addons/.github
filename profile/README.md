@@ -80,4 +80,4 @@ Pull requests are welcome:
 
 # License
 
-MIT License
+All addons are under the MIT License, except **Dungeon Quest Atlas Forever** (All Rights Reserved). Each repository includes its own `LICENSE` file.
