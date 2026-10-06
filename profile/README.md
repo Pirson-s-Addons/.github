@@ -11,8 +11,8 @@
 
 <p align="center">
 
-<a href="https://github.com/PirsonAddons">
-<img src="https://img.shields.io/badge/Addons-16-C4B5FD?style=for-the-badge">
+<a href="https://github.com/Pirson-s-Addons">
+<img src="https://img.shields.io/badge/Addons-17-C4B5FD?style=for-the-badge">
 </a>
 
 <a href="https://www.curseforge.com/members/pirson/projects">
@@ -44,6 +44,7 @@
 | **[Map Fix Forever](https://github.com/Pirson-s-Addons/MapFixForever)** | Fixes the green world map in non-English clients with the original map art (WoW Forever) | Map | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MapFixForever?color=A78BFA) |
 | **[Dungeon Quest Atlas Forever](https://github.com/Pirson-s-Addons/DungeonQuestAtlas)** | Every dungeon quest, boss and loot table in an Adventure Guide-style window, with the game's quest icons, full quest chains, class quests, rewards, dungeon maps with every boss marked (also for the new Forever dungeons and on the world map inside a dungeon), slain bosses crossed out, exact instance entrances, a route to every dungeon, a guidance arrow that targets and marks the quest giver, and a language selector (WoW Forever) | Quests | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DungeonQuestAtlas?color=A78BFA) |
 | **[Azeroth TicTacToe](https://github.com/Pirson-s-Addons/AzerothTicTacToe)** | Classic Tic-Tac-Toe with moving pieces against other players, betting gold, silver or copper (WoW Forever) | Games | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/AzerothTicTacToe?color=A78BFA) |
+| **[Emoji & React](https://github.com/Pirson-s-Addons/EmojiReact)** | Emojis in chat and speech bubbles, plus a reaction wheel like the game's Ping Wheel that shows reactions above your character, with the key you choose (WoW Forever) | Chat & Communication | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/EmojiReact?color=A78BFA) |
 | **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Move Extra Action Button anywhere | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton?color=A78BFA) |
 | **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Faster ore prospecting | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper?color=A78BFA) |
 | **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Faster herb milling | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper?color=A78BFA) |
@@ -51,6 +52,7 @@
 | **[Leave Instance Group](https://github.com/Pirson-s-Addons/LeaveInstanceGroup)** | Instantly leave instance groups | Utility | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/LeaveInstanceGroup?color=A78BFA) |
 | **[HandyNotes: Troves of the Thunder King](https://github.com/Pirson-s-Addons/HandyNotes_Trove-Thunder-King)** | Shows treasures on the map | Map | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_Trove-Thunder-King?color=A78BFA) |
 | **[Loot-A-Rang Classic](https://github.com/Pirson-s-Addons/Loot-A-Rang-Classic)** | Loot-A-Rang support for Classic | QoL | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Loot-A-Rang-Classic?color=A78BFA) |
+
 ---
 
 # Installation
