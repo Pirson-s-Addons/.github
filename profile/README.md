@@ -35,7 +35,7 @@
 
 | Addon | Description | Category | Version |
 |------|-------------|---------|---------|
-| **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Real-time chat translation, also of Korean and Chinese slang | Chat & Communication | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator?color=A78BFA) |
+| **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Real-time chat translation, also of Korean and Chinese slang and the new WoW Forever dungeons | Chat & Communication | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator?color=A78BFA) |
 | **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Remove quests quickly from Questie | Gameplay | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie?color=A78BFA) |
 | **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Adds a glowing aura around the cursor | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
 | **[Health Bar Text Forever](https://github.com/Pirson-s-Addons/HealthBarTextForever)** | Always-visible health and power text on the unit frames | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthBarTextForever?color=A78BFA) |
