@@ -12,7 +12,7 @@
 <p align="center">
 
 <a href="https://github.com/Pirson-s-Addons">
-<img src="https://img.shields.io/badge/Addons-17-C4B5FD?style=for-the-badge">
+<img src="https://img.shields.io/badge/Addons-18-C4B5FD?style=for-the-badge">
 </a>
 
 <a href="https://www.curseforge.com/members/pirson/projects">
@@ -45,6 +45,7 @@
 | **[Dungeon Quest Atlas Forever](https://github.com/Pirson-s-Addons/DungeonQuestAtlas)** | Guía de aventuras para WoW Forever: mazmorras, bandas, eventos de mundo y reputaciones | Misiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DungeonQuestAtlas?color=A78BFA) |
 | **[Azeroth TicTacToe](https://github.com/Pirson-s-Addons/AzerothTicTacToe)** | 3 en raya clásico, con fichas que se mueven, contra otros jugadores apostando oro, plata o cobre, con revanchas y un libro de victorias, derrotas y deudas | Juegos | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/AzerothTicTacToe?color=A78BFA) |
 | **[Emoji & React](https://github.com/Pirson-s-Addons/EmojiReact)** | Emojis en el chat y los bocadillos, y una rueda de reacciones sobre tu personaje con reacciones de PvP y animadas (GG, WP, EZ...) y emotes del juego opcionales | Chat & Comunicación | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/EmojiReact?color=A78BFA) |
+| **[HandyNotes: DungeonLocations (Forever)](https://github.com/Pirson-s-Addons/HandyNotes_DungeonLocations-Forever)** | Todas las entradas de mazmorras y bandas de WoW Forever en el mapa | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_DungeonLocations-Forever?color=A78BFA) |
 | **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Mueve el botón de acción extra | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton?color=A78BFA) |
 | **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Prospecta minerales más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper?color=A78BFA) |
 | **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Muele hierbas más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper?color=A78BFA) |
