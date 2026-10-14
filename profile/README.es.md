@@ -12,7 +12,7 @@
 <p align="center">
 
 <a href="https://github.com/Pirson-s-Addons">
-<img src="https://img.shields.io/badge/Addons-18-C4B5FD?style=for-the-badge">
+<img src="https://img.shields.io/badge/Addons-19-C4B5FD?style=for-the-badge">
 </a>
 
 <a href="https://www.curseforge.com/members/pirson/projects">
@@ -40,6 +40,7 @@
 | **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Añade un aura brillante alrededor del cursor | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
 | **[Health Bar Text Forever](https://github.com/Pirson-s-Addons/HealthBarTextForever)** | Vida y poder en los marcos de unidad | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthBarTextForever?color=A78BFA) |
 | **[Seal Timers Forever](https://github.com/Pirson-s-Addons/SealTimersForever)** | Tiempos de sellos de paladín en pantalla | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/SealTimersForever?color=A78BFA) |
+| **[DR Tracker Forever](https://github.com/Pirson-s-Addons/DRTrackerForever)** | Rendimientos decrecientes del control | JcJ | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DRTrackerForever?color=A78BFA) |
 | **[AnyMove Forever](https://github.com/Pirson-s-Addons/AnyMoveForever)** | Mueve y redimensiona cualquier ventana | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/AnyMoveForever?color=A78BFA) |
 | **[Map Fix Forever](https://github.com/Pirson-s-Addons/MapFixForever)** | Arregla el mapa del mundo verde | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MapFixForever?color=A78BFA) |
 | **[Dungeon Quest Atlas Forever](https://github.com/Pirson-s-Addons/DungeonQuestAtlas)** | Misiones, jefes y mapas de mazmorras | Misiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DungeonQuestAtlas?color=A78BFA) |

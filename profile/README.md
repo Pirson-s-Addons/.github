@@ -12,7 +12,7 @@
 <p align="center">
 
 <a href="https://github.com/Pirson-s-Addons">
-<img src="https://img.shields.io/badge/Addons-18-C4B5FD?style=for-the-badge">
+<img src="https://img.shields.io/badge/Addons-19-C4B5FD?style=for-the-badge">
 </a>
 
 <a href="https://www.curseforge.com/members/pirson/projects">
@@ -40,6 +40,7 @@
 | **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Adds a glowing aura around the cursor | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
 | **[Health Bar Text Forever](https://github.com/Pirson-s-Addons/HealthBarTextForever)** | Health and power text on unit frames | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthBarTextForever?color=A78BFA) |
 | **[Seal Timers Forever](https://github.com/Pirson-s-Addons/SealTimersForever)** | Paladin seal timers on screen | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/SealTimersForever?color=A78BFA) |
+| **[DR Tracker Forever](https://github.com/Pirson-s-Addons/DRTrackerForever)** | Crowd control DR tracker | PvP | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DRTrackerForever?color=A78BFA) |
 | **[AnyMove Forever](https://github.com/Pirson-s-Addons/AnyMoveForever)** | Move and resize any window | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/AnyMoveForever?color=A78BFA) |
 | **[Map Fix Forever](https://github.com/Pirson-s-Addons/MapFixForever)** | Fixes the green world map | Map | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MapFixForever?color=A78BFA) |
 | **[Dungeon Quest Atlas Forever](https://github.com/Pirson-s-Addons/DungeonQuestAtlas)** | Dungeon quests, bosses and maps | Quests | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DungeonQuestAtlas?color=A78BFA) |
