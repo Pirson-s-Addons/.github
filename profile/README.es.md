@@ -37,7 +37,7 @@
 |------|-------------|---------|---------|
 | **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Traduce la jerga de WoW en el chat | Chat & Comunicación | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator?color=A78BFA) |
 | **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Elimina misiones rápidamente desde Questie | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie?color=A78BFA) |
-| **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Añade un aura brillante alrededor del cursor | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
+| **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Añade un aura brillante RGB alrededor del cursor que se adapta al cursor del juego (espada, hechizos, PNJ) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
 | **[Health Bar Text Forever](https://github.com/Pirson-s-Addons/HealthBarTextForever)** | Vida y poder en los marcos de unidad | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthBarTextForever?color=A78BFA) |
 | **[Seal Timers Forever](https://github.com/Pirson-s-Addons/SealTimersForever)** | Tiempos de sellos de paladín en pantalla | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/SealTimersForever?color=A78BFA) |
 | **[DR Tracker Forever](https://github.com/Pirson-s-Addons/DRTrackerForever)** | Rendimientos decrecientes del control | JcJ | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DRTrackerForever?color=A78BFA) |
