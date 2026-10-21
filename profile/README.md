@@ -12,7 +12,7 @@
 <p align="center">
 
 <a href="https://github.com/Pirson-s-Addons">
-<img src="https://img.shields.io/badge/Addons-19-C4B5FD?style=for-the-badge">
+<img src="https://img.shields.io/badge/Addons-20-C4B5FD?style=for-the-badge">
 </a>
 
 <a href="https://www.curseforge.com/members/pirson/projects">
@@ -48,6 +48,7 @@
 | **[Emoji & React](https://github.com/Pirson-s-Addons/EmojiReact)** | Emojis and reactions in chat | Chat & Communication | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/EmojiReact?color=A78BFA) |
 | **[HandyNotes: Dungeon & Raid Locations (Forever)](https://github.com/Pirson-s-Addons/HandyNotes_DungeonRaidLocations-Forever)** | Shows dungeon entrances on the map | Map | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_DungeonRaidLocations-Forever?color=A78BFA) |
 | **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Move Extra Action Button anywhere | UI | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton?color=A78BFA) |
+| **[GatherRadar](https://github.com/Pirson-s-Addons/GatherRadar)** | Herbs, ore, treasure and fishing pools on the minimap and world map with their icons | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/GatherRadar?color=A78BFA) |
 | **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Faster ore prospecting | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper?color=A78BFA) |
 | **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Faster herb milling | Professions | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper?color=A78BFA) |
 | **[Vendor Item Filter](https://github.com/Pirson-s-Addons/VendorItemFilter)** | Filter vendor items easily | Utility | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/VendorItemFilter?color=A78BFA) |
