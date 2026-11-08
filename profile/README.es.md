@@ -36,7 +36,7 @@
 | Addon | Descripción | Categoría | Versión |
 |------|-------------|---------|---------|
 | **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Traduce la jerga de WoW en el chat y escribe como frase completa los mensajes típicos | Chat & Comunicación | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator?color=A78BFA) |
-| **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Elimina misiones rápidamente desde Questie | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie?color=A78BFA) |
+| **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Abandona todas o las misiones marcadas desde el registro, con confirmación | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie?color=A78BFA) |
 | **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Añade un aura brillante RGB alrededor del cursor que se adapta al cursor del juego (espada, hechizos, PNJ) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
 | **[Chocolate XP Bar](https://github.com/Pirson-s-Addons/ChocolateXPBar)** | Solamente una barra de chocolate para la barra de experiencia, en todas las versiones del juego | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ChocolateXPBar?color=A78BFA) |
 | **[Health Bar Text Forever](https://github.com/Pirson-s-Addons/HealthBarTextForever)** | Vida y poder en los marcos de unidad, siempre o solo al pasar el ratón, con o sin el máximo y donde quieras | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthBarTextForever?color=A78BFA) |
