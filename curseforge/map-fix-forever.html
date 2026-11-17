@@ -1,0 +1,152 @@
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/hero-mf-en.jpg" alt="Map Fix Forever, World of Warcraft addon: Fixes the green world map in non-English clients with the original map art." width="836"></p>
+
+<p style="text-align: center;"><strong><span style="color: #ffd100;">English</span></strong> · <em>Español más abajo</em> · <a href="https://github.com/Pirson-s-Addons/MapFixForever" rel="nofollow">Source code</a> · <a href="https://github.com/Pirson-s-Addons/MapFixForever/issues" rel="nofollow">Report a bug</a></p>
+
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span style="color: #4aa3ff;">Map Fix Forever</span></strong> is a <strong>World of Warcraft addon</strong> for <strong>WoW Forever</strong>. Fixes the green world map in non-English clients with the original map art.</span></p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">What it does</span></h2>
+
+<p><strong>Map Fix Forever</strong> ships the <strong>original map textures</strong> of the English client (build 1.60.1.69913, 1554 textures in 55 map folders) and swaps them in whenever the game draws one of those maps. Your map looks exactly like it does in English, explored areas included.</p>
+<ul>
+<li>Nothing to set up: install it and open the map.</li>
+<li>On English clients the world map is left alone (only the minimap fix below runs).</li>
+<li>Only post-hooks: Blizzard's map code is never replaced.</li>
+</ul>
+<p><strong>Grey minimap in Orgrimmar and Stormwind</strong> (build 1.60.1.70291, every language): inside those two cities the minimap turns light grey and black. The addon hides the broken city minimap and draws the ground minimap tiles the game already has underneath, following your position, zoom and minimap rotation. Icons stay on top. Outside those cities nothing changes.</p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Screenshots</span></h2>
+
+<table style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="https://media.forgecdn.net/attachments/1957/882/mapnofixed-png.png" alt="Before: green map" width="400"><br><em>Before: green map</em></td>
+<td style="text-align: center;"><img src="https://media.forgecdn.net/attachments/1957/883/mapfixed-png.png" alt="After: original map art" width="400"><br><em>After: original map art</em></td>
+</tr>
+</tbody>
+</table>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">The problem</span></h2>
+
+<p>In WoW Forever (1.60.1), the new world maps (the world map, Kalimdor, Durotar, Zephras Isle, Hyjal and the other redrawn zones) only shipped for <strong>English</strong> clients. In any other language the client can't find them (<code>Logs/AsyncFile.log</code>: <em>"Can't find file in build manifest"</em>) and draws them <strong>solid green</strong>, both the zone map and the explored areas.</p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">How to use</span></h2>
+
+<ul>
+<li><code>/mapfix</code> — status: how many original textures are being shown.</li>
+<li><code>/mapfix on</code> / <code>/mapfix off</code> — turn the fix on or off.</li>
+<li><code>/mapfix minimap</code> — turn the grey minimap fix on or off.</li>
+</ul>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Installation</span></h2>
+
+<ol>
+<li>Install it with the <strong>CurseForge app</strong> (recommended: it keeps the addon updated and puts it in the right client), or download the ZIP from the Files tab.</li>
+<li>If you install by hand, extract the <code>MapFixForever</code> folder into <code>World of Warcraft/&lt;version&gt;/Interface/AddOns/</code>.</li>
+<li>Restart the game and make sure <strong>Map Fix Forever</strong> is enabled in the AddOns list.</li>
+</ol>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Compatibility</span></h2>
+
+<p style="text-align: center;">Works on: <strong>WoW Forever</strong> · MIT License</p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Good to know</span></h2>
+
+<ul>
+<li>The addon is large (~52 MB zipped) because it carries the map art.</li>
+<li>The map textures belong to Blizzard Entertainment. They are included only to show non-English clients the same map English clients already have. If Blizzard ships the maps for every language, this addon is no longer needed.</li>
+</ul>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Support the project</span></h2>
+
+<p style="text-align: center;">Map Fix Forever is made in my free time. If it makes your adventures better, you can support it, or simply <strong>leave a comment, a rating or share it with your guild</strong>.</p>
+
+<p style="text-align: center;"><a href="https://coff.ee/franciscorb" target="_blank" rel="nofollow noopener"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/coffee-en.png" alt="Buy me a coffee" width="280"></a></p>
+
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/lang-es.png" alt="Español: versión en español" width="836"></p>
+<p>&nbsp;</p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/hero-mf-es.jpg" alt="Map Fix Forever, addon de World of Warcraft: Arregla el mapa del mundo verde en clientes no ingleses con el arte original." width="836"></p>
+
+<p style="text-align: center;"><strong><span style="color: #ffd100;">Español</span></strong> · <a href="https://github.com/Pirson-s-Addons/MapFixForever" rel="nofollow">Código fuente</a> · <a href="https://github.com/Pirson-s-Addons/MapFixForever/issues" rel="nofollow">Informar de un fallo</a></p>
+
+<p style="text-align: center;"><span style="font-size: 16px;"><strong><span style="color: #4aa3ff;">Map Fix Forever</span></strong> es un <strong>addon de World of Warcraft</strong> para <strong>WoW Forever</strong>. Arregla el mapa del mundo verde en clientes no ingleses con el arte original.</span></p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Qué hace</span></h2>
+
+<p><strong>Map Fix Forever</strong> lleva las <strong>texturas originales del mapa</strong> del cliente en inglés (build 1.60.1.69913, 1554 texturas en 55 carpetas de mapas) y las pone cada vez que el juego dibuja uno de esos mapas. El mapa se ve exactamente igual que en inglés, zonas exploradas incluidas.</p>
+<ul>
+<li>Sin configurar nada: instálalo y abre el mapa.</li>
+<li>En el cliente en inglés no toca el mapa del mundo (solo corre el arreglo del minimapa de abajo).</li>
+<li>Solo post-hooks: no reemplaza el código del mapa de Blizzard.</li>
+</ul>
+<p><strong>Minimapa gris en Orgrimmar y Ventormenta</strong> (build 1.60.1.70291, todos los idiomas): dentro de esas dos ciudades el minimapa sale gris claro y negro. El addon oculta el minimapa roto de la ciudad y pinta debajo las teselas del suelo que ya tiene el juego, siguiendo tu posición, el zoom y el giro del minimapa. Los iconos quedan encima. Fuera de esas ciudades no cambia nada.</p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Capturas</span></h2>
+
+<table style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="https://media.forgecdn.net/attachments/1957/882/mapnofixed-png.png" alt="Antes: mapa verde" width="400"><br><em>Antes: mapa verde</em></td>
+<td style="text-align: center;"><img src="https://media.forgecdn.net/attachments/1957/883/mapfixed-png.png" alt="Después: mapa original" width="400"><br><em>Después: mapa original</em></td>
+</tr>
+</tbody>
+</table>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">El problema</span></h2>
+
+<p>En WoW Forever (1.60.1), los mapas nuevos (mapa del mundo, Kalimdor, Durotar, Isla de Zephras, Hyjal y el resto de zonas redibujadas) solo se publicaron para el cliente en <strong>inglés</strong>. En cualquier otro idioma el cliente no los encuentra (<code>Logs/AsyncFile.log</code>: <em>"Can't find file in build manifest"</em>) y los pinta en <strong>verde</strong>, tanto el mapa de la zona como las zonas exploradas.</p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Cómo se usa</span></h2>
+
+<ul>
+<li><code>/mapfix</code> — estado: cuántas texturas originales se están mostrando.</li>
+<li><code>/mapfix on</code> / <code>/mapfix off</code> — activa o desactiva el arreglo.</li>
+<li><code>/mapfix minimap</code> — activa o desactiva el arreglo del minimapa gris.</li>
+</ul>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Instalación</span></h2>
+
+<ol>
+<li>Instálalo con la <strong>app de CurseForge</strong> (recomendado: se actualiza solo y lo coloca en el cliente correcto) o descarga el ZIP de la pestaña Files.</li>
+<li>Si lo instalas a mano, descomprime la carpeta <code>MapFixForever</code> en <code>World of Warcraft/&lt;versión&gt;/Interface/AddOns/</code>.</li>
+<li>Reinicia el juego y comprueba que <strong>Map Fix Forever</strong> está activado en la lista de addons.</li>
+</ol>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Compatibilidad</span></h2>
+
+<p style="text-align: center;">Funciona en: <strong>WoW Forever</strong> · Licencia MIT</p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">A tener en cuenta</span></h2>
+
+<ul>
+<li>El addon pesa bastante (~52 MB en zip) porque lleva el arte del mapa.</li>
+<li>Las texturas del mapa son de Blizzard Entertainment. Se incluyen solo para que los clientes no ingleses vean el mismo mapa que ya tiene el cliente en inglés. Si Blizzard publica los mapas en todos los idiomas, este addon deja de hacer falta.</li>
+</ul>
+<p><strong>Autor</strong>: Pirson · <a href="https://github.com/Pirson-s-Addons" rel="nofollow">GitHub</a> · <a href="https://www.curseforge.com/members/pirson/projects" rel="nofollow">CurseForge</a> · Licencia MIT</p>
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/divider.png" alt="" width="836"></p>
+<h2 style="text-align: center;"><span style="color: #ffd100; font-family: georgia, serif;">Apoya el proyecto</span></h2>
+
+<p style="text-align: center;">Map Fix Forever se hace en mi tiempo libre. Si mejora tus aventuras, puedes apoyarlo, o simplemente <strong>dejar un comentario, una valoración o compartirlo con tu hermandad</strong>.</p>
+
+<p style="text-align: center;"><a href="https://coff.ee/franciscorb" target="_blank" rel="nofollow noopener"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/coffee-es.png" alt="Invítame a un café" width="280"></a></p>
+
+<p style="text-align: center;"><span style="font-size: 11px; color: #6b7089;">Map Fix Forever: World of Warcraft addon · Map · Fixes the green world map · addon de World of Warcraft · Mapa · Arregla el mapa del mundo verde. Compatible with WoW Forever.</span></p>

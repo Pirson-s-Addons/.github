@@ -637,4 +637,9 @@ ${t.tail}
   writeFileSync(new URL(`../profile/${t.file}`, import.meta.url), md);
 }
 
+// catalog for scripts/curseforge.py (CurseForge descriptions use the same names, taglines, clients and colors)
+write("catalog.json", JSON.stringify(rows.map((a) => ({
+  abbr: a.abbr.toLowerCase(), name: a.name, repo: a.repo, url: a.url, color: Q[quality(a.downloads)], license: ARR.has(a.abbr) ? 1 : 0,
+  clients: (a.clients ?? []).map((k) => CLIENTS.find((c) => c[0] === k).slice(1)), cat: CATS[a.cat], one: ONE[a.abbr].slice(1), en: a.en.join(" "), es: a.es.join(" "),
+})), null, 1) + "\n");
 console.log(`built ${rows.length} addons, ${fmt(total, "en")} downloads, ${usedClients.length} clients`);
