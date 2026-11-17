@@ -419,6 +419,40 @@ each("button-curseforge", (lang) => svg(260, 52, "CurseForge", `
   <rect x="2" y="2" width="256" height="48" rx="6" fill="url(#btn)" stroke="url(#goldtext)" stroke-width="3"/>
   <text class="t" x="130" y="33" text-anchor="middle" style="font-size:18px; fill:url(#goldtext)">${lang === "en" ? "Get them on CurseForge" : "Descárgalos en CurseForge"}</text>`));
 
+// ---------- 10. Header + footer for each addon's own README (linked from the addon repos by raw URL) ----------
+const ARR = new Set(["DQ", "AI"]); // All Rights Reserved; the rest are MIT
+const RH_T = {
+  en: { dl: "downloads", all: "Every client", lic: ["MIT License", "All rights reserved"], part: "Part of Pirson's Addons", see: "See all addons →" },
+  es: { dl: "descargas", all: "Todos los clientes", lic: ["Licencia MIT", "Todos los derechos reservados"], part: "Parte de Pirson's Addons", see: "Ver todos los addons →" },
+};
+const wrap = (s, max) => { // split a sentence into at most two lines near `max` chars
+  if (s.length <= max) return [s];
+  const cut = s.lastIndexOf(" ", max);
+  return [s.slice(0, cut), s.slice(cut + 1)];
+};
+for (const a of rows) each(`readme-${a.abbr.toLowerCase()}`, (lang) => {
+  const t = RH_T[lang], i = LANGS.indexOf(lang), q = Q[quality(a.downloads)];
+  const tag = wrap(a[lang].join(" "), 82), H = 138 + (tag.length - 1) * 22;
+  const cl = a.clients ?? [], clients = cl.length >= 7 ? t.all : cl.map((k) => CLIENTS.find((c) => c[0] === k)[i + 1]).join(", ");
+  const meta = [a.version ? `v${a.version}` : null, clients, `<tspan style="fill:${GOLD}">${fmt(a.downloads, lang)}</tspan> ${t.dl}`, t.lic[ARR.has(a.abbr) ? 1 : 0]].filter(Boolean);
+  return svg(840, H, `${a.name}: ${a[lang].join(" ")}`, `
+${tooltip(1, 1, 838, H - 2)}
+  <rect x="24" y="24" width="72" height="72" rx="6" fill="#12141f" stroke="${q}" stroke-width="2.5"/>
+  <rect x="27" y="27" width="66" height="66" rx="5" fill="${q}" fill-opacity=".1"/>
+  <text class="t" x="60" y="70" text-anchor="middle" style="font-size:28px; fill:${q}">${a.abbr}</text>
+${line(118, 56, esc(a.name), 0.1, { cls: "t", style: `font-size:${a.name.length > 30 ? 24 : 30}px; fill:${q}` })}
+${tag.map((s, k) => line(118, 86 + k * 22, esc(s), 0.25, { fill: "#e6e6e6", style: "font-size:15px" })).join("\n")}
+${line(118, H - 26, meta.map((m) => esc(m).replace(/&lt;tspan style="fill:(#[0-9a-f]+)"&gt;(.*?)&lt;\/tspan&gt;/i, `<tspan style="fill:$1">$2</tspan>`)).join(`<tspan style="fill:${GOLD}">  ◆  </tspan>`), 0.4, { fill: "#9d9d9d", style: "font-size:13px; white-space:pre" })}`);
+});
+each("readme-footer", (lang) => {
+  const t = RH_T[lang];
+  return svg(840, 56, `${t.part}: ${rows.length} addons, ${fmt(total, lang)} ${t.dl}`, `
+${tooltip(1, 1, 838, 54)}
+  <path d="M22 28 l6 -6 l6 6 l-6 6 Z" fill="${GOLD}"/>
+  <text x="44" y="33" style="font-size:14px; fill:#e6e6e6"><tspan class="t" style="fill:${Q.legendary}; font-size:16px">${esc(t.part)}</tspan>  ·  ${rows.length} addons  ·  <tspan style="fill:${GOLD}">${fmt(total, lang)}</tspan> ${t.dl}</text>
+  <text x="816" y="33" text-anchor="end" style="font-size:13px; fill:${GOLD}">${t.see}</text>`);
+});
+
 // ---------- 9. README.md / README.es.md ----------
 const RD = {
   en: { file: "README.md", other: `<b>English</b> · <a href="README.es.md">Español</a>`,

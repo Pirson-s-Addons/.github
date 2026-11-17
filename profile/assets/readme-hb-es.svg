@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="138" viewBox="0 0 840 138" role="img" aria-label="Health Bar Text Forever: Texto de salud y poder siempre visible en jugador, objetivo, foco y su objetivo.">
+  <defs>
+    <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
+    <linearGradient id="goldtext" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3b0"/><stop offset=".55" stop-color="#ffd100"/><stop offset="1" stop-color="#c8860a"/></linearGradient>
+    <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient></defs>
+  <style>
+    text { font-family: Verdana, 'DejaVu Sans', Arial, sans-serif; font-size: 14px; fill: #fff; }
+    .t { font-family: Georgia, 'Times New Roman', serif; font-weight: bold; }
+    .l { opacity: 0; animation: in .45s ease-out forwards; }
+    .glint { animation: run 7s linear infinite; }
+    @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1000; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .l, .glint, .fx { animation: none !important; opacity: 1 !important; } }</style>
+
+  <rect x="1" y="1" width="838" height="136" rx="8" fill="url(#tip)" stroke="#4a4f6a" stroke-width="2"/>
+
+  <rect x="24" y="24" width="72" height="72" rx="6" fill="#12141f" stroke="#c77dff" stroke-width="2.5"/>
+  <rect x="27" y="27" width="66" height="66" rx="5" fill="#c77dff" fill-opacity=".1"/>
+  <text class="t" x="60" y="70" text-anchor="middle" style="font-size:28px; fill:#c77dff">HB</text>
+  <text class="l t" x="118" y="56" style="animation-delay:0.1s; font-size:30px; fill:#c77dff">Health Bar Text Forever</text>
+  <text class="l " x="118" y="86" style="animation-delay:0.25s; fill:#e6e6e6; font-size:15px">Texto de salud y poder siempre visible en jugador, objetivo, foco y su objetivo.</text>
+  <text class="l " x="118" y="112" style="animation-delay:0.4s; fill:#9d9d9d; font-size:13px; white-space:pre">v1.08<tspan style="fill:#ffd100">  ◆  </tspan>WoW Forever<tspan style="fill:#ffd100">  ◆  </tspan><tspan style="fill:#ffd100">18.924</tspan> descargas<tspan style="fill:#ffd100">  ◆  </tspan>Licencia MIT</text>
+</svg>
