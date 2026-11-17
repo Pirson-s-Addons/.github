@@ -2,7 +2,7 @@
 // Usage: node scripts/build.mjs [--fetch]
 //   --fetch  refreshes profile/assets/data.json (CurseForge downloads via cfwidget, game clients from each repo's TOC files).
 //            Needs GITHUB_TOKEN for the GitHub API; anything that fails keeps its previous value.
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import assert from "node:assert/strict";
 
 const dir = new URL("../profile/assets/", import.meta.url);
@@ -457,42 +457,73 @@ ${tooltip(1, 1, 838, 54)}
 });
 
 // ---------- 11. CurseForge description images (PNG, no live numbers: CurseForge already shows downloads and version) ----------
-// SVGs land in assets/cf/; `--png` renders them to PNG with headless Chrome (CurseForge may not show SVG).
+// CurseForge's description column is 836px wide on a near-black page. SVGs go to assets/cf/; `--png` renders them at 2x.
 const CF_T = {
-  en: { addon: "World of Warcraft addon", more: "More addons by Pirson", see: "Browse all →" },
-  es: { addon: "Addon de World of Warcraft", more: "Más addons de Pirson", see: "Ver todos →" },
+  en: { more: "More addons by Pirson", see: "Browse all →", coffee: "Buy me a coffee", sign: "Pirson's Addons" },
+  es: { more: "Más addons de Pirson", see: "Ver todos →", coffee: "Invítame a un café", sign: "Pirson's Addons" },
 };
 const cfFiles = [];
+mkdirSync(new URL("cf/", dir), { recursive: true });
 const cfWrite = (f, s) => { write(`cf/${f}`, s); cfFiles.push(f); };
+const chips = (list, x0, y) => { // gold-bordered pills, left to right
+  let x = x0;
+  return list.map((t) => { const w = t.length * 8 + 30, s = `<rect x="${x}" y="${y}" width="${w}" height="30" rx="15" fill="#0b0d18" stroke="${GOLD}" stroke-opacity=".7"/><text x="${x + w / 2}" y="${y + 20}" text-anchor="middle" style="font-size:14px; fill:${GOLD}">${esc(t)}</text>`; x += w + 10; return s; }).join("\n  ");
+};
 for (const a of rows) for (const lang of LANGS) {
-  const t = CF_T[lang], i = LANGS.indexOf(lang), q = Q[quality(a.downloads)];
-  const tag = wrap(a[lang].join(" "), 82), H = 138 + (tag.length - 1) * 22;
-  const cl = a.clients ?? [], clients = cl.length >= 7 ? RH_T[lang].all : cl.map((k) => CLIENTS.find((c) => c[0] === k)[i + 1]).join(", ");
-  const meta = [t.addon, clients, RH_T[lang].lic[ARR.has(a.abbr) ? 1 : 0]];
-  cfWrite(`cf-${a.abbr.toLowerCase()}-${lang}.svg`, svg(840, H, a.name, `
-${tooltip(1, 1, 838, H - 2)}
-  <image x="14" y="${(H - 110) / 2}" width="110" height="110" href="${logo(a.abbr)}"/>
-  <text class="t" x="140" y="56" style="font-size:${a.name.length > 30 ? 24 : 30}px; fill:${q}">${esc(a.name)}</text>
-${tag.map((s, k) => `  <text x="140" y="${86 + k * 22}" style="font-size:15px; fill:#e6e6e6">${esc(s)}</text>`).join("\n")}
-  <text x="140" y="${H - 26}" style="font-size:13px; fill:#9d9d9d; white-space:pre">${meta.map(esc).join(`<tspan style="fill:${GOLD}">  ◆  </tspan>`)}</text>`));
+  const i = LANGS.indexOf(lang), q = Q[quality(a.downloads)], tag = wrap(a[lang].join(" "), 56);
+  const cl = a.clients ?? [], cls = cl.length >= 7 ? [RH_T[lang].all] : cl.map((k) => SHORT[k]);
+  // hero: the addon as a legendary-style item, logo glowing in its quality color
+  cfWrite(`hero-${a.abbr.toLowerCase()}-${lang}.svg`, svg(836, 300, `${a.name}: ${a[lang].join(" ")}`, `
+  <defs><radialGradient id="glow"><stop offset="0" stop-color="${q}" stop-opacity=".45"/><stop offset="1" stop-color="${q}" stop-opacity="0"/></radialGradient></defs>
+  <rect x="2" y="2" width="832" height="296" rx="14" fill="url(#tip)" stroke="url(#goldtext)" stroke-width="3"/>
+  <rect x="9" y="9" width="818" height="282" rx="10" fill="none" stroke="#4a4f6a"/>
+  <circle cx="138" cy="150" r="130" fill="url(#glow)"/>
+  <image x="38" y="50" width="200" height="200" href="${logo(a.abbr)}"/>
+  <text class="t" x="270" y="${tag.length > 1 ? 98 : 112}" style="font-size:${a.name.length > 28 ? 30 : 40}px; fill:${q}">${esc(a.name)}</text>
+${tag.map((s, k) => `  <text x="270" y="${(tag.length > 1 ? 136 : 150) + k * 26}" style="font-size:18px; fill:#e6e6e6">${esc(s)}</text>`).join("\n")}
+  ${chips([...cls, CATS[a.cat][i]], 270, 208)}
+  <text x="808" y="276" text-anchor="end" style="font-size:12px; fill:#6b7089">${CF_T[lang].sign}</text>`));
+  // card for the "more addons" strip
+  cfWrite(`card-${a.abbr.toLowerCase()}-${lang}.svg`, svg(410, 92, a.name, `
+${tooltip(1, 1, 408, 90)}
+  <image x="10" y="9" width="74" height="74" href="${logo(a.abbr)}"/>
+  <text class="t" x="94" y="40" style="font-size:${a.name.length > 30 ? 13 : a.name.length > 22 ? 15 : 17}px; fill:${q}">${esc(a.name)}</text>
+  <text x="94" y="64" style="font-size:13px; fill:#c9c9c9">${esc(ONE[a.abbr][i + 1])}</text>`));
 }
+cfWrite("divider.svg", svg(836, 28, "", `
+  <line x1="40" y1="14" x2="400" y2="14" stroke="${GOLD}" stroke-opacity=".55"/><line x1="436" y1="14" x2="796" y2="14" stroke="${GOLD}" stroke-opacity=".55"/>
+  <path d="M418 4 l10 10 l-10 10 l-10 -10 Z" fill="${GOLD}"/><path d="M400 14 l4 -4 l4 4 l-4 4 Z M428 14 l4 -4 l4 4 l-4 4 Z" fill="${GOLD}" opacity=".7"/>`));
 for (const lang of LANGS) {
   const t = CF_T[lang];
-  cfWrite(`cf-footer-${lang}.svg`, svg(840, 56, t.more, `
-${tooltip(1, 1, 838, 54)}
+  cfWrite(`coffee-${lang}.svg`, svg(280, 56, t.coffee, `
+  <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b3261e"/><stop offset="1" stop-color="#5c0f0a"/></linearGradient>
+  <rect x="2" y="2" width="276" height="52" rx="8" fill="url(#btn)" stroke="url(#goldtext)" stroke-width="3"/>
+  <text class="t" x="140" y="35" text-anchor="middle" style="font-size:19px; fill:url(#goldtext)">${esc(t.coffee)}</text>`));
+  cfWrite(`footer-${lang}.svg`, svg(836, 56, t.more, `
+${tooltip(1, 1, 834, 54)}
   <path d="M22 28 l6 -6 l6 6 l-6 6 Z" fill="${GOLD}"/>
   <text x="44" y="34" class="t" style="font-size:17px; fill:${Q.legendary}">${esc(t.more)}</text>
-  <text x="816" y="33" text-anchor="end" style="font-size:13px; fill:${GOLD}">${esc(t.see)}</text>`));
+  <text x="812" y="33" text-anchor="end" style="font-size:13px; fill:${GOLD}">${esc(t.see)}</text>`));
 }
 if (process.argv.includes("--png")) {
   const { execFileSync } = await import("node:child_process");
   const chrome = process.env.CHROME ?? "google-chrome";
   for (const f of cfFiles) {
-    const src = new URL(`cf/${f}`, dir), h = Number(readFileSync(src, "utf8").match(/height="(\d+)"/)[1]);
+    const src = new URL(`cf/${f}`, dir), m = readFileSync(src, "utf8").match(/width="(\d+)" height="(\d+)"/);
     execFileSync(chrome, ["--headless", "--disable-gpu", "--hide-scrollbars", "--force-prefers-reduced-motion", "--force-device-scale-factor=2",
-      "--default-background-color=00000000", `--window-size=840,${h}`, `--screenshot=${new URL(`cf/${f.replace(".svg", ".png")}`, dir).pathname}`, src.href], { stdio: "ignore" });
+      "--default-background-color=00000000", `--window-size=${m[1]},${m[2]}`, `--screenshot=${new URL(`cf/${f.replace(".svg", ".png")}`, dir).pathname}`, src.href], { stdio: "ignore" });
   }
-  console.log(`rendered ${cfFiles.length} CurseForge PNGs`);
+  // heroes and cards as JPEG on CurseForge's own page color: same look, ~5x lighter (needs python3 + Pillow)
+  execFileSync("python3", ["-c", `
+import glob, os
+from PIL import Image
+for f in glob.glob(${JSON.stringify(new URL("cf/", dir).pathname)} + "*.png"):
+    n = os.path.basename(f)
+    if not n.startswith(("hero-", "card-")): continue
+    im = Image.open(f).convert("RGBA"); bg = Image.new("RGBA", im.size, (13, 13, 13, 255)); bg.alpha_composite(im)
+    bg.convert("RGB").save(f[:-4] + ".jpg", quality=88, optimize=True, progressive=True); os.remove(f)
+`]);
+  console.log(`rendered ${cfFiles.length} CurseForge images`);
 }
 
 // ---------- 9. README.md / README.es.md ----------

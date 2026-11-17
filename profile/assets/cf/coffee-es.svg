@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Invítame a un café">
+  <defs>
+    <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
+    <linearGradient id="goldtext" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3b0"/><stop offset=".55" stop-color="#ffd100"/><stop offset="1" stop-color="#c8860a"/></linearGradient>
+    <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient></defs>
+  <style>
+    text { font-family: Verdana, 'DejaVu Sans', Arial, sans-serif; font-size: 14px; fill: #fff; }
+    .t { font-family: Georgia, 'Times New Roman', serif; font-weight: bold; }
+    .l { opacity: 0; animation: in .45s ease-out forwards; }
+    .glint { animation: run 7s linear infinite; }
+    @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1000; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .l, .glint, .fx { animation: none !important; opacity: 1 !important; } }</style>
+
+  <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b3261e"/><stop offset="1" stop-color="#5c0f0a"/></linearGradient>
+  <rect x="2" y="2" width="276" height="52" rx="8" fill="url(#btn)" stroke="url(#goldtext)" stroke-width="3"/>
+  <text class="t" x="140" y="35" text-anchor="middle" style="font-size:19px; fill:url(#goldtext)">Invítame a un café</text>
+</svg>
