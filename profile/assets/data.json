@@ -1,0 +1,211 @@
+{
+  "addons": {
+    "1308020": {
+      "downloads": 7822,
+      "url": "https://www.curseforge.com/wow/addons/remove-questie",
+      "version": "1.13",
+      "clients": [
+        "forever",
+        "mop",
+        "tbc"
+      ]
+    },
+    "1331866": {
+      "downloads": 182,
+      "url": "https://www.curseforge.com/wow/addons/loot-a-rang-classic",
+      "version": "1.06",
+      "clients": [
+        "mop"
+      ]
+    },
+    "1335779": {
+      "downloads": 1039,
+      "url": "https://www.curseforge.com/wow/addons/prospect-helper",
+      "version": "1.08",
+      "clients": [
+        "mop",
+        "cata",
+        "wrath",
+        "tbc"
+      ]
+    },
+    "1339466": {
+      "downloads": 723,
+      "url": "https://www.curseforge.com/wow/addons/mill-helper",
+      "version": "1.08",
+      "clients": [
+        "mop",
+        "cata",
+        "wrath"
+      ]
+    },
+    "1343504": {
+      "downloads": 663,
+      "url": "https://www.curseforge.com/wow/addons/vendor-item-filter",
+      "version": "1.07",
+      "clients": [
+        "forever",
+        "mop"
+      ]
+    },
+    "1349365": {
+      "downloads": 277,
+      "url": "https://www.curseforge.com/wow/addons/leave-instance-group",
+      "version": "1.05",
+      "clients": [
+        "mop"
+      ]
+    },
+    "1403777": {
+      "downloads": 5945,
+      "url": "https://www.curseforge.com/wow/addons/handynotes-trove-of-the-thunder-king",
+      "version": "1.05",
+      "clients": [
+        "mop"
+      ]
+    },
+    "1431567": {
+      "downloads": 72069,
+      "url": "https://www.curseforge.com/wow/addons/wow-translator",
+      "version": "2.15",
+      "clients": [
+        "retail",
+        "forever",
+        "mop",
+        "cata",
+        "wrath",
+        "tbc",
+        "era",
+        "legacy"
+      ]
+    },
+    "1439079": {
+      "downloads": 666,
+      "url": "https://www.curseforge.com/wow/addons/move-extra-action-button",
+      "version": "1.03",
+      "clients": [
+        "mop",
+        "tbc"
+      ]
+    },
+    "1476012": {
+      "downloads": 137,
+      "url": "https://www.curseforge.com/wow/addons/azeroth-tic-tac-toe",
+      "version": "1.04",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1549539": {
+      "downloads": 1173,
+      "url": "https://www.curseforge.com/wow/addons/cursor-glow-rgb",
+      "version": "1.06",
+      "clients": [
+        "retail",
+        "forever",
+        "mop",
+        "cata",
+        "wrath",
+        "tbc",
+        "era",
+        "legacy"
+      ]
+    },
+    "1700978": {
+      "downloads": 18924,
+      "url": "https://www.curseforge.com/wow/addons/health-bar-text-forever",
+      "version": "1.08",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1701053": {
+      "downloads": 12175,
+      "url": "https://www.curseforge.com/wow/addons/seal-timers-forever",
+      "version": "1.11",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1701856": {
+      "downloads": 2364,
+      "url": "https://www.curseforge.com/wow/addons/map-fix-forever",
+      "version": "1.02",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1713716": {
+      "downloads": 40946,
+      "url": "https://www.curseforge.com/wow/addons/dungeon-quest-atlas",
+      "version": "3.06",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1729936": {
+      "downloads": 187,
+      "url": "https://www.curseforge.com/wow/addons/emoji-react",
+      "version": "1.04",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1743547": {
+      "downloads": 26355,
+      "url": "https://www.curseforge.com/wow/addons/handynotes-dungeon-raid-locations-forever",
+      "version": "1.03",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1744981": {
+      "downloads": 1830,
+      "url": "https://www.curseforge.com/wow/addons/dr-tracker-forever",
+      "version": "1.02",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1757790": {
+      "downloads": 6466,
+      "url": "https://www.curseforge.com/wow/addons/gather-radar",
+      "version": "1.04",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1788942": {
+      "downloads": 49,
+      "url": "https://www.curseforge.com/wow/addons/chocolate-xp-bar",
+      "version": "1.00",
+      "clients": [
+        "retail",
+        "forever",
+        "mop",
+        "cata",
+        "wrath",
+        "tbc",
+        "era",
+        "legacy"
+      ]
+    },
+    "1796245": {
+      "downloads": 71,
+      "url": "https://www.curseforge.com/wow/addons/azeroth-ai",
+      "version": "1.02",
+      "clients": [
+        "forever"
+      ]
+    },
+    "1806190": {
+      "downloads": 24,
+      "url": "https://www.curseforge.com/wow/addons/rotation-guide",
+      "version": "1.01",
+      "clients": [
+        "forever"
+      ]
+    }
+  },
+  "date": "2026-11-17"
+}

@@ -1,87 +1,83 @@
-<p align="center">
-  <img src="assets/banner.jpg" alt="Pirson WoW Addons"/>
-</p>
+<p align="center"><img src="assets/hero-es.svg" width="760" alt="Pirson's Addons como el tooltip de un objeto legendario: 22 addons, 200.087 descargas en CurseForge, 8 clientes del juego. Retail, Classic y WoW Forever."/></p>
 
-<h1 align="center">Pirson WoW Addons</h1>
+<p align="center"><a href="README.md">English</a> · <b>Español</b></p>
 
-<p align="center">
-  <b>Addons de alta calidad para World of Warcraft Classic y Retail</b><br>
-  Herramientas ligeras diseñadas para mejorar la jugabilidad, profesiones y la interfaz.
-</p>
+<p align="center"><a href="https://www.curseforge.com/members/pirson/projects"><img src="assets/button-curseforge-es.svg" width="260" alt="Descárgalos en CurseForge"/></a></p>
 
-<p align="center">
+<p align="center"><img src="assets/header-achievements-es.svg" width="100%" alt="Logros"/></p>
 
-<a href="https://github.com/Pirson-s-Addons">
-<img src="https://img.shields.io/badge/Addons-22-C4B5FD?style=for-the-badge">
-</a>
+<p align="center"><img src="assets/achievements-es.svg" width="100%" alt="200.000 descargas: Alcanza 200.000 descargas en CurseForge. El favorito del público: WoW Translator: 72.069 descargas. Coleccionista: Publica 22 addons para 8 clientes del juego."/></p>
 
-<a href="https://www.curseforge.com/members/pirson/projects">
-<img src="https://img.shields.io/badge/CurseForge-Projects-E9D5FF?style=for-the-badge">
-</a>
-
-<a href="https://github.com/SrPirson?tab=followers">
-<img src="https://img.shields.io/github/followers/SrPirson?style=for-the-badge&color=C4B5FD">
-</a>
-
-</p>
+<p align="center"><img src="assets/header-collection-es.svg" width="100%" alt="Colección de addons"/></p>
 
 <p align="center">
-<a href="README.md">🇬🇧 English</a>
+  <a href="https://www.curseforge.com/wow/addons/wow-translator"><img src="assets/addon-wt-es.svg" width="49%" alt="WoW Translator: Traduce la jerga, abreviaturas y mazmorras del chat de WoW a 44 idiomas."/></a>
+  <a href="https://www.curseforge.com/wow/addons/dungeon-quest-atlas"><img src="assets/addon-dq-es.svg" width="49%" alt="Dungeon Quest Atlas: Misiones, jefes y botín de cada mazmorra en un diario, con cadenas y pines."/></a>
+  <a href="https://www.curseforge.com/wow/addons/handynotes-dungeon-raid-locations-forever"><img src="assets/addon-hn-es.svg" width="49%" alt="HandyNotes: Dungeon &amp; Raid Locations: Todas las entradas de mazmorras y bandas en el mapa de zona, continente y minimapa."/></a>
+  <a href="https://www.curseforge.com/wow/addons/health-bar-text-forever"><img src="assets/addon-hb-es.svg" width="49%" alt="Health Bar Text Forever: Texto de salud y poder siempre visible en jugador, objetivo, foco y su objetivo."/></a>
+  <a href="https://www.curseforge.com/wow/addons/seal-timers-forever"><img src="assets/addon-st-es.svg" width="49%" alt="Seal Timers Forever: Tu sello de paladín activo en pantalla con su tiempo restante. Movible y escalable."/></a>
+  <a href="https://www.curseforge.com/wow/addons/remove-questie"><img src="assets/addon-rq-es.svg" width="49%" alt="Remove Questie: Abandona todas las misiones, o solo las que marques, desde el registro en un clic."/></a>
+  <a href="https://www.curseforge.com/wow/addons/gather-radar"><img src="assets/addon-gr-es.svg" width="49%" alt="Gather Radar: Hierbas, minerales, tesoros y bancos de peces en el minimapa y el mapa del mundo."/></a>
+  <a href="https://www.curseforge.com/wow/addons/handynotes-trove-of-the-thunder-king"><img src="assets/addon-tk-es.svg" width="49%" alt="HandyNotes: Trove of the Thunder King: Cada tesoro Trove of the Thunder King en el mapa de la Isla del Trueno."/></a>
+  <a href="https://www.curseforge.com/wow/addons/map-fix-forever"><img src="assets/addon-mf-es.svg" width="49%" alt="Map Fix Forever: Arregla el mapa del mundo verde en clientes no ingleses con el arte original."/></a>
+  <a href="https://www.curseforge.com/wow/addons/dr-tracker-forever"><img src="assets/addon-dr-es.svg" width="49%" alt="DR Tracker Forever: Cuánto dura el siguiente control de masas en tu objetivo, tu foco y en ti."/></a>
+  <a href="https://www.curseforge.com/wow/addons/cursor-glow-rgb"><img src="assets/addon-cg-es.svg" width="49%" alt="Cursor Glow RGB: Un aura RGB brillante alrededor del cursor, con formas, colores y animaciones."/></a>
+  <a href="https://www.curseforge.com/wow/addons/prospect-helper"><img src="assets/addon-ph-es.svg" width="49%" alt="Prospect Helper: Prospecta minerales en un clic para Joyería. Lista los minerales de tus bolsas."/></a>
+  <a href="https://www.curseforge.com/wow/addons/mill-helper"><img src="assets/addon-mh-es.svg" width="49%" alt="Mill Helper: Muele hierbas en un clic para Inscripción. Lista las hierbas de tus bolsas."/></a>
+  <a href="https://www.curseforge.com/wow/addons/move-extra-action-button"><img src="assets/addon-ea-es.svg" width="49%" alt="Move Extra Action Button: Mueve el botón de acción extra y la barra de poder alternativo donde quieras."/></a>
+  <a href="https://www.curseforge.com/wow/addons/vendor-item-filter"><img src="assets/addon-vf-es.svg" width="49%" alt="Vendor Item Filter: Filtra los objetos del vendedor por armadura, ranura, tipo de arma, joyería y más."/></a>
+  <a href="https://www.curseforge.com/wow/addons/leave-instance-group"><img src="assets/addon-lg-es.svg" width="49%" alt="Leave Instance Group: Añade la opción que falta para salir del grupo de instancia en tu retrato."/></a>
+  <a href="https://www.curseforge.com/wow/addons/emoji-react"><img src="assets/addon-er-es.svg" width="49%" alt="Emoji &amp; React: Emojis en el chat y los bocadillos, y una rueda de reacciones sobre tu personaje."/></a>
+  <a href="https://www.curseforge.com/wow/addons/loot-a-rang-classic"><img src="assets/addon-lr-es.svg" width="49%" alt="Loot-A-Rang Classic: Doble clic derecho para usar el Loot-A-Rang y despojar a distancia. Sin ranura."/></a>
+  <a href="https://www.curseforge.com/wow/addons/azeroth-tic-tac-toe"><img src="assets/addon-tt-es.svg" width="49%" alt="Azeroth Tic-Tac-Toe: Juega al tres en raya contra otro jugador apostando oro, con ranking e historial."/></a>
+  <a href="https://www.curseforge.com/wow/addons/azeroth-ai"><img src="assets/addon-ai-es.svg" width="49%" alt="Azeroth AI: Un chatbot dentro del juego para WoW Forever: pregunta sin salir del juego."/></a>
+  <a href="https://www.curseforge.com/wow/addons/chocolate-xp-bar"><img src="assets/addon-cx-es.svg" width="49%" alt="Chocolate XP Bar: Una tableta de chocolate como barra de experiencia, en cinco sabores."/></a>
+  <a href="https://www.curseforge.com/wow/addons/rotation-guide"><img src="assets/addon-rg-es.svg" width="49%" alt="Rotation Guide: La rotación de tu clase en WoW Forever, para las 27 especializaciones."/></a>
 </p>
 
----
+<p align="center"><sub>Las cifras se actualizan cada lunes desde CurseForge. Última actualización: 2026-11-17.</sub></p>
 
-# Colección de Addons
+<details>
+<summary><b>Código fuente en GitHub</b></summary>
 
-| Addon | Descripción | Categoría | Versión |
-|------|-------------|---------|---------|
-| **[WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)** | Traduce la jerga de WoW en el chat y escribe como frase completa los mensajes típicos | Chat & Comunicación | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator?color=A78BFA) |
-| **[Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)** | Abandona todas o las misiones marcadas desde el registro, con confirmación | Jugabilidad | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RemoveQuestie?color=A78BFA) |
-| **[Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)** | Añade un aura brillante RGB alrededor del cursor que se adapta al cursor del juego (espada, hechizos, PNJ) | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Cursor-Glow-RGB?color=A78BFA) |
-| **[Chocolate XP Bar](https://github.com/Pirson-s-Addons/ChocolateXPBar)** | Solamente una barra de chocolate para la barra de experiencia, en todas las versiones del juego | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ChocolateXPBar?color=A78BFA) |
-| **[Health Bar Text Forever](https://github.com/Pirson-s-Addons/HealthBarTextForever)** | Vida y poder en los marcos de unidad, siempre o solo al pasar el ratón, con o sin el máximo y donde quieras; compatible con ClassicUI Forever | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HealthBarTextForever?color=A78BFA) |
-| **[Seal Timers Forever](https://github.com/Pirson-s-Addons/SealTimersForever)** | Tiempos de sellos de paladín en pantalla, con aviso cuando se acaban, borde opcional y el Eco de Cólera desellada con sus acumulaciones; cada elemento se mueve y cambia de tamaño por separado | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/SealTimersForever?color=A78BFA) |
-| **[DR Tracker Forever](https://github.com/Pirson-s-Addons/DRTrackerForever)** | Rendimientos decrecientes del control | JcJ | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DRTrackerForever?color=A78BFA) |
-| **[Rotation Guide](https://github.com/Pirson-s-Addons/RotationGuide)** | Resalta el siguiente hechizo de tu rotación | Combate | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/RotationGuide?color=A78BFA) |
-| **[Map Fix Forever](https://github.com/Pirson-s-Addons/MapFixForever)** | Arregla el mapa del mundo verde | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MapFixForever?color=A78BFA) |
-| **[Dungeon Quest Atlas Forever](https://github.com/Pirson-s-Addons/DungeonQuestAtlas)** | Guía de aventuras de mazmorras y bandas: misiones, jefes, botín, mapas y buscar grupo | Misiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/DungeonQuestAtlas?color=A78BFA) |
-| **[Azeroth TicTacToe](https://github.com/Pirson-s-Addons/AzerothTicTacToe)** | 3 en raya con apuestas de oro | Juegos | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/AzerothTicTacToe?color=A78BFA) |
-| **[Emoji & React](https://github.com/Pirson-s-Addons/EmojiReact)** | Emojis en el chat y rueda de reacciones, también automáticas en duelos, niveles y logros | Chat & Comunicación | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/EmojiReact?color=A78BFA) |
-| **[HandyNotes: Dungeon & Raid Locations (Forever)](https://github.com/Pirson-s-Addons/HandyNotes_DungeonRaidLocations-Forever)** | Muestra entradas de mazmorras en el mapa | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_DungeonRaidLocations-Forever?color=A78BFA) |
-| **[Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)** | Mueve el botón de acción extra | Interfaz | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MoveExtraActionButton?color=A78BFA) |
-| **[GatherRadar](https://github.com/Pirson-s-Addons/GatherRadar)** | Hierbas, menas, tesoros y bancos de peces: lo guardado como aros en el minimapa (pasa el ratón por un punto para identificarlo) y todo en el mapa del mundo | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/GatherRadar?color=A78BFA) |
-| **[Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)** | Prospecta minerales más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/ProspectHelper?color=A78BFA) |
-| **[Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)** | Muele hierbas más rápido | Profesiones | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/MillHelper?color=A78BFA) |
-| **[Vendor Item Filter](https://github.com/Pirson-s-Addons/VendorItemFilter)** | Filtra objetos en vendedores | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/VendorItemFilter?color=A78BFA) |
-| **[Leave Instance Group](https://github.com/Pirson-s-Addons/LeaveInstanceGroup)** | Abandonar grupos rápidamente | Utilidades | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/LeaveInstanceGroup?color=A78BFA) |
-| **[HandyNotes: Troves of the Thunder King](https://github.com/Pirson-s-Addons/HandyNotes_Trove-Thunder-King)** | Muestra tesoros en el mapa | Mapas | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/HandyNotes_Trove-Thunder-King?color=A78BFA) |
-| **[Loot-A-Rang Classic](https://github.com/Pirson-s-Addons/Loot-A-Rang-Classic)** | Funcionalidad Loot-A-Rang para Classic | QoL | ![Release](https://img.shields.io/github/v/release/Pirson-s-Addons/Loot-A-Rang-Classic?color=A78BFA) |
+- [WoW Translator](https://github.com/Pirson-s-Addons/WoW-Translator)
+- [Dungeon Quest Atlas](https://github.com/Pirson-s-Addons/DungeonQuestAtlas)
+- [HandyNotes: Dungeon & Raid Locations](https://github.com/Pirson-s-Addons/HandyNotes_DungeonRaidLocations-Forever)
+- [Health Bar Text Forever](https://github.com/Pirson-s-Addons/HealthBarTextForever)
+- [Seal Timers Forever](https://github.com/Pirson-s-Addons/SealTimersForever)
+- [Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)
+- [Gather Radar](https://github.com/Pirson-s-Addons/GatherRadar)
+- [HandyNotes: Trove of the Thunder King](https://github.com/Pirson-s-Addons/HandyNotes_Trove-Thunder-King)
+- [Map Fix Forever](https://github.com/Pirson-s-Addons/MapFixForever)
+- [DR Tracker Forever](https://github.com/Pirson-s-Addons/DRTrackerForever)
+- [Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)
+- [Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)
+- [Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)
+- [Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)
+- [Vendor Item Filter](https://github.com/Pirson-s-Addons/VendorItemFilter)
+- [Leave Instance Group](https://github.com/Pirson-s-Addons/LeaveInstanceGroup)
+- [Emoji & React](https://github.com/Pirson-s-Addons/EmojiReact)
+- [Loot-A-Rang Classic](https://github.com/Pirson-s-Addons/Loot-A-Rang-Classic)
+- [Azeroth Tic-Tac-Toe](https://github.com/Pirson-s-Addons/AzerothTicTacToe)
+- [Chocolate XP Bar](https://github.com/Pirson-s-Addons/ChocolateXPBar)
+- [Rotation Guide](https://github.com/Pirson-s-Addons/RotationGuide)
 
----
+</details>
 
-# Instalación
+<p align="center"><img src="assets/header-realms-es.svg" width="100%" alt="Clientes compatibles"/></p>
 
-### GitHub
-Descarga la última release y copia en:
-World of Warcraft/{versión_juego}/Interface/AddOns/
+<p align="center"><img src="assets/realms-es.svg" width="100%" alt="Selección de reino"/></p>
 
-Reinicia WoW y activa el addon.
+<p align="center"><img src="assets/header-install-es.svg" width="100%" alt="Instalación"/></p>
 
-### CurseForge
-https://www.curseforge.com/members/pirson/projects
+<p align="center"><img src="assets/quest-es.svg" width="100%" alt="Una interfaz mejor. Consigue el addon en CurseForge o en una release de GitHub. Pon su carpeta en World of Warcraft/_versión_/Interface/AddOns. Reinicia el juego y actívalo en el menú de AddOns."/></p>
 
----
+## Contribuir
 
-# Contribuciones
+Las pull requests son bienvenidas: haz un fork del repositorio, crea una rama y abre una Pull Request.
 
-Pull requests son bienvenidas:
+## Licencia
 
-1. Haz fork del repo  
-2. Crea una rama para la feature  
-3. Envía Pull Request
+Todos los addons usan la licencia MIT, excepto **Dungeon Quest Atlas** y **Azeroth AI** (todos los derechos reservados). Cada repositorio incluye su propio archivo `LICENSE`.
 
----
-
-# Licencia
-
-Todos los addons tienen licencia MIT, salvo **Dungeon Quest Atlas Forever** (todos los derechos reservados). Cada repositorio incluye su propio archivo `LICENSE`.
+<p align="center"><img src="assets/chat-es.svg" width="100%" alt="[Hermandad] [Pirson]: ¡Gracias por usar mis addons! Nos vemos en Azeroth."/></p>

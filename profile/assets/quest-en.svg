@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="400" viewBox="0 0 840 400" role="img" aria-label="A Better Interface. Get the addon from CurseForge or a GitHub release. Put its folder in World of Warcraft/_version_/Interface/AddOns. Restart the game and enable it in the AddOns menu.">
+  <defs>
+    <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
+    <linearGradient id="goldtext" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3b0"/><stop offset=".55" stop-color="#ffd100"/><stop offset="1" stop-color="#c8860a"/></linearGradient>
+    <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient></defs>
+  <style>
+    text { font-family: Verdana, 'DejaVu Sans', Arial, sans-serif; font-size: 14px; fill: #fff; }
+    .t { font-family: Georgia, 'Times New Roman', serif; font-weight: bold; }
+    .l { opacity: 0; animation: in .45s ease-out forwards; }
+    .glint { animation: run 7s linear infinite; }
+    @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1000; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .l, .glint, .fx { animation: none !important; opacity: 1 !important; } }
+    .zero { animation: out .3s forwards; }
+    @keyframes out { to { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .zero { display: none; } }</style>
+
+  <defs><linearGradient id="parch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3e6c4"/><stop offset="1" stop-color="#dcc391"/></linearGradient></defs>
+  <rect x="1" y="1" width="838" height="398" rx="10" fill="#2a1a08"/>
+  <rect x="12" y="12" width="816" height="376" rx="6" fill="url(#parch)" stroke="#8a6414" stroke-width="2"/>
+  <text class="t" x="44" y="58" style="font-size:26px; fill:#5a3a12">A Better Interface</text>
+  <line x1="44" y1="72" x2="796" y2="72" stroke="#5a3a12" stroke-opacity=".4"/>
+  <text x="44" y="102" style="fill:#3b2a14">Your interface could use some help, adventurer. Gather my addons</text>
+  <text x="44" y="124" style="fill:#3b2a14">and see how much smoother Azeroth feels.</text>
+  <text class="t" x="44" y="152" style="font-size:18px; fill:#5a3a12">Objectives</text>
+  <text x="66" y="176" style="fill:#3b2a14">- Get the addon from CurseForge or a GitHub release</text>
+  <text class="zero" x="772" y="176" text-anchor="end" style="fill:#3b2a14; animation-delay:0.8s">0/1</text>
+  <text class="l" x="772" y="176" text-anchor="end" style="fill:#1f6b12; font-weight:bold; animation-delay:0.8s">1/1 ✓</text>
+  <text x="66" y="206" style="fill:#3b2a14">- Put its folder in World of Warcraft/_version_/Interface/AddOns</text>
+  <text class="zero" x="772" y="206" text-anchor="end" style="fill:#3b2a14; animation-delay:1.4s">0/1</text>
+  <text class="l" x="772" y="206" text-anchor="end" style="fill:#1f6b12; font-weight:bold; animation-delay:1.4s">1/1 ✓</text>
+  <text x="66" y="236" style="fill:#3b2a14">- Restart the game and enable it in the AddOns menu</text>
+  <text class="zero" x="772" y="236" text-anchor="end" style="fill:#3b2a14; animation-delay:2s">0/1</text>
+  <text class="l" x="772" y="236" text-anchor="end" style="fill:#1f6b12; font-weight:bold; animation-delay:2s">1/1 ✓</text>
+  <text class="t" x="44" y="292" style="font-size:18px; fill:#5a3a12">Rewards</text>
+  <rect x="44" y="306" width="36" height="36" rx="4" fill="url(#gem)" stroke="#8a6414" stroke-width="2"/>
+  <path d="M62 312 L65 321 L74 324 L65 327 L62 336 L59 327 L50 324 L59 321 Z" fill="url(#goldtext)"/>
+  <text x="92" y="322" style="fill:#3b2a14; font-weight:bold">A cleaner, faster UI</text>
+  <text x="92" y="340" style="fill:#3b2a14; font-size:13px">+1000 reputation with Pirson's Addons</text>
+</svg>
