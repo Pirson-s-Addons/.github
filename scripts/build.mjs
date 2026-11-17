@@ -166,7 +166,8 @@ const usedClients = CLIENTS.filter(([k]) => rows.some((a) => a.clients?.includes
 const fmt = (n, lang) => n.toLocaleString(lang === "en" ? "en-US" : "es-ES", { useGrouping: "always" });
 
 // ---------- look ----------
-const Q = { legendary: "#ff8000", epic: "#a335ee", rare: "#0070dd", uncommon: "#1eff00" };
+// WoW quality colors; epic and rare brightened (#a335ee / #0070dd are ~3.9:1 on the dark tooltip, these are ~7:1)
+const Q = { legendary: "#ff8000", epic: "#c77dff", rare: "#4aa3ff", uncommon: "#1eff00" };
 const quality = (d) => (d >= 25000 ? "legendary" : d >= 5000 ? "epic" : d >= 1000 ? "rare" : "uncommon");
 assert.equal(quality(25000), "legendary"); assert.equal(quality(999), "uncommon");
 const GOLD = "#ffd100", GREEN = "#1eff00";
@@ -314,7 +315,8 @@ for (const a of rows) each(`row-${a.abbr.toLowerCase()}`, (lang) => {
   const dl = `${CARD_DL[i]}: <tspan style="fill:${GOLD}">${fmt(a.downloads, lang)}</tspan>`;
   return svg(434, 98, `${a.name}: ${ONE[a.abbr][i + 1]} ${CARD_DL[i]}: ${fmt(a.downloads, lang)}`, `
 ${tooltip(7, 7, 420, 84)}
-  <rect x="17" y="17" width="44" height="44" rx="5" fill="url(#gem)" stroke="${q}" stroke-width="2"/>
+  <rect x="17" y="17" width="44" height="44" rx="5" fill="#12141f" stroke="${q}" stroke-width="2"/>
+  <rect x="19" y="19" width="40" height="40" rx="4" fill="${q}" fill-opacity=".1"/>
   <text class="t" x="39" y="45" text-anchor="middle" style="font-size:17px; fill:${q}">${a.abbr}</text>
 ${line(74, 33, esc(a.name), 0.1, { cls: "t", style: `font-size:${fs}px; fill:${q}` })}
   <text class="l" x="413" y="33" text-anchor="end" style="font-size:12px; fill:#9d9d9d; animation-delay:.1s">${a.version ? `v${a.version}` : ""}</text>

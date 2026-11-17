@@ -16,9 +16,10 @@
 
   <rect x="7" y="7" width="420" height="84" rx="8" fill="url(#tip)" stroke="#4a4f6a" stroke-width="2"/>
 
-  <rect x="17" y="17" width="44" height="44" rx="5" fill="url(#gem)" stroke="#a335ee" stroke-width="2"/>
-  <text class="t" x="39" y="45" text-anchor="middle" style="font-size:17px; fill:#a335ee">TK</text>
-  <text class="l t" x="74" y="33" style="animation-delay:0.1s; font-size:13px; fill:#a335ee">HandyNotes: Trove of the Thunder King</text>
+  <rect x="17" y="17" width="44" height="44" rx="5" fill="#12141f" stroke="#c77dff" stroke-width="2"/>
+  <rect x="19" y="19" width="40" height="40" rx="4" fill="#c77dff" fill-opacity=".1"/>
+  <text class="t" x="39" y="45" text-anchor="middle" style="font-size:17px; fill:#c77dff">TK</text>
+  <text class="l t" x="74" y="33" style="animation-delay:0.1s; font-size:13px; fill:#c77dff">HandyNotes: Trove of the Thunder King</text>
   <text class="l" x="413" y="33" text-anchor="end" style="font-size:12px; fill:#9d9d9d; animation-delay:.1s">v1.05</text>
   <text class="l " x="74" y="54" style="animation-delay:0.2s; fill:#c9c9c9; font-size:12.5px">Todos los tesoros del Rey del Trueno</text>
   <text class="l " x="74" y="76" style="animation-delay:0.3s; fill:#9d9d9d; font-size:12.5px">Descargas: <tspan style="fill:#ffd100">5.945</tspan></text>
