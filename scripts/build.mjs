@@ -413,6 +413,11 @@ each("chat", (lang) => svg(840, 130, "Thanks for using my addons! See you in Aze
   <text x="16" y="19" style="font-size:12px; fill:${GOLD}">General</text>
 ${CHAT[lang].map(([c, s], i) => line(16, 52 + i * 26, `${s}${i === 2 ? `<tspan class="fx" style="animation: blink 1s step-end infinite">|</tspan>` : ""}`, (0.3 + i * 0.6).toFixed(1), { fill: c, style: "white-space:pre" })).join("\n")}`));
 
+// ---------- 8b. Small link buttons under each addon row ----------
+for (const [id, label, accent] of [["code", ["</> Code", "</> Código"], GOLD], ["curseforge", ["CurseForge", "CurseForge"], Q.legendary]]) each(`link-${id}`, (lang) => svg(150, 34, label[LANGS.indexOf(lang)], `
+  <rect x="1" y="1" width="148" height="32" rx="16" fill="url(#tip)" stroke="${accent}" stroke-width="1.5"/>
+  <text x="75" y="22" text-anchor="middle" style="font-size:13px; font-weight:bold; fill:${accent}">${esc(label[LANGS.indexOf(lang)])}</text>`));
+
 // ---------- 8. CurseForge button ----------
 each("button-curseforge", (lang) => svg(260, 52, "CurseForge", `
   <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b3261e"/><stop offset="1" stop-color="#5c0f0a"/></linearGradient>
@@ -478,7 +483,13 @@ Todos los addons usan la licencia MIT, excepto **Dungeon Quest Atlas** y **Azero
 };
 const img = (f, alt, w = "100%") => `<img src="assets/${f}" width="${w}" alt="${esc(alt)}"/>`;
 // title = the full description on hover, so rows stay one line
-const cards = (list, lang) => list.map((a) => `  <a href="${a.url}"><img src="assets/row-${a.abbr.toLowerCase()}-${lang}.svg" width="49%" alt="${esc(`${a.name}: ${a[lang].join(" ")}`)}" title="${esc(a[lang].join(" "))}"/></a>`).join("\n");
+// one table cell per addon: the row image, then a button to the repo (if public) and one to CurseForge
+const cards = (list, lang) => {
+  const cell = (a) => `<td width="50%" align="center"><img src="assets/row-${a.abbr.toLowerCase()}-${lang}.svg" width="100%" alt="${esc(`${a.name}: ${a[lang].join(" ")}`)}" title="${esc(a[lang].join(" "))}"/><br/>${a.repo ? `<a href="https://github.com/${ORG}/${a.repo}"><img src="assets/link-code-${lang}.svg" width="120" alt="${lang === "en" ? "Code" : "Código"}: ${esc(a.name)}"/></a> ` : ""}<a href="${a.url}"><img src="assets/link-curseforge-${lang}.svg" width="120" alt="CurseForge: ${esc(a.name)}"/></a></td>`;
+  const out = [];
+  for (let k = 0; k < list.length; k += 2) out.push(`<tr>\n${list.slice(k, k + 2).map(cell).join("\n")}\n</tr>`);
+  return `<table width="100%">\n${out.join("\n")}\n</table>`;
+};
 for (const lang of LANGS) {
   const t = RD[lang], i = LANGS.indexOf(lang), hdr = (id) => `<p align="center">${img(`header-${id}-${lang}.svg`, HEADERS[id][i])}</p>`;
   const md = `<p align="center">${img(`hero-${lang}.svg`, t.hero, "760")}</p>
@@ -495,9 +506,7 @@ ${hdr("collection")}
 
 ${grouped.map((g) => `<p>${img(`group-${g.id}-${lang}.svg`, lang === "en" ? g.en : g.es)}</p>
 
-<p align="center">
-${cards(g.list, lang)}
-</p>`).join("\n\n")}
+${cards(g.list, lang)}`).join("\n\n")}
 
 <p align="center"><sub>${t.note}</sub></p>
 
