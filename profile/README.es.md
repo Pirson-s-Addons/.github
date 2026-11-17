@@ -17,6 +17,12 @@
   <a href="https://www.curseforge.com/wow/addons/health-bar-text-forever"><img src="assets/addon-hb-es.svg" width="49%" alt="Health Bar Text Forever: Texto de salud y poder siempre visible en jugador, objetivo, foco y su objetivo."/></a>
   <a href="https://www.curseforge.com/wow/addons/seal-timers-forever"><img src="assets/addon-st-es.svg" width="49%" alt="Seal Timers Forever: Tu sello de paladín activo en pantalla con su tiempo restante. Movible y escalable."/></a>
   <a href="https://www.curseforge.com/wow/addons/remove-questie"><img src="assets/addon-rq-es.svg" width="49%" alt="Remove Questie: Abandona todas las misiones, o solo las que marques, desde el registro en un clic."/></a>
+</p>
+
+<details>
+<summary><b>Ver 16 addons más</b></summary>
+<br/>
+<p align="center">
   <a href="https://www.curseforge.com/wow/addons/gather-radar"><img src="assets/addon-gr-es.svg" width="49%" alt="Gather Radar: Hierbas, minerales, tesoros y bancos de peces en el minimapa y el mapa del mundo."/></a>
   <a href="https://www.curseforge.com/wow/addons/handynotes-trove-of-the-thunder-king"><img src="assets/addon-tk-es.svg" width="49%" alt="HandyNotes: Trove of the Thunder King: Cada tesoro Trove of the Thunder King en el mapa de la Isla del Trueno."/></a>
   <a href="https://www.curseforge.com/wow/addons/map-fix-forever"><img src="assets/addon-mf-es.svg" width="49%" alt="Map Fix Forever: Arregla el mapa del mundo verde en clientes no ingleses con el arte original."/></a>
@@ -34,6 +40,7 @@
   <a href="https://www.curseforge.com/wow/addons/chocolate-xp-bar"><img src="assets/addon-cx-es.svg" width="49%" alt="Chocolate XP Bar: Una tableta de chocolate como barra de experiencia, en cinco sabores."/></a>
   <a href="https://www.curseforge.com/wow/addons/rotation-guide"><img src="assets/addon-rg-es.svg" width="49%" alt="Rotation Guide: La rotación de tu clase en WoW Forever, para las 27 especializaciones."/></a>
 </p>
+</details>
 
 <p align="center"><sub>Las cifras se actualizan cada lunes desde CurseForge. Última actualización: 2026-11-17.</sub></p>
 
@@ -72,6 +79,8 @@
 
 <p align="center"><img src="assets/quest-es.svg" width="100%" alt="Una interfaz mejor. Consigue el addon en CurseForge o en una release de GitHub. Pon su carpeta en World of Warcraft/_versión_/Interface/AddOns. Reinicia el juego y actívalo en el menú de AddOns."/></p>
 
+<br/>
+
 ## Contribuir
 
 Las pull requests son bienvenidas: haz un fork del repositorio, crea una rama y abre una Pull Request.
@@ -79,5 +88,7 @@ Las pull requests son bienvenidas: haz un fork del repositorio, crea una rama y 
 ## Licencia
 
 Todos los addons usan la licencia MIT, excepto **Dungeon Quest Atlas** y **Azeroth AI** (todos los derechos reservados). Cada repositorio incluye su propio archivo `LICENSE`.
+
+<br/>
 
 <p align="center"><img src="assets/chat-es.svg" width="100%" alt="[Hermandad] [Pirson]: ¡Gracias por usar mis addons! Nos vemos en Azeroth."/></p>

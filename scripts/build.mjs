@@ -237,11 +237,12 @@ const HEADERS = {
 for (const [id, names] of Object.entries(HEADERS)) each(`header-${id}`, (lang) => {
   const name = names[LANGS.indexOf(lang)], half = name.length * 8.5 + 10;
   const orn = (x1, x2) => `<line x1="${x1}" y1="30" x2="${x2}" y2="30" stroke="${GOLD}" stroke-opacity=".7" stroke-width="1.5"/><path d="M${x2 > x1 ? x2 : x2} 30 l6 -6 l6 6 l-6 6 Z" fill="${GOLD}" transform="translate(${x2 > x1 ? 0 : -12} 0)"/>`;
-  return svg(840, 60, name, `
+  // transparent band on top = breathing room between sections
+  return svg(840, 100, name, `<g transform="translate(0 40)">
   <rect x="1" y="1" width="838" height="58" rx="10" fill="url(#tip)" stroke="#4a4f6a"/>
   ${orn(40, 420 - half - 18)}
   ${orn(800, 420 + half + 18)}
-  <text class="t" x="420" y="39" text-anchor="middle" style="font-size:26px; fill:url(#goldtext); letter-spacing:1px">${esc(name)}</text>`);
+  <text class="t" x="420" y="39" text-anchor="middle" style="font-size:26px; fill:url(#goldtext); letter-spacing:1px">${esc(name)}</text></g>`);
 });
 
 // ---------- 3. Achievements ----------
@@ -278,7 +279,8 @@ const CARD = { en: { equip: "Equip:", dl: "Downloads", all: "Every client" }, es
 for (const a of rows) each(`addon-${a.abbr.toLowerCase()}`, (lang) => {
   const t = CARD[lang], q = Q[quality(a.downloads)], fs = a.name.length > 30 ? 14 : a.name.length > 22 ? 16 : 18;
   const cl = a.clients ?? [], clients = cl.length >= 7 ? t.all : cl.map((k) => SHORT[k]).join(" · ");
-  return svg(410, 182, `${a.name}: ${a[lang].join(" ")}`, `
+  // transparent margin around the tooltip keeps cards apart in the grid
+  return svg(434, 214, `${a.name}: ${a[lang].join(" ")}`, `<g transform="translate(12 16)">
 ${tooltip(1, 1, 408, 180)}
   <rect x="14" y="14" width="46" height="46" rx="5" fill="url(#gem)" stroke="${q}" stroke-width="2"/>
   <text class="t" x="37" y="44" text-anchor="middle" style="font-size:18px; fill:${q}">${a.abbr}</text>
@@ -288,7 +290,7 @@ ${line(72, 55, esc(CATS[a.cat][LANGS.indexOf(lang)]), 0.2, { style: "font-size:1
 ${line(16, 90, `${t.equip} ${esc(a[lang][0])}`, 0.3, { fill: GREEN, style: "font-size:13px" })}
 ${line(16, 109, esc(a[lang][1]), 0.3, { fill: GREEN, style: "font-size:13px" })}
 ${line(16, 138, esc(clients), 0.4, { style: "font-size:13px" })}
-${line(16, 164, `${t.dl}: <tspan fill="${GOLD}">${fmt(a.downloads, lang)}</tspan>`, 0.5, { fill: "#c9c9c9", style: "font-size:13px" })}`);
+${line(16, 164, `${t.dl}: <tspan fill="${GOLD}">${fmt(a.downloads, lang)}</tspan>`, 0.5, { fill: "#c9c9c9", style: "font-size:13px" })}</g>`);
 });
 
 // ---------- 5. Supported clients as a realm list ----------
@@ -401,6 +403,10 @@ Las pull requests son bienvenidas: haz un fork del repositorio, crea una rama y 
 Todos los addons usan la licencia MIT, excepto **Dungeon Quest Atlas** y **Azeroth AI** (todos los derechos reservados). Cada repositorio incluye su propio archivo \`LICENSE\`.` },
 };
 const img = (f, alt, w = "100%") => `<img src="assets/${f}" width="${w}" alt="${esc(alt)}"/>`;
+const FEATURED = 6; // most downloaded shown up front, the rest folded so the page doesn't overwhelm
+const cards = (list, lang) => list.map((a) => `  <a href="${a.url}">${img(`addon-${a.abbr.toLowerCase()}-${lang}.svg`, `${a.name}: ${a[lang].join(" ")}`, "49%")}</a>`).join("\n");
+RD.en.more = (n) => `Show ${n} more addons`;
+RD.es.more = (n) => `Ver ${n} addons más`;
 for (const lang of LANGS) {
   const t = RD[lang], i = LANGS.indexOf(lang), hdr = (id) => `<p align="center">${img(`header-${id}-${lang}.svg`, HEADERS[id][i])}</p>`;
   const md = `<p align="center">${img(`hero-${lang}.svg`, t.hero, "760")}</p>
@@ -416,8 +422,16 @@ ${hdr("achievements")}
 ${hdr("collection")}
 
 <p align="center">
-${rows.map((a) => `  <a href="${a.url}">${img(`addon-${a.abbr.toLowerCase()}-${lang}.svg`, `${a.name}: ${a[lang].join(" ")}`, "49%")}</a>`).join("\n")}
+${cards(rows.slice(0, FEATURED), lang)}
 </p>
+
+<details>
+<summary><b>${t.more(rows.length - FEATURED)}</b></summary>
+<br/>
+<p align="center">
+${cards(rows.slice(FEATURED), lang)}
+</p>
+</details>
 
 <p align="center"><sub>${t.note}</sub></p>
 
@@ -436,7 +450,11 @@ ${hdr("install")}
 
 <p align="center">${img(`quest-${lang}.svg`, `${QUEST[lang].title}. ${QUEST[lang].list.join(". ")}.`)}</p>
 
+<br/>
+
 ${t.tail}
+
+<br/>
 
 <p align="center">${img(`chat-${lang}.svg`, CHAT[lang][1][1])}</p>
 `;

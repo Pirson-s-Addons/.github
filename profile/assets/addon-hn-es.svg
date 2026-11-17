@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="410" height="182" viewBox="0 0 410 182" role="img" aria-label="HandyNotes: Dungeon &amp; Raid Locations: Todas las entradas de mazmorras y bandas en el mapa de zona, continente y minimapa.">
+<svg xmlns="http://www.w3.org/2000/svg" width="434" height="214" viewBox="0 0 434 214" role="img" aria-label="HandyNotes: Dungeon &amp; Raid Locations: Todas las entradas de mazmorras y bandas en el mapa de zona, continente y minimapa.">
   <defs>
     <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
@@ -13,7 +13,7 @@
     @keyframes run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1000; } }
     @keyframes blink { 50% { opacity: 0; } }
     @media (prefers-reduced-motion: reduce) { .l, .glint, .fx { animation: none !important; opacity: 1 !important; } }</style>
-
+<g transform="translate(12 16)">
   <rect x="1" y="1" width="408" height="180" rx="8" fill="url(#tip)" stroke="#4a4f6a" stroke-width="2"/>
 
   <rect x="14" y="14" width="46" height="46" rx="5" fill="url(#gem)" stroke="#ff8000" stroke-width="2"/>
@@ -24,5 +24,5 @@
   <text class="l " x="16" y="90" style="animation-delay:0.3s; fill:#1eff00; font-size:13px">Equipar: Todas las entradas de mazmorras y bandas</text>
   <text class="l " x="16" y="109" style="animation-delay:0.3s; fill:#1eff00; font-size:13px">en el mapa de zona, continente y minimapa.</text>
   <text class="l " x="16" y="138" style="animation-delay:0.4s; font-size:13px">Forever</text>
-  <text class="l " x="16" y="164" style="animation-delay:0.5s; fill:#c9c9c9; font-size:13px">Descargas: <tspan fill="#ffd100">26.355</tspan></text>
+  <text class="l " x="16" y="164" style="animation-delay:0.5s; fill:#c9c9c9; font-size:13px">Descargas: <tspan fill="#ffd100">26.355</tspan></text></g>
 </svg>
