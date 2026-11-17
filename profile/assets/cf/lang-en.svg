@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="836" height="110" viewBox="0 0 836 110" role="img" aria-label="English">
+  <defs>
+    <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
+    <linearGradient id="goldtext" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3b0"/><stop offset=".55" stop-color="#ffd100"/><stop offset="1" stop-color="#c8860a"/></linearGradient>
+    <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient></defs>
+  <style>
+    text { font-family: Verdana, 'DejaVu Sans', Arial, sans-serif; font-size: 14px; fill: #fff; }
+    .t { font-family: Georgia, 'Times New Roman', serif; font-weight: bold; }
+    .l { opacity: 0; animation: in .45s ease-out forwards; }
+    .glint { animation: run 7s linear infinite; }
+    @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1000; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .l, .glint, .fx { animation: none !important; opacity: 1 !important; } }</style>
+
+  <rect x="2" y="2" width="832" height="106" rx="12" fill="url(#tip)" stroke="url(#goldtext)" stroke-width="2.5"/>
+  <line x1="40" y1="55" x2="250" y2="55" stroke="#ffd100" stroke-opacity=".6"/><line x1="586" y1="55" x2="796" y2="55" stroke="#ffd100" stroke-opacity=".6"/>
+  <path d="M250 55 l8 -8 l8 8 l-8 8 Z M570 55 l8 -8 l8 8 l-8 8 Z" fill="#ffd100"/>
+  <text class="t" x="418" y="62" text-anchor="middle" style="font-size:40px; fill:url(#goldtext); letter-spacing:2px">English</text>
+  <text x="418" y="90" text-anchor="middle" style="font-size:14px; fill:#9d9d9d">English version</text>
+</svg>

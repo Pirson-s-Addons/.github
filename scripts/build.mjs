@@ -490,6 +490,13 @@ ${tooltip(1, 1, 408, 90)}
   <text class="t" x="94" y="40" style="font-size:${a.name.length > 30 ? 13 : a.name.length > 22 ? 15 : 17}px; fill:${q}">${esc(a.name)}</text>
   <text x="94" y="64" style="font-size:13px; fill:#c9c9c9">${esc(ONE[a.abbr][i + 1])}</text>`));
 }
+// language banner that opens each language block of a CurseForge description
+for (const [lang, title, sub] of [["en", "English", "English version"], ["es", "Español", "Versión en español"]]) cfWrite(`lang-${lang}.svg`, svg(836, 110, title, `
+  <rect x="2" y="2" width="832" height="106" rx="12" fill="url(#tip)" stroke="url(#goldtext)" stroke-width="2.5"/>
+  <line x1="40" y1="55" x2="250" y2="55" stroke="${GOLD}" stroke-opacity=".6"/><line x1="586" y1="55" x2="796" y2="55" stroke="${GOLD}" stroke-opacity=".6"/>
+  <path d="M250 55 l8 -8 l8 8 l-8 8 Z M570 55 l8 -8 l8 8 l-8 8 Z" fill="${GOLD}"/>
+  <text class="t" x="418" y="62" text-anchor="middle" style="font-size:40px; fill:url(#goldtext); letter-spacing:2px">${title}</text>
+  <text x="418" y="90" text-anchor="middle" style="font-size:14px; fill:#9d9d9d">${sub}</text>`));
 cfWrite("divider.svg", svg(836, 28, "", `
   <line x1="40" y1="14" x2="400" y2="14" stroke="${GOLD}" stroke-opacity=".55"/><line x1="436" y1="14" x2="796" y2="14" stroke="${GOLD}" stroke-opacity=".55"/>
   <path d="M418 4 l10 10 l-10 10 l-10 -10 Z" fill="${GOLD}"/><path d="M400 14 l4 -4 l4 4 l-4 4 Z M428 14 l4 -4 l4 4 l-4 4 Z" fill="${GOLD}" opacity=".7"/>`));
