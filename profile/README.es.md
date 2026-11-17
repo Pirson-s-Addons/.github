@@ -10,37 +10,57 @@
 
 <p align="center"><img src="assets/header-collection-es.svg" width="100%" alt="Colección de addons"/></p>
 
+<p><img src="assets/group-quests-es.svg" width="100%" alt="Misiones y mapas"/></p>
+
 <p align="center">
-  <a href="https://www.curseforge.com/wow/addons/wow-translator"><img src="assets/addon-wt-es.svg" width="49%" alt="WoW Translator: Traduce la jerga, abreviaturas y mazmorras del chat de WoW a 44 idiomas."/></a>
-  <a href="https://www.curseforge.com/wow/addons/dungeon-quest-atlas"><img src="assets/addon-dq-es.svg" width="49%" alt="Dungeon Quest Atlas: Misiones, jefes y botín de cada mazmorra en un diario, con cadenas y pines."/></a>
-  <a href="https://www.curseforge.com/wow/addons/handynotes-dungeon-raid-locations-forever"><img src="assets/addon-hn-es.svg" width="49%" alt="HandyNotes: Dungeon &amp; Raid Locations: Todas las entradas de mazmorras y bandas en el mapa de zona, continente y minimapa."/></a>
-  <a href="https://www.curseforge.com/wow/addons/health-bar-text-forever"><img src="assets/addon-hb-es.svg" width="49%" alt="Health Bar Text Forever: Texto de salud y poder siempre visible en jugador, objetivo, foco y su objetivo."/></a>
-  <a href="https://www.curseforge.com/wow/addons/seal-timers-forever"><img src="assets/addon-st-es.svg" width="49%" alt="Seal Timers Forever: Tu sello de paladín activo en pantalla con su tiempo restante. Movible y escalable."/></a>
-  <a href="https://www.curseforge.com/wow/addons/remove-questie"><img src="assets/addon-rq-es.svg" width="49%" alt="Remove Questie: Abandona todas las misiones, o solo las que marques, desde el registro en un clic."/></a>
+  <a href="https://www.curseforge.com/wow/addons/dungeon-quest-atlas"><img src="assets/row-dq-es.svg" width="49%" alt="Dungeon Quest Atlas: Misiones, jefes y botín de cada mazmorra en un diario, con cadenas y pines." title="Misiones, jefes y botín de cada mazmorra en un diario, con cadenas y pines."/></a>
+  <a href="https://www.curseforge.com/wow/addons/handynotes-dungeon-raid-locations-forever"><img src="assets/row-hn-es.svg" width="49%" alt="HandyNotes: Dungeon &amp; Raid Locations: Todas las entradas de mazmorras y bandas en el mapa de zona, continente y minimapa." title="Todas las entradas de mazmorras y bandas en el mapa de zona, continente y minimapa."/></a>
+  <a href="https://www.curseforge.com/wow/addons/handynotes-trove-of-the-thunder-king"><img src="assets/row-tk-es.svg" width="49%" alt="HandyNotes: Trove of the Thunder King: Cada tesoro Trove of the Thunder King en el mapa de la Isla del Trueno." title="Cada tesoro Trove of the Thunder King en el mapa de la Isla del Trueno."/></a>
+  <a href="https://www.curseforge.com/wow/addons/map-fix-forever"><img src="assets/row-mf-es.svg" width="49%" alt="Map Fix Forever: Arregla el mapa del mundo verde en clientes no ingleses con el arte original." title="Arregla el mapa del mundo verde en clientes no ingleses con el arte original."/></a>
 </p>
 
-<details>
-<summary><b>Ver 16 addons más</b></summary>
-<br/>
+<p><img src="assets/group-ui-es.svg" width="100%" alt="Interfaz"/></p>
+
 <p align="center">
-  <a href="https://www.curseforge.com/wow/addons/gather-radar"><img src="assets/addon-gr-es.svg" width="49%" alt="Gather Radar: Hierbas, minerales, tesoros y bancos de peces en el minimapa y el mapa del mundo."/></a>
-  <a href="https://www.curseforge.com/wow/addons/handynotes-trove-of-the-thunder-king"><img src="assets/addon-tk-es.svg" width="49%" alt="HandyNotes: Trove of the Thunder King: Cada tesoro Trove of the Thunder King en el mapa de la Isla del Trueno."/></a>
-  <a href="https://www.curseforge.com/wow/addons/map-fix-forever"><img src="assets/addon-mf-es.svg" width="49%" alt="Map Fix Forever: Arregla el mapa del mundo verde en clientes no ingleses con el arte original."/></a>
-  <a href="https://www.curseforge.com/wow/addons/dr-tracker-forever"><img src="assets/addon-dr-es.svg" width="49%" alt="DR Tracker Forever: Cuánto dura el siguiente control de masas en tu objetivo, tu foco y en ti."/></a>
-  <a href="https://www.curseforge.com/wow/addons/cursor-glow-rgb"><img src="assets/addon-cg-es.svg" width="49%" alt="Cursor Glow RGB: Un aura RGB brillante alrededor del cursor, con formas, colores y animaciones."/></a>
-  <a href="https://www.curseforge.com/wow/addons/prospect-helper"><img src="assets/addon-ph-es.svg" width="49%" alt="Prospect Helper: Prospecta minerales en un clic para Joyería. Lista los minerales de tus bolsas."/></a>
-  <a href="https://www.curseforge.com/wow/addons/mill-helper"><img src="assets/addon-mh-es.svg" width="49%" alt="Mill Helper: Muele hierbas en un clic para Inscripción. Lista las hierbas de tus bolsas."/></a>
-  <a href="https://www.curseforge.com/wow/addons/move-extra-action-button"><img src="assets/addon-ea-es.svg" width="49%" alt="Move Extra Action Button: Mueve el botón de acción extra y la barra de poder alternativo donde quieras."/></a>
-  <a href="https://www.curseforge.com/wow/addons/vendor-item-filter"><img src="assets/addon-vf-es.svg" width="49%" alt="Vendor Item Filter: Filtra los objetos del vendedor por armadura, ranura, tipo de arma, joyería y más."/></a>
-  <a href="https://www.curseforge.com/wow/addons/leave-instance-group"><img src="assets/addon-lg-es.svg" width="49%" alt="Leave Instance Group: Añade la opción que falta para salir del grupo de instancia en tu retrato."/></a>
-  <a href="https://www.curseforge.com/wow/addons/emoji-react"><img src="assets/addon-er-es.svg" width="49%" alt="Emoji &amp; React: Emojis en el chat y los bocadillos, y una rueda de reacciones sobre tu personaje."/></a>
-  <a href="https://www.curseforge.com/wow/addons/loot-a-rang-classic"><img src="assets/addon-lr-es.svg" width="49%" alt="Loot-A-Rang Classic: Doble clic derecho para usar el Loot-A-Rang y despojar a distancia. Sin ranura."/></a>
-  <a href="https://www.curseforge.com/wow/addons/azeroth-tic-tac-toe"><img src="assets/addon-tt-es.svg" width="49%" alt="Azeroth Tic-Tac-Toe: Juega al tres en raya contra otro jugador apostando oro, con ranking e historial."/></a>
-  <a href="https://www.curseforge.com/wow/addons/azeroth-ai"><img src="assets/addon-ai-es.svg" width="49%" alt="Azeroth AI: Un chatbot dentro del juego para WoW Forever: pregunta sin salir del juego."/></a>
-  <a href="https://www.curseforge.com/wow/addons/chocolate-xp-bar"><img src="assets/addon-cx-es.svg" width="49%" alt="Chocolate XP Bar: Una tableta de chocolate como barra de experiencia, en cinco sabores."/></a>
-  <a href="https://www.curseforge.com/wow/addons/rotation-guide"><img src="assets/addon-rg-es.svg" width="49%" alt="Rotation Guide: La rotación de tu clase en WoW Forever, para las 27 especializaciones."/></a>
+  <a href="https://www.curseforge.com/wow/addons/health-bar-text-forever"><img src="assets/row-hb-es.svg" width="49%" alt="Health Bar Text Forever: Texto de salud y poder siempre visible en jugador, objetivo, foco y su objetivo." title="Texto de salud y poder siempre visible en jugador, objetivo, foco y su objetivo."/></a>
+  <a href="https://www.curseforge.com/wow/addons/seal-timers-forever"><img src="assets/row-st-es.svg" width="49%" alt="Seal Timers Forever: Tu sello de paladín activo en pantalla con su tiempo restante. Movible y escalable." title="Tu sello de paladín activo en pantalla con su tiempo restante. Movible y escalable."/></a>
+  <a href="https://www.curseforge.com/wow/addons/cursor-glow-rgb"><img src="assets/row-cg-es.svg" width="49%" alt="Cursor Glow RGB: Un aura RGB brillante alrededor del cursor, con formas, colores y animaciones." title="Un aura RGB brillante alrededor del cursor, con formas, colores y animaciones."/></a>
+  <a href="https://www.curseforge.com/wow/addons/move-extra-action-button"><img src="assets/row-ea-es.svg" width="49%" alt="Move Extra Action Button: Mueve el botón de acción extra y la barra de poder alternativo donde quieras." title="Mueve el botón de acción extra y la barra de poder alternativo donde quieras."/></a>
+  <a href="https://www.curseforge.com/wow/addons/chocolate-xp-bar"><img src="assets/row-cx-es.svg" width="49%" alt="Chocolate XP Bar: Una tableta de chocolate como barra de experiencia, en cinco sabores." title="Una tableta de chocolate como barra de experiencia, en cinco sabores."/></a>
 </p>
-</details>
+
+<p><img src="assets/group-social-es.svg" width="100%" alt="Chat y social"/></p>
+
+<p align="center">
+  <a href="https://www.curseforge.com/wow/addons/wow-translator"><img src="assets/row-wt-es.svg" width="49%" alt="WoW Translator: Traduce la jerga, abreviaturas y mazmorras del chat de WoW a 44 idiomas." title="Traduce la jerga, abreviaturas y mazmorras del chat de WoW a 44 idiomas."/></a>
+  <a href="https://www.curseforge.com/wow/addons/emoji-react"><img src="assets/row-er-es.svg" width="49%" alt="Emoji &amp; React: Emojis en el chat y los bocadillos, y una rueda de reacciones sobre tu personaje." title="Emojis en el chat y los bocadillos, y una rueda de reacciones sobre tu personaje."/></a>
+  <a href="https://www.curseforge.com/wow/addons/azeroth-tic-tac-toe"><img src="assets/row-tt-es.svg" width="49%" alt="Azeroth Tic-Tac-Toe: Juega al tres en raya contra otro jugador apostando oro, con ranking e historial." title="Juega al tres en raya contra otro jugador apostando oro, con ranking e historial."/></a>
+  <a href="https://www.curseforge.com/wow/addons/azeroth-ai"><img src="assets/row-ai-es.svg" width="49%" alt="Azeroth AI: Un chatbot dentro del juego para WoW Forever: pregunta sin salir del juego." title="Un chatbot dentro del juego para WoW Forever: pregunta sin salir del juego."/></a>
+</p>
+
+<p><img src="assets/group-prof-es.svg" width="100%" alt="Profesiones"/></p>
+
+<p align="center">
+  <a href="https://www.curseforge.com/wow/addons/gather-radar"><img src="assets/row-gr-es.svg" width="49%" alt="Gather Radar: Hierbas, minerales, tesoros y bancos de peces en el minimapa y el mapa del mundo." title="Hierbas, minerales, tesoros y bancos de peces en el minimapa y el mapa del mundo."/></a>
+  <a href="https://www.curseforge.com/wow/addons/prospect-helper"><img src="assets/row-ph-es.svg" width="49%" alt="Prospect Helper: Prospecta minerales en un clic para Joyería. Lista los minerales de tus bolsas." title="Prospecta minerales en un clic para Joyería. Lista los minerales de tus bolsas."/></a>
+  <a href="https://www.curseforge.com/wow/addons/mill-helper"><img src="assets/row-mh-es.svg" width="49%" alt="Mill Helper: Muele hierbas en un clic para Inscripción. Lista las hierbas de tus bolsas." title="Muele hierbas en un clic para Inscripción. Lista las hierbas de tus bolsas."/></a>
+</p>
+
+<p><img src="assets/group-combat-es.svg" width="100%" alt="Combate y JcJ"/></p>
+
+<p align="center">
+  <a href="https://www.curseforge.com/wow/addons/dr-tracker-forever"><img src="assets/row-dr-es.svg" width="49%" alt="DR Tracker Forever: Cuánto dura el siguiente control de masas en tu objetivo, tu foco y en ti." title="Cuánto dura el siguiente control de masas en tu objetivo, tu foco y en ti."/></a>
+  <a href="https://www.curseforge.com/wow/addons/rotation-guide"><img src="assets/row-rg-es.svg" width="49%" alt="Rotation Guide: La rotación de tu clase en WoW Forever, para las 27 especializaciones." title="La rotación de tu clase en WoW Forever, para las 27 especializaciones."/></a>
+</p>
+
+<p><img src="assets/group-qol-es.svg" width="100%" alt="Calidad de vida"/></p>
+
+<p align="center">
+  <a href="https://www.curseforge.com/wow/addons/remove-questie"><img src="assets/row-rq-es.svg" width="49%" alt="Remove Questie: Abandona todas las misiones, o solo las que marques, desde el registro en un clic." title="Abandona todas las misiones, o solo las que marques, desde el registro en un clic."/></a>
+  <a href="https://www.curseforge.com/wow/addons/vendor-item-filter"><img src="assets/row-vf-es.svg" width="49%" alt="Vendor Item Filter: Filtra los objetos del vendedor por armadura, ranura, tipo de arma, joyería y más." title="Filtra los objetos del vendedor por armadura, ranura, tipo de arma, joyería y más."/></a>
+  <a href="https://www.curseforge.com/wow/addons/leave-instance-group"><img src="assets/row-lg-es.svg" width="49%" alt="Leave Instance Group: Añade la opción que falta para salir del grupo de instancia en tu retrato." title="Añade la opción que falta para salir del grupo de instancia en tu retrato."/></a>
+  <a href="https://www.curseforge.com/wow/addons/loot-a-rang-classic"><img src="assets/row-lr-es.svg" width="49%" alt="Loot-A-Rang Classic: Doble clic derecho para usar el Loot-A-Rang y despojar a distancia. Sin ranura." title="Doble clic derecho para usar el Loot-A-Rang y despojar a distancia. Sin ranura."/></a>
+</p>
 
 <p align="center"><sub>Las cifras se actualizan cada lunes desde CurseForge. Última actualización: 2026-11-17.</sub></p>
 

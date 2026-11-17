@@ -274,23 +274,58 @@ each("achievements", (lang) => {
   return svg(840, 306, t.list.map((x) => `${x[1]}: ${x[2]}`).join(" "), toasts);
 });
 
-// ---------- 4. One tooltip card per addon ----------
-const CARD = { en: { equip: "Equip:", dl: "Downloads", all: "Every client" }, es: { equip: "Equipar:", dl: "Descargas", all: "Todos los clientes" } };
-for (const a of rows) each(`addon-${a.abbr.toLowerCase()}`, (lang) => {
-  const t = CARD[lang], q = Q[quality(a.downloads)], fs = a.name.length > 30 ? 14 : a.name.length > 22 ? 16 : 18;
-  const cl = a.clients ?? [], clients = cl.length >= 7 ? t.all : cl.map((k) => SHORT[k]).join(" · ");
-  // transparent margin around the tooltip keeps cards apart in the grid
-  return svg(434, 214, `${a.name}: ${a[lang].join(" ")}`, `<g transform="translate(12 16)">
-${tooltip(1, 1, 408, 180)}
-  <rect x="14" y="14" width="46" height="46" rx="5" fill="url(#gem)" stroke="${q}" stroke-width="2"/>
-  <text class="t" x="37" y="44" text-anchor="middle" style="font-size:18px; fill:${q}">${a.abbr}</text>
-${line(72, 34, esc(a.name), 0.1, { cls: "t", style: `font-size:${fs}px; fill:${q}` })}
-${line(72, 55, esc(CATS[a.cat][LANGS.indexOf(lang)]), 0.2, { style: "font-size:13px" })}
-  <text class="l" x="394" y="55" text-anchor="end" style="font-size:13px; animation-delay:.2s">${a.version ? `v${a.version}` : ""}</text>
-${line(16, 90, `${t.equip} ${esc(a[lang][0])}`, 0.3, { fill: GREEN, style: "font-size:13px" })}
-${line(16, 109, esc(a[lang][1]), 0.3, { fill: GREEN, style: "font-size:13px" })}
-${line(16, 138, esc(clients), 0.4, { style: "font-size:13px" })}
-${line(16, 164, `${t.dl}: <tspan fill="${GOLD}">${fmt(a.downloads, lang)}</tspan>`, 0.5, { fill: "#c9c9c9", style: "font-size:13px" })}</g>`);
+// ---------- 4. Collection: compact rows grouped by kind, all visible ----------
+const GROUPS = [
+  ["quests", "Quests & Maps", "Misiones y mapas"], ["ui", "Interface", "Interfaz"], ["social", "Chat & Social", "Chat y social"],
+  ["prof", "Professions", "Profesiones"], ["combat", "Combat & PvP", "Combate y JcJ"], ["qol", "Quality of Life", "Calidad de vida"],
+];
+// abbr -> [group, one-liner en, one-liner es]; one-liners stay under ~44 chars so they fit one row
+const ONE = {
+  WT: ["social", "Chat slang translated into 44 languages", "Traduce la jerga del chat a 44 idiomas"],
+  DQ: ["quests", "Quests, bosses and loot of every dungeon", "Misiones, jefes y botín de cada mazmorra"],
+  HN: ["quests", "Dungeon and raid entrances on your map", "Entradas de mazmorras y bandas en el mapa"],
+  HB: ["ui", "Health and power text on unit frames", "Texto de salud y poder en los marcos"],
+  ST: ["ui", "Your paladin seal and its timer on screen", "Tu sello de paladín y su tiempo en pantalla"],
+  RQ: ["qol", "Abandon quests in bulk, in one click", "Abandona misiones en bloque con un clic"],
+  GR: ["prof", "Herbs, ore and treasure on your maps", "Hierbas, minerales y tesoros en tus mapas"],
+  TK: ["quests", "Every Thunder King trove on the map", "Todos los tesoros del Rey del Trueno"],
+  MF: ["quests", "Fixes the green world map", "Arregla el mapa del mundo verde"],
+  DR: ["combat", "How long the next crowd control lasts", "Cuánto dura el próximo control de masas"],
+  CG: ["ui", "A glowing RGB aura around your cursor", "Un aura RGB brillante en tu cursor"],
+  PH: ["prof", "Prospect ores in one click", "Prospecta minerales en un clic"],
+  MH: ["prof", "Mill herbs in one click", "Muele hierbas en un clic"],
+  EA: ["ui", "Move the Extra Action Button anywhere", "Mueve el botón de acción extra"],
+  VF: ["qol", "Filter vendor items by type and slot", "Filtra objetos del vendedor por tipo"],
+  LG: ["qol", "Leave instance groups from your portrait", "Sal del grupo de instancia desde el retrato"],
+  ER: ["social", "Emojis and a reaction wheel in chat", "Emojis y rueda de reacciones en el chat"],
+  LR: ["qol", "Loot-A-Rang with a double right-click", "Loot-A-Rang con doble clic derecho"],
+  TT: ["social", "Tic-Tac-Toe with gold bets", "Tres en raya apostando oro"],
+  AI: ["social", "Ask an AI without leaving the game", "Pregunta a una IA sin salir del juego"],
+  CX: ["ui", "A chocolate bar as your XP bar", "Una tableta de chocolate como barra de XP"],
+  RG: ["combat", "Your class rotation, all 27 specs", "La rotación de tu clase, 27 especializaciones"],
+};
+for (const a of ADDONS) assert(ONE[a.abbr], `missing one-liner for ${a.abbr}`);
+const grouped = GROUPS.map(([id, en, es]) => ({ id, en, es, list: rows.filter((a) => ONE[a.abbr][0] === id) })).filter((g) => g.list.length);
+assert.equal(grouped.reduce((n, g) => n + g.list.length, 0), rows.length);
+
+for (const a of rows) each(`row-${a.abbr.toLowerCase()}`, (lang) => {
+  const q = Q[quality(a.downloads)], fs = a.name.length > 30 ? 13 : a.name.length > 22 ? 14 : 16;
+  return svg(434, 78, `${a.name}: ${ONE[a.abbr][LANGS.indexOf(lang) + 1]}`, `
+${tooltip(7, 7, 420, 64)}
+  <rect x="17" y="17" width="44" height="44" rx="5" fill="url(#gem)" stroke="${q}" stroke-width="2"/>
+  <text class="t" x="39" y="45" text-anchor="middle" style="font-size:17px; fill:${q}">${a.abbr}</text>
+${line(74, 35, esc(a.name), 0.1, { cls: "t", style: `font-size:${fs}px; fill:${q}` })}
+  <text class="l" x="413" y="35" text-anchor="end" style="font-size:12px; fill:${GOLD}; animation-delay:.1s">${fmt(a.downloads, lang)}</text>
+${line(74, 56, esc(ONE[a.abbr][LANGS.indexOf(lang) + 1]), 0.2, { fill: "#c9c9c9", style: "font-size:12.5px" })}`);
+});
+for (const g of grouped) each(`group-${g.id}`, (lang) => {
+  const name = lang === "en" ? g.en : g.es, label = `${name}  ·  ${g.list.length}`, end = 30 + label.length * 9.2;
+  // dark band so the gold label reads on GitHub's light theme too
+  return svg(840, 50, name, `
+  <rect x="1" y="5" width="838" height="40" rx="8" fill="url(#tip)" stroke="#4a4f6a"/>
+  <path d="M16 25 l6 -6 l6 6 l-6 6 Z" fill="${GOLD}"/>
+  <text class="t" x="36" y="32" style="font-size:19px; fill:url(#goldtext)">${esc(name)} <tspan style="${BODY} font-size:13px; font-weight:normal; fill:#9d9d9d">·  ${g.list.length}</tspan></text>
+  <line x1="${end}" y1="25" x2="820" y2="25" stroke="${GOLD}" stroke-opacity=".45"/>`);
 });
 
 // ---------- 5. Supported clients as a realm list ----------
@@ -403,10 +438,8 @@ Las pull requests son bienvenidas: haz un fork del repositorio, crea una rama y 
 Todos los addons usan la licencia MIT, excepto **Dungeon Quest Atlas** y **Azeroth AI** (todos los derechos reservados). Cada repositorio incluye su propio archivo \`LICENSE\`.` },
 };
 const img = (f, alt, w = "100%") => `<img src="assets/${f}" width="${w}" alt="${esc(alt)}"/>`;
-const FEATURED = 6; // most downloaded shown up front, the rest folded so the page doesn't overwhelm
-const cards = (list, lang) => list.map((a) => `  <a href="${a.url}">${img(`addon-${a.abbr.toLowerCase()}-${lang}.svg`, `${a.name}: ${a[lang].join(" ")}`, "49%")}</a>`).join("\n");
-RD.en.more = (n) => `Show ${n} more addons`;
-RD.es.more = (n) => `Ver ${n} addons más`;
+// title = the full description on hover, so rows stay one line
+const cards = (list, lang) => list.map((a) => `  <a href="${a.url}"><img src="assets/row-${a.abbr.toLowerCase()}-${lang}.svg" width="49%" alt="${esc(`${a.name}: ${a[lang].join(" ")}`)}" title="${esc(a[lang].join(" "))}"/></a>`).join("\n");
 for (const lang of LANGS) {
   const t = RD[lang], i = LANGS.indexOf(lang), hdr = (id) => `<p align="center">${img(`header-${id}-${lang}.svg`, HEADERS[id][i])}</p>`;
   const md = `<p align="center">${img(`hero-${lang}.svg`, t.hero, "760")}</p>
@@ -421,17 +454,11 @@ ${hdr("achievements")}
 
 ${hdr("collection")}
 
-<p align="center">
-${cards(rows.slice(0, FEATURED), lang)}
-</p>
+${grouped.map((g) => `<p>${img(`group-${g.id}-${lang}.svg`, lang === "en" ? g.en : g.es)}</p>
 
-<details>
-<summary><b>${t.more(rows.length - FEATURED)}</b></summary>
-<br/>
 <p align="center">
-${cards(rows.slice(FEATURED), lang)}
-</p>
-</details>
+${cards(g.list, lang)}
+</p>`).join("\n\n")}
 
 <p align="center"><sub>${t.note}</sub></p>
 
