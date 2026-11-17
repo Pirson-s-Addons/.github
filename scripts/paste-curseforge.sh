@@ -4,6 +4,7 @@
 # Usage: scripts/paste-curseforge.sh [slug ...]   (no slugs = all)
 set -euo pipefail
 cd "$(dirname "$0")/.."
+command -v xclip >/dev/null || { echo "Falta xclip: sudo apt install xclip" >&2; exit 1; }
 python3 - "$@" <<'EOF' | while IFS=$'\t' read -r id slug name; do
 import json, sys
 only = set(sys.argv[1:])
