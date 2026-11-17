@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="434" height="78" viewBox="0 0 434 78" role="img" aria-label="DR Tracker Forever: How long the next crowd control lasts">
+<svg xmlns="http://www.w3.org/2000/svg" width="434" height="98" viewBox="0 0 434 98" role="img" aria-label="DR Tracker Forever: How long the next crowd control lasts Downloads: 1,830">
   <defs>
     <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
@@ -14,11 +14,12 @@
     @keyframes blink { 50% { opacity: 0; } }
     @media (prefers-reduced-motion: reduce) { .l, .glint, .fx { animation: none !important; opacity: 1 !important; } }</style>
 
-  <rect x="7" y="7" width="420" height="64" rx="8" fill="url(#tip)" stroke="#4a4f6a" stroke-width="2"/>
+  <rect x="7" y="7" width="420" height="84" rx="8" fill="url(#tip)" stroke="#4a4f6a" stroke-width="2"/>
 
   <rect x="17" y="17" width="44" height="44" rx="5" fill="url(#gem)" stroke="#0070dd" stroke-width="2"/>
   <text class="t" x="39" y="45" text-anchor="middle" style="font-size:17px; fill:#0070dd">DR</text>
-  <text class="l t" x="74" y="35" style="animation-delay:0.1s; font-size:16px; fill:#0070dd">DR Tracker Forever</text>
-  <text class="l" x="413" y="35" text-anchor="end" style="font-size:12px; fill:#ffd100; animation-delay:.1s">1,830</text>
-  <text class="l " x="74" y="56" style="animation-delay:0.2s; fill:#c9c9c9; font-size:12.5px">How long the next crowd control lasts</text>
+  <text class="l t" x="74" y="33" style="animation-delay:0.1s; font-size:16px; fill:#0070dd">DR Tracker Forever</text>
+  <text class="l" x="413" y="33" text-anchor="end" style="font-size:12px; fill:#9d9d9d; animation-delay:.1s">v1.02</text>
+  <text class="l " x="74" y="54" style="animation-delay:0.2s; fill:#c9c9c9; font-size:12.5px">How long the next crowd control lasts</text>
+  <text class="l " x="74" y="76" style="animation-delay:0.3s; fill:#9d9d9d; font-size:12.5px">Downloads: <tspan style="fill:#ffd100">1,830</tspan></text>
 </svg>

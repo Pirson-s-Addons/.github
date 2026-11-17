@@ -304,19 +304,22 @@ const ONE = {
   CX: ["ui", "A chocolate bar as your XP bar", "Una tableta de chocolate como barra de XP"],
   RG: ["combat", "Your class rotation, all 27 specs", "La rotación de tu clase, 27 especializaciones"],
 };
+const CARD_DL = ["Downloads", "Descargas"];
 for (const a of ADDONS) assert(ONE[a.abbr], `missing one-liner for ${a.abbr}`);
 const grouped = GROUPS.map(([id, en, es]) => ({ id, en, es, list: rows.filter((a) => ONE[a.abbr][0] === id) })).filter((g) => g.list.length);
 assert.equal(grouped.reduce((n, g) => n + g.list.length, 0), rows.length);
 
 for (const a of rows) each(`row-${a.abbr.toLowerCase()}`, (lang) => {
-  const q = Q[quality(a.downloads)], fs = a.name.length > 30 ? 13 : a.name.length > 22 ? 14 : 16;
-  return svg(434, 78, `${a.name}: ${ONE[a.abbr][LANGS.indexOf(lang) + 1]}`, `
-${tooltip(7, 7, 420, 64)}
+  const q = Q[quality(a.downloads)], fs = a.name.length > 30 ? 13 : a.name.length > 22 ? 14 : 16, i = LANGS.indexOf(lang);
+  const dl = `${CARD_DL[i]}: <tspan style="fill:${GOLD}">${fmt(a.downloads, lang)}</tspan>`;
+  return svg(434, 98, `${a.name}: ${ONE[a.abbr][i + 1]} ${CARD_DL[i]}: ${fmt(a.downloads, lang)}`, `
+${tooltip(7, 7, 420, 84)}
   <rect x="17" y="17" width="44" height="44" rx="5" fill="url(#gem)" stroke="${q}" stroke-width="2"/>
   <text class="t" x="39" y="45" text-anchor="middle" style="font-size:17px; fill:${q}">${a.abbr}</text>
-${line(74, 35, esc(a.name), 0.1, { cls: "t", style: `font-size:${fs}px; fill:${q}` })}
-  <text class="l" x="413" y="35" text-anchor="end" style="font-size:12px; fill:${GOLD}; animation-delay:.1s">${fmt(a.downloads, lang)}</text>
-${line(74, 56, esc(ONE[a.abbr][LANGS.indexOf(lang) + 1]), 0.2, { fill: "#c9c9c9", style: "font-size:12.5px" })}`);
+${line(74, 33, esc(a.name), 0.1, { cls: "t", style: `font-size:${fs}px; fill:${q}` })}
+  <text class="l" x="413" y="33" text-anchor="end" style="font-size:12px; fill:#9d9d9d; animation-delay:.1s">${a.version ? `v${a.version}` : ""}</text>
+${line(74, 54, esc(ONE[a.abbr][i + 1]), 0.2, { fill: "#c9c9c9", style: "font-size:12.5px" })}
+${line(74, 76, dl, 0.3, { fill: "#9d9d9d", style: "font-size:12.5px" })}`);
 });
 for (const g of grouped) each(`group-${g.id}`, (lang) => {
   const name = lang === "en" ? g.en : g.es, label = `${name}  ·  ${g.list.length}`, end = 30 + label.length * 9.2;
