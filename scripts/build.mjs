@@ -456,6 +456,45 @@ ${tooltip(1, 1, 838, 54)}
   <text x="816" y="33" text-anchor="end" style="font-size:13px; fill:${GOLD}">${t.see}</text>`);
 });
 
+// ---------- 11. CurseForge description images (PNG, no live numbers: CurseForge already shows downloads and version) ----------
+// SVGs land in assets/cf/; `--png` renders them to PNG with headless Chrome (CurseForge may not show SVG).
+const CF_T = {
+  en: { addon: "World of Warcraft addon", more: "More addons by Pirson", see: "Browse all →" },
+  es: { addon: "Addon de World of Warcraft", more: "Más addons de Pirson", see: "Ver todos →" },
+};
+const cfFiles = [];
+const cfWrite = (f, s) => { write(`cf/${f}`, s); cfFiles.push(f); };
+for (const a of rows) for (const lang of LANGS) {
+  const t = CF_T[lang], i = LANGS.indexOf(lang), q = Q[quality(a.downloads)];
+  const tag = wrap(a[lang].join(" "), 82), H = 138 + (tag.length - 1) * 22;
+  const cl = a.clients ?? [], clients = cl.length >= 7 ? RH_T[lang].all : cl.map((k) => CLIENTS.find((c) => c[0] === k)[i + 1]).join(", ");
+  const meta = [t.addon, clients, RH_T[lang].lic[ARR.has(a.abbr) ? 1 : 0]];
+  cfWrite(`cf-${a.abbr.toLowerCase()}-${lang}.svg`, svg(840, H, a.name, `
+${tooltip(1, 1, 838, H - 2)}
+  <image x="14" y="${(H - 110) / 2}" width="110" height="110" href="${logo(a.abbr)}"/>
+  <text class="t" x="140" y="56" style="font-size:${a.name.length > 30 ? 24 : 30}px; fill:${q}">${esc(a.name)}</text>
+${tag.map((s, k) => `  <text x="140" y="${86 + k * 22}" style="font-size:15px; fill:#e6e6e6">${esc(s)}</text>`).join("\n")}
+  <text x="140" y="${H - 26}" style="font-size:13px; fill:#9d9d9d; white-space:pre">${meta.map(esc).join(`<tspan style="fill:${GOLD}">  ◆  </tspan>`)}</text>`));
+}
+for (const lang of LANGS) {
+  const t = CF_T[lang];
+  cfWrite(`cf-footer-${lang}.svg`, svg(840, 56, t.more, `
+${tooltip(1, 1, 838, 54)}
+  <path d="M22 28 l6 -6 l6 6 l-6 6 Z" fill="${GOLD}"/>
+  <text x="44" y="34" class="t" style="font-size:17px; fill:${Q.legendary}">${esc(t.more)}</text>
+  <text x="816" y="33" text-anchor="end" style="font-size:13px; fill:${GOLD}">${esc(t.see)}</text>`));
+}
+if (process.argv.includes("--png")) {
+  const { execFileSync } = await import("node:child_process");
+  const chrome = process.env.CHROME ?? "google-chrome";
+  for (const f of cfFiles) {
+    const src = new URL(`cf/${f}`, dir), h = Number(readFileSync(src, "utf8").match(/height="(\d+)"/)[1]);
+    execFileSync(chrome, ["--headless", "--disable-gpu", "--hide-scrollbars", "--force-prefers-reduced-motion", "--force-device-scale-factor=2",
+      "--default-background-color=00000000", `--window-size=840,${h}`, `--screenshot=${new URL(`cf/${f.replace(".svg", ".png")}`, dir).pathname}`, src.href], { stdio: "ignore" });
+  }
+  console.log(`rendered ${cfFiles.length} CurseForge PNGs`);
+}
+
 // ---------- 9. README.md / README.es.md ----------
 const RD = {
   en: { file: "README.md", other: `<b>English</b> · <a href="README.es.md">Español</a>`,
