@@ -166,6 +166,8 @@ const usedClients = CLIENTS.filter(([k]) => rows.some((a) => a.clients?.includes
 const fmt = (n, lang) => n.toLocaleString(lang === "en" ? "en-US" : "es-ES", { useGrouping: "always" });
 
 // ---------- look ----------
+// addon medallions (192px WebP in assets/logos), embedded because GitHub shows SVGs as <img> and those can't load external files
+const logo = (abbr) => `data:image/webp;base64,${readFileSync(new URL(`logos/${abbr.toLowerCase()}.webp`, dir)).toString("base64")}`;
 // WoW quality colors; epic and rare brightened (#a335ee / #0070dd are ~3.9:1 on the dark tooltip, these are ~7:1)
 const Q = { legendary: "#ff8000", epic: "#c77dff", rare: "#4aa3ff", uncommon: "#1eff00" };
 const quality = (d) => (d >= 25000 ? "legendary" : d >= 5000 ? "epic" : d >= 1000 ? "rare" : "uncommon");
@@ -315,13 +317,11 @@ for (const a of rows) each(`row-${a.abbr.toLowerCase()}`, (lang) => {
   const dl = `${CARD_DL[i]}: <tspan style="fill:${GOLD}">${fmt(a.downloads, lang)}</tspan>`;
   return svg(434, 98, `${a.name}: ${ONE[a.abbr][i + 1]} ${CARD_DL[i]}: ${fmt(a.downloads, lang)}`, `
 ${tooltip(7, 7, 420, 84)}
-  <rect x="17" y="17" width="44" height="44" rx="5" fill="#12141f" stroke="${q}" stroke-width="2"/>
-  <rect x="19" y="19" width="40" height="40" rx="4" fill="${q}" fill-opacity=".1"/>
-  <text class="t" x="39" y="45" text-anchor="middle" style="font-size:17px; fill:${q}">${a.abbr}</text>
-${line(74, 33, esc(a.name), 0.1, { cls: "t", style: `font-size:${fs}px; fill:${q}` })}
+  <image x="12" y="13" width="66" height="66" href="${logo(a.abbr)}"/>
+${line(86, 33, esc(a.name), 0.1, { cls: "t", style: `font-size:${fs}px; fill:${q}` })}
   <text class="l" x="413" y="33" text-anchor="end" style="font-size:12px; fill:#9d9d9d; animation-delay:.1s">${a.version ? `v${a.version}` : ""}</text>
-${line(74, 54, esc(ONE[a.abbr][i + 1]), 0.2, { fill: "#c9c9c9", style: "font-size:12.5px" })}
-${line(74, 76, dl, 0.3, { fill: "#9d9d9d", style: "font-size:12.5px" })}`);
+${line(86, 54, esc(ONE[a.abbr][i + 1]), 0.2, { fill: "#c9c9c9", style: "font-size:12.5px" })}
+${line(86, 76, dl, 0.3, { fill: "#9d9d9d", style: "font-size:12.5px" })}`);
 });
 for (const g of grouped) each(`group-${g.id}`, (lang) => {
   const name = lang === "en" ? g.en : g.es, label = `${name}  ·  ${g.list.length}`, end = 30 + label.length * 9.2;
@@ -442,12 +442,10 @@ for (const a of rows) each(`readme-${a.abbr.toLowerCase()}`, (lang) => {
   const meta = [a.version ? `v${a.version}` : null, clients, `<tspan style="fill:${GOLD}">${fmt(a.downloads, lang)}</tspan> ${t.dl}`, t.lic[ARR.has(a.abbr) ? 1 : 0]].filter(Boolean);
   return svg(840, H, `${a.name}: ${a[lang].join(" ")}`, `
 ${tooltip(1, 1, 838, H - 2)}
-  <rect x="24" y="24" width="72" height="72" rx="6" fill="#12141f" stroke="${q}" stroke-width="2.5"/>
-  <rect x="27" y="27" width="66" height="66" rx="5" fill="${q}" fill-opacity=".1"/>
-  <text class="t" x="60" y="70" text-anchor="middle" style="font-size:28px; fill:${q}">${a.abbr}</text>
-${line(118, 56, esc(a.name), 0.1, { cls: "t", style: `font-size:${a.name.length > 30 ? 24 : 30}px; fill:${q}` })}
-${tag.map((s, k) => line(118, 86 + k * 22, esc(s), 0.25, { fill: "#e6e6e6", style: "font-size:15px" })).join("\n")}
-${line(118, H - 26, meta.map((m) => esc(m).replace(/&lt;tspan style="fill:(#[0-9a-f]+)"&gt;(.*?)&lt;\/tspan&gt;/i, `<tspan style="fill:$1">$2</tspan>`)).join(`<tspan style="fill:${GOLD}">  ◆  </tspan>`), 0.4, { fill: "#9d9d9d", style: "font-size:13px; white-space:pre" })}`);
+  <image x="14" y="${(H - 110) / 2}" width="110" height="110" href="${logo(a.abbr)}"/>
+${line(140, 56, esc(a.name), 0.1, { cls: "t", style: `font-size:${a.name.length > 30 ? 24 : 30}px; fill:${q}` })}
+${tag.map((s, k) => line(140, 86 + k * 22, esc(s), 0.25, { fill: "#e6e6e6", style: "font-size:15px" })).join("\n")}
+${line(140, H - 26, meta.map((m) => esc(m).replace(/&lt;tspan style="fill:(#[0-9a-f]+)"&gt;(.*?)&lt;\/tspan&gt;/i, `<tspan style="fill:$1">$2</tspan>`)).join(`<tspan style="fill:${GOLD}">  ◆  </tspan>`), 0.4, { fill: "#9d9d9d", style: "font-size:13px; white-space:pre" })}`);
 });
 each("readme-footer", (lang) => {
   const t = RH_T[lang];
