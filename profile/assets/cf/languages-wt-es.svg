@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="836" height="546" viewBox="0 0 836 546" role="img" aria-label="44 idiomas: Inglés, Español (España), Español (Latam), Alemán, Francés, Italiano, Portugués, Ruso, Coreano, Chino simplificado, Chino tradicional, Japonés, Polaco, Sueco, Noruego, Danés, Finlandés, Neerlandés, Turco, Árabe, Persa, Hebreo, Hindi, Bengalí, Urdu, Tamil, Telugu, Tailandés, Vietnamita, Indonesio, Malayo, Checo, Eslovaco, Húngaro, Rumano, Búlgaro, Griego, Ucraniano, Croata, Serbio, Esloveno, Lituano, Letón, Estonio">
+  <defs>
+    <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
+    <linearGradient id="goldtext" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3b0"/><stop offset=".55" stop-color="#ffd100"/><stop offset="1" stop-color="#c8860a"/></linearGradient>
+    <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient></defs>
+  <style>
+    text { font-family: Verdana, 'DejaVu Sans', Arial, sans-serif; font-size: 14px; fill: #fff; }
+    .t { font-family: Georgia, 'Times New Roman', serif; font-weight: bold; }
+    .l { opacity: 0; animation: in .45s ease-out forwards; }
+    .glint { animation: run 7s linear infinite; }
+    @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1000; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .l, .glint, .fx { animation: none !important; opacity: 1 !important; } }</style>
+
+  <rect x="1" y="1" width="834" height="544" rx="8" fill="url(#tip)" stroke="#4a4f6a" stroke-width="2"/>
+
+  <rect x="1" y="1" width="834" height="58" rx="8" fill="#2a1a08"/><rect x="1" y="58" width="834" height="2" fill="url(#goldtext)"/>
+  <text class="t" x="418" y="40" text-anchor="middle" style="font-size:26px; fill:url(#goldtext)">44 idiomas</text>
+  <rect x="20" y="86" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.07"/><rect x="20" y="126" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.03"/><rect x="20" y="166" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.07"/><rect x="20" y="206" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.03"/><rect x="20" y="246" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.07"/><rect x="20" y="286" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.03"/><rect x="20" y="326" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.07"/><rect x="20" y="366" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.03"/><rect x="20" y="406" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.07"/><rect x="20" y="446" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.03"/><rect x="20" y="486" width="796" height="36" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+  <line x1="217" y1="90" x2="217" y2="518" stroke="#ffd100" stroke-opacity=".2"/><line x1="414" y1="90" x2="414" y2="518" stroke="#ffd100" stroke-opacity=".2"/><line x1="611" y1="90" x2="611" y2="518" stroke="#ffd100" stroke-opacity=".2"/>
+  <text x="34" y="110" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇺🇸</text><text x="68" y="109" style="font-size:15px; fill:#e6e6e6">Inglés</text>
+  <text x="231" y="110" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇪🇸</text><text x="265" y="109" style="font-size:15px; fill:#e6e6e6">Español (España)</text>
+  <text x="428" y="110" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇲🇽</text><text x="462" y="109" style="font-size:15px; fill:#e6e6e6">Español (Latam)</text>
+  <text x="625" y="110" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇩🇪</text><text x="659" y="109" style="font-size:15px; fill:#e6e6e6">Alemán</text>
+  <text x="34" y="150" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇫🇷</text><text x="68" y="149" style="font-size:15px; fill:#e6e6e6">Francés</text>
+  <text x="231" y="150" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇮🇹</text><text x="265" y="149" style="font-size:15px; fill:#e6e6e6">Italiano</text>
+  <text x="428" y="150" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇧🇷</text><text x="462" y="149" style="font-size:15px; fill:#e6e6e6">Portugués</text>
+  <text x="625" y="150" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇷🇺</text><text x="659" y="149" style="font-size:15px; fill:#e6e6e6">Ruso</text>
+  <text x="34" y="190" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇰🇷</text><text x="68" y="189" style="font-size:15px; fill:#e6e6e6">Coreano</text>
+  <text x="231" y="190" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇨🇳</text><text x="265" y="189" style="font-size:15px; fill:#e6e6e6">Chino simplificado</text>
+  <text x="428" y="190" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇹🇼</text><text x="462" y="189" style="font-size:15px; fill:#e6e6e6">Chino tradicional</text>
+  <text x="625" y="190" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇯🇵</text><text x="659" y="189" style="font-size:15px; fill:#e6e6e6">Japonés</text>
+  <text x="34" y="230" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇵🇱</text><text x="68" y="229" style="font-size:15px; fill:#e6e6e6">Polaco</text>
+  <text x="231" y="230" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇸🇪</text><text x="265" y="229" style="font-size:15px; fill:#e6e6e6">Sueco</text>
+  <text x="428" y="230" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇳🇴</text><text x="462" y="229" style="font-size:15px; fill:#e6e6e6">Noruego</text>
+  <text x="625" y="230" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇩🇰</text><text x="659" y="229" style="font-size:15px; fill:#e6e6e6">Danés</text>
+  <text x="34" y="270" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇫🇮</text><text x="68" y="269" style="font-size:15px; fill:#e6e6e6">Finlandés</text>
+  <text x="231" y="270" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇳🇱</text><text x="265" y="269" style="font-size:15px; fill:#e6e6e6">Neerlandés</text>
+  <text x="428" y="270" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇹🇷</text><text x="462" y="269" style="font-size:15px; fill:#e6e6e6">Turco</text>
+  <text x="625" y="270" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇸🇦</text><text x="659" y="269" style="font-size:15px; fill:#e6e6e6">Árabe</text>
+  <text x="34" y="310" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇮🇷</text><text x="68" y="309" style="font-size:15px; fill:#e6e6e6">Persa</text>
+  <text x="231" y="310" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇮🇱</text><text x="265" y="309" style="font-size:15px; fill:#e6e6e6">Hebreo</text>
+  <text x="428" y="310" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇮🇳</text><text x="462" y="309" style="font-size:15px; fill:#e6e6e6">Hindi</text>
+  <text x="625" y="310" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇧🇩</text><text x="659" y="309" style="font-size:15px; fill:#e6e6e6">Bengalí</text>
+  <text x="34" y="350" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇵🇰</text><text x="68" y="349" style="font-size:15px; fill:#e6e6e6">Urdu</text>
+  <text x="231" y="350" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇮🇳</text><text x="265" y="349" style="font-size:15px; fill:#e6e6e6">Tamil</text>
+  <text x="428" y="350" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇮🇳</text><text x="462" y="349" style="font-size:15px; fill:#e6e6e6">Telugu</text>
+  <text x="625" y="350" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇹🇭</text><text x="659" y="349" style="font-size:15px; fill:#e6e6e6">Tailandés</text>
+  <text x="34" y="390" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇻🇳</text><text x="68" y="389" style="font-size:15px; fill:#e6e6e6">Vietnamita</text>
+  <text x="231" y="390" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇮🇩</text><text x="265" y="389" style="font-size:15px; fill:#e6e6e6">Indonesio</text>
+  <text x="428" y="390" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇲🇾</text><text x="462" y="389" style="font-size:15px; fill:#e6e6e6">Malayo</text>
+  <text x="625" y="390" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇨🇿</text><text x="659" y="389" style="font-size:15px; fill:#e6e6e6">Checo</text>
+  <text x="34" y="430" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇸🇰</text><text x="68" y="429" style="font-size:15px; fill:#e6e6e6">Eslovaco</text>
+  <text x="231" y="430" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇭🇺</text><text x="265" y="429" style="font-size:15px; fill:#e6e6e6">Húngaro</text>
+  <text x="428" y="430" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇷🇴</text><text x="462" y="429" style="font-size:15px; fill:#e6e6e6">Rumano</text>
+  <text x="625" y="430" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇧🇬</text><text x="659" y="429" style="font-size:15px; fill:#e6e6e6">Búlgaro</text>
+  <text x="34" y="470" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇬🇷</text><text x="68" y="469" style="font-size:15px; fill:#e6e6e6">Griego</text>
+  <text x="231" y="470" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇺🇦</text><text x="265" y="469" style="font-size:15px; fill:#e6e6e6">Ucraniano</text>
+  <text x="428" y="470" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇭🇷</text><text x="462" y="469" style="font-size:15px; fill:#e6e6e6">Croata</text>
+  <text x="625" y="470" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇷🇸</text><text x="659" y="469" style="font-size:15px; fill:#e6e6e6">Serbio</text>
+  <text x="34" y="510" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇸🇮</text><text x="68" y="509" style="font-size:15px; fill:#e6e6e6">Esloveno</text>
+  <text x="231" y="510" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇱🇹</text><text x="265" y="509" style="font-size:15px; fill:#e6e6e6">Lituano</text>
+  <text x="428" y="510" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇱🇻</text><text x="462" y="509" style="font-size:15px; fill:#e6e6e6">Letón</text>
+  <text x="625" y="510" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">🇪🇪</text><text x="659" y="509" style="font-size:15px; fill:#e6e6e6">Estonio</text>
+</svg>

@@ -497,6 +497,32 @@ for (const [lang, title, sub] of [["en", "English", "English version"], ["es", "
   <path d="M250 55 l8 -8 l8 8 l-8 8 Z M570 55 l8 -8 l8 8 l-8 8 Z" fill="${GOLD}"/>
   <text class="t" x="418" y="62" text-anchor="middle" style="font-size:40px; fill:url(#goldtext); letter-spacing:2px">${title}</text>
   <text x="418" y="90" text-anchor="middle" style="font-size:14px; fill:#9d9d9d">${sub}</text>`));
+// WoW Translator: its 44 languages as a themed table (flags need a color emoji font when rendering)
+const WT_LANGS = [["🇺🇸","English","Inglés"],["🇪🇸","Spanish (Spain)","Español (España)"],["🇲🇽","Spanish (Latam)","Español (Latam)"],["🇩🇪","German","Alemán"],
+  ["🇫🇷","French","Francés"],["🇮🇹","Italian","Italiano"],["🇧🇷","Portuguese","Portugués"],["🇷🇺","Russian","Ruso"],["🇰🇷","Korean","Coreano"],
+  ["🇨🇳","Simplified Chinese","Chino simplificado"],["🇹🇼","Traditional Chinese","Chino tradicional"],["🇯🇵","Japanese","Japonés"],["🇵🇱","Polish","Polaco"],
+  ["🇸🇪","Swedish","Sueco"],["🇳🇴","Norwegian","Noruego"],["🇩🇰","Danish","Danés"],["🇫🇮","Finnish","Finlandés"],["🇳🇱","Dutch","Neerlandés"],
+  ["🇹🇷","Turkish","Turco"],["🇸🇦","Arabic","Árabe"],["🇮🇷","Persian","Persa"],["🇮🇱","Hebrew","Hebreo"],["🇮🇳","Hindi","Hindi"],["🇧🇩","Bengali","Bengalí"],
+  ["🇵🇰","Urdu","Urdu"],["🇮🇳","Tamil","Tamil"],["🇮🇳","Telugu","Telugu"],["🇹🇭","Thai","Tailandés"],["🇻🇳","Vietnamese","Vietnamita"],["🇮🇩","Indonesian","Indonesio"],
+  ["🇲🇾","Malay","Malayo"],["🇨🇿","Czech","Checo"],["🇸🇰","Slovak","Eslovaco"],["🇭🇺","Hungarian","Húngaro"],["🇷🇴","Romanian","Rumano"],["🇧🇬","Bulgarian","Búlgaro"],
+  ["🇬🇷","Greek","Griego"],["🇺🇦","Ukrainian","Ucraniano"],["🇭🇷","Croatian","Croata"],["🇷🇸","Serbian","Serbio"],["🇸🇮","Slovenian","Esloveno"],["🇱🇹","Lithuanian","Lituano"],
+  ["🇱🇻","Latvian","Letón"],["🇪🇪","Estonian","Estonio"]];
+assert.equal(WT_LANGS.length, 44);
+for (const lang of LANGS) {
+  const i = LANGS.indexOf(lang), COLS = 4, CW = 197, RH = 40, Y0 = 84, nRows = Math.ceil(WT_LANGS.length / COLS), H = Y0 + nRows * RH + 22;
+  const cells = WT_LANGS.map(([flag, en, es], k) => {
+    const c = k % COLS, r = Math.floor(k / COLS), x = 24 + c * CW, y = Y0 + r * RH;
+    return `<text x="${x + 10}" y="${y + 26}" style="font-size:20px; font-family:'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji',sans-serif">${flag}</text><text x="${x + 44}" y="${y + 25}" style="font-size:15px; fill:#e6e6e6">${esc(i ? es : en)}</text>`;
+  }).join("\n  ");
+  const stripes = Array.from({ length: nRows }, (_, r) => `<rect x="20" y="${Y0 + r * RH + 2}" width="796" height="${RH - 4}" rx="6" fill="#ffffff" fill-opacity="${r % 2 ? 0.03 : 0.07}"/>`).join("");
+  cfWrite(`languages-wt-${lang}.svg`, svg(836, H, `${i ? "44 idiomas" : "44 languages"}: ${WT_LANGS.map((l) => l[i + 1]).join(", ")}`, `
+${tooltip(1, 1, 834, H - 2)}
+  <rect x="1" y="1" width="834" height="58" rx="8" fill="#2a1a08"/><rect x="1" y="58" width="834" height="2" fill="url(#goldtext)"/>
+  <text class="t" x="418" y="40" text-anchor="middle" style="font-size:26px; fill:url(#goldtext)">${i ? "44 idiomas" : "44 languages"}</text>
+  ${stripes}
+  ${Array.from({ length: COLS - 1 }, (_, c) => `<line x1="${20 + (c + 1) * CW}" y1="${Y0 + 6}" x2="${20 + (c + 1) * CW}" y2="${Y0 + nRows * RH - 6}" stroke="${GOLD}" stroke-opacity=".2"/>`).join("")}
+  ${cells}`));
+}
 cfWrite("divider.svg", svg(836, 28, "", `
   <line x1="40" y1="14" x2="400" y2="14" stroke="${GOLD}" stroke-opacity=".55"/><line x1="436" y1="14" x2="796" y2="14" stroke="${GOLD}" stroke-opacity=".55"/>
   <path d="M418 4 l10 10 l-10 10 l-10 -10 Z" fill="${GOLD}"/><path d="M400 14 l4 -4 l4 4 l-4 4 Z M428 14 l4 -4 l4 4 l-4 4 Z" fill="${GOLD}" opacity=".7"/>`));
@@ -526,7 +552,7 @@ import glob, os
 from PIL import Image
 for f in glob.glob(${JSON.stringify(new URL("cf/", dir).pathname)} + "*.png"):
     n = os.path.basename(f)
-    if not n.startswith(("hero-", "card-")): continue
+    if not n.startswith(("hero-", "card-", "languages-")): continue
     im = Image.open(f).convert("RGBA"); bg = Image.new("RGBA", im.size, (13, 13, 13, 255)); bg.alpha_composite(im)
     bg.convert("RGB").save(f[:-4] + ".jpg", quality=88, optimize=True, progressive=True); os.remove(f)
 `]);
