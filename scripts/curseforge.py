@@ -94,7 +94,9 @@ def md(block, lang):
         if s.startswith("|"):
             rows = []
             while i < len(lines) and lines[i].strip().startswith("|"):
-                rows.append([c.strip() for c in lines[i].strip().strip("|").split("|")]); i += 1
+                # "\|" inside a cell is a literal pipe (`/dqa collect on\|off`), not a column break
+                cells = re.split(r"(?<!\\)\|", lines[i].strip().strip("|"))
+                rows.append([c.strip().replace("\\|", "|") for c in cells]); i += 1
             out.append(table(rows)); continue
         if s.startswith("### "):
             out.append(f'<h3><span style="color: {GOLD};">{inline(s[4:])}</span></h3>'); i += 1; continue
@@ -135,12 +137,18 @@ def shots(block):
     pairs = [(src, cap or alt) for src, alt, cap in pairs if "img.youtube.com" not in src]  # the video is embedded above
     if not pairs:
         return ""
+    # Animated GIFs: on their own, centred, above the table
+    gifs = "".join(f'<p style="text-align: center;"><img src="{absurl(src)}" alt="{html.escape(cap)}" width="520"><br><em>{cap}</em></p>\n'
+                   for src, cap in pairs if src.lower().endswith(".gif"))
+    pairs = [(src, cap) for src, cap in pairs if not src.lower().endswith(".gif")]
+    if not pairs:
+        return gifs.rstrip()
     if len(pairs) == 1:
         src, cap = pairs[0]
-        return f'<p style="text-align: center;"><img src="{absurl(src)}" alt="{html.escape(cap)}" width="760"><br><em>{cap}</em></p>'
+        return gifs + f'<p style="text-align: center;"><img src="{absurl(src)}" alt="{html.escape(cap)}" width="760"><br><em>{cap}</em></p>'
     cells = [f'<td style="text-align: center;"><img src="{absurl(s)}" alt="{html.escape(c)}" width="400"><br><em>{c}</em></td>' for s, c in pairs]
     trs = "\n".join("<tr>\n" + "\n".join(cells[k:k + 2]) + "\n</tr>" for k in range(0, len(cells), 2))
-    return f'<table style="margin-left: auto; margin-right: auto;">\n<tbody>\n{trs}\n</tbody>\n</table>'
+    return gifs + f'<table style="margin-left: auto; margin-right: auto;">\n<tbody>\n{trs}\n</tbody>\n</table>'
 
 
 def h2(title):
