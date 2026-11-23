@@ -9,11 +9,13 @@ import html, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CF = "https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/"
 ORG = "https://github.com/Pirson-s-Addons"
+SITE = "https://wow.pirson.dev"
+DISCORD = "https://discord.gg/BM3hXNZXTh"
 GOLD = "#ffd100"
 HAND_WRITTEN = {"wow-translator"}
 
 T = {
-    "en": {"other": "<em>Español más abajo</em>", "video": "Video guide", "src": "Source code", "bug": "Report a bug",
+    "en": {"other": "<em>Español más abajo</em>", "guide": "Full guide", "discord": "Discord", "video": "Video guide", "src": "Source code", "bug": "Report a bug",
            "is": "is a", "addon": "World of Warcraft addon", "for": "for", "every": "Retail, every Classic client and WoW Forever",
            "and": "and", "works": "Works on", "lic": ["MIT License", "All rights reserved"],
            "h": {"screens": "Screenshots", "what": "What it does", "rules": "Rules", "features": "Features", "usage": "How to use",
@@ -24,7 +26,7 @@ T = {
                        "Restart the game and make sure <strong>{name}</strong> is enabled in the AddOns list."],
            "support": "{name} is made in my free time. If it makes your adventures better, you can support it, or simply <strong>leave a comment, a rating or share it with your guild</strong>.",
            "coffee": "Buy me a coffee", "tip": "Tip:"},
-    "es": {"video": "Vídeo guía", "src": "Código fuente", "bug": "Informar de un fallo",
+    "es": {"guide": "Guía completa", "discord": "Discord", "video": "Vídeo guía", "src": "Código fuente", "bug": "Informar de un fallo",
            "is": "es un", "addon": "addon de World of Warcraft", "for": "para", "every": "Retail, todos los clientes Classic y WoW Forever",
            "and": "y", "works": "Funciona en", "lic": ["Licencia MIT", "Todos los derechos reservados"],
            "h": {"screens": "Capturas", "what": "Qué hace", "rules": "Reglas", "features": "Funciones", "usage": "Cómo se usa",
@@ -181,6 +183,9 @@ def lang_block(a, lang, folder, video):
         links.append(f'<strong><span style="color: {GOLD};">English</span></strong>'); links.append(t["other"])
     else:
         links.append(f'<strong><span style="color: {GOLD};">Español</span></strong>')
+    slug = a["url"].rsplit("/", 1)[1]  # same slug as the wow.pirson.dev guide
+    links.append(f'<a href="{SITE}{"/es" if lang == "es" else ""}/addons/{slug}/" rel="nofollow">{t["guide"]}</a>')
+    links.append(f'<a href="{DISCORD}" rel="nofollow">{t["discord"]}</a>')
     if video:
         links.append(f'<a href="https://www.youtube.com/watch?v={video}" rel="nofollow">{t["video"]}</a>')
     if a["repo"]:
