@@ -17,7 +17,7 @@
   <rect x="1" y="1" width="838" height="128" rx="6" fill="#000000" fill-opacity=".72" stroke="#4a4f6a"/>
   <rect x="1" y="1" width="140" height="26" rx="6" fill="#1a1a1a"/>
   <text x="16" y="19" style="font-size:12px; fill:#ffd100">General</text>
-  <text class="l " x="16" y="52" style="animation-delay:0.3s; fill:#ffff00; white-space:pre">¡[Pirson] ha conseguido el logro <tspan fill="#ff8000">[200.000 descargas]</tspan>!</text>
+  <text class="l " x="16" y="52" style="animation-delay:0.3s; fill:#ffff00; white-space:pre">¡[Pirson] ha conseguido el logro <tspan fill="#ff8000">[250.000 descargas]</tspan>!</text>
   <text class="l " x="16" y="78" style="animation-delay:0.9s; fill:#40ff40; white-space:pre">[Hermandad] [Pirson]: ¡Gracias por usar mis addons! Nos vemos en Azeroth.</text>
   <text class="l " x="16" y="104" style="animation-delay:1.5s; fill:#ff80ff; white-space:pre">Para [Pirson]: <tspan class="fx" style="animation: blink 1s step-end infinite">|</tspan></text>
 </svg>

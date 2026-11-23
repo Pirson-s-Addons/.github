@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/hero-es.svg" width="760" alt="Pirson's Addons como el tooltip de un objeto legendario: 22 addons, 200.087 descargas en CurseForge, 8 clientes del juego. Retail, Classic y WoW Forever."/></p>
+<p align="center"><img src="assets/hero-es.svg" width="760" alt="Pirson's Addons como el tooltip de un objeto legendario: 22 addons, 271.388 descargas en CurseForge, 8 clientes del juego. Retail, Classic y WoW Forever."/></p>
 
 <p align="center"><a href="README.md">English</a> · <b>Español</b></p>
 
@@ -6,7 +6,7 @@
 
 <p align="center"><img src="assets/header-achievements-es.svg" width="100%" alt="Logros"/></p>
 
-<p align="center"><img src="assets/achievements-es.svg" width="100%" alt="200.000 descargas: Alcanza 200.000 descargas en CurseForge. El favorito del público: WoW Translator: 72.069 descargas. Coleccionista: Publica 22 addons para 8 clientes del juego."/></p>
+<p align="center"><img src="assets/achievements-es.svg" width="100%" alt="250.000 descargas: Alcanza 250.000 descargas en CurseForge. El favorito del público: WoW Translator: 78.866 descargas. Coleccionista: Publica 22 addons para 8 clientes del juego."/></p>
 
 <p align="center"><img src="assets/header-collection-es.svg" width="100%" alt="Colección de addons"/></p>
 
@@ -86,7 +86,7 @@
 </tr>
 </table>
 
-<p align="center"><sub>Las cifras se actualizan cada lunes desde CurseForge. Última actualización: 2026-11-17.</sub></p>
+<p align="center"><sub>Las cifras se actualizan cada lunes desde CurseForge. Última actualización: 2026-11-23.</sub></p>
 
 <details>
 <summary><b>Código fuente en GitHub</b></summary>
@@ -96,22 +96,22 @@
 - [HandyNotes: Dungeon & Raid Locations](https://github.com/Pirson-s-Addons/HandyNotes_DungeonRaidLocations-Forever)
 - [Health Bar Text Forever](https://github.com/Pirson-s-Addons/HealthBarTextForever)
 - [Seal Timers Forever](https://github.com/Pirson-s-Addons/SealTimersForever)
-- [Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)
 - [Gather Radar](https://github.com/Pirson-s-Addons/GatherRadar)
+- [Remove Questie](https://github.com/Pirson-s-Addons/RemoveQuestie)
 - [HandyNotes: Trove of the Thunder King](https://github.com/Pirson-s-Addons/HandyNotes_Trove-Thunder-King)
-- [Map Fix Forever](https://github.com/Pirson-s-Addons/MapFixForever)
 - [DR Tracker Forever](https://github.com/Pirson-s-Addons/DRTrackerForever)
+- [Map Fix Forever](https://github.com/Pirson-s-Addons/MapFixForever)
 - [Cursor Glow RGB](https://github.com/Pirson-s-Addons/Cursor-Glow-RGB)
 - [Prospect Helper](https://github.com/Pirson-s-Addons/ProspectHelper)
 - [Mill Helper](https://github.com/Pirson-s-Addons/MillHelper)
-- [Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)
 - [Vendor Item Filter](https://github.com/Pirson-s-Addons/VendorItemFilter)
-- [Leave Instance Group](https://github.com/Pirson-s-Addons/LeaveInstanceGroup)
+- [Move Extra Action Button](https://github.com/Pirson-s-Addons/MoveExtraActionButton)
 - [Emoji & React](https://github.com/Pirson-s-Addons/EmojiReact)
+- [Leave Instance Group](https://github.com/Pirson-s-Addons/LeaveInstanceGroup)
+- [Rotation Guide](https://github.com/Pirson-s-Addons/RotationGuide)
 - [Loot-A-Rang Classic](https://github.com/Pirson-s-Addons/Loot-A-Rang-Classic)
 - [Azeroth Tic-Tac-Toe](https://github.com/Pirson-s-Addons/AzerothTicTacToe)
 - [Chocolate XP Bar](https://github.com/Pirson-s-Addons/ChocolateXPBar)
-- [Rotation Guide](https://github.com/Pirson-s-Addons/RotationGuide)
 
 </details>
 

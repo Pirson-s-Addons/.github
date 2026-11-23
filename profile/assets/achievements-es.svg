@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="306" viewBox="0 0 840 306" role="img" aria-label="200.000 descargas: Alcanza 200.000 descargas en CurseForge. El favorito del público: WoW Translator: 72.069 descargas. Coleccionista: Publica 22 addons para 8 clientes del juego.">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="306" viewBox="0 0 840 306" role="img" aria-label="250.000 descargas: Alcanza 250.000 descargas en CurseForge. El favorito del público: WoW Translator: 78.866 descargas. Coleccionista: Publica 22 addons para 8 clientes del juego.">
   <defs>
     <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
@@ -19,8 +19,8 @@
     <circle cx="104" cy="52" r="30" fill="url(#gem)" stroke="url(#goldtext)" stroke-width="3"/>
     <text class="t" x="104" y="60" text-anchor="middle" style="font-size:22px; fill:url(#goldtext)">50</text>
     <text x="440" y="36" text-anchor="middle" style="font-size:12px; fill:#ffd100; letter-spacing:1px">LOGRO CONSEGUIDO</text>
-    <text class="t" x="440" y="62" text-anchor="middle" style="font-size:22px">200.000 descargas</text>
-    <text x="440" y="82" text-anchor="middle" style="font-size:13px; fill:#c9c9c9">Alcanza 200.000 descargas en CurseForge.</text>
+    <text class="t" x="440" y="62" text-anchor="middle" style="font-size:22px">250.000 descargas</text>
+    <text x="440" y="82" text-anchor="middle" style="font-size:13px; fill:#c9c9c9">Alcanza 250.000 descargas en CurseForge.</text>
   </g>
   <g class="l" style="animation-delay:0.55s">
     <rect x="60" y="110" width="720" height="84" rx="42" fill="url(#tip)" stroke="url(#goldtext)" stroke-width="2.5"/>
@@ -29,7 +29,7 @@
     <text class="t" x="104" y="160" text-anchor="middle" style="font-size:22px; fill:url(#goldtext)">25</text>
     <text x="440" y="136" text-anchor="middle" style="font-size:12px; fill:#ffd100; letter-spacing:1px">LOGRO CONSEGUIDO</text>
     <text class="t" x="440" y="162" text-anchor="middle" style="font-size:22px">El favorito del público</text>
-    <text x="440" y="182" text-anchor="middle" style="font-size:13px; fill:#c9c9c9">WoW Translator: 72.069 descargas.</text>
+    <text x="440" y="182" text-anchor="middle" style="font-size:13px; fill:#c9c9c9">WoW Translator: 78.866 descargas.</text>
   </g>
   <g class="l" style="animation-delay:0.90s">
     <rect x="60" y="210" width="720" height="84" rx="42" fill="url(#tip)" stroke="url(#goldtext)" stroke-width="2.5"/>

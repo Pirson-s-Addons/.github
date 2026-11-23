@@ -104,7 +104,7 @@
   "name": "Health Bar Text Forever",
   "repo": "HealthBarTextForever",
   "url": "https://www.curseforge.com/wow/addons/health-bar-text-forever",
-  "color": "#c77dff",
+  "color": "#ff8000",
   "license": 0,
   "clients": [
    [
@@ -148,6 +148,30 @@
   "es": "Tu sello de paladín activo en pantalla con su tiempo restante. Movible y escalable."
  },
  {
+  "abbr": "gr",
+  "name": "Gather Radar",
+  "repo": "GatherRadar",
+  "url": "https://www.curseforge.com/wow/addons/gather-radar",
+  "color": "#c77dff",
+  "license": 0,
+  "clients": [
+   [
+    "WoW Forever",
+    "WoW Forever"
+   ]
+  ],
+  "cat": [
+   "Professions",
+   "Profesiones"
+  ],
+  "one": [
+   "Herbs, ore and treasure on your maps",
+   "Hierbas, minerales y tesoros en tus mapas"
+  ],
+  "en": "Herbs, ore, treasure and fishing pools on the minimap and world map, with icons.",
+  "es": "Hierbas, minerales, tesoros y bancos de peces en el minimapa y el mapa del mundo."
+ },
+ {
   "abbr": "rq",
   "name": "Remove Questie",
   "repo": "RemoveQuestie",
@@ -180,30 +204,6 @@
   "es": "Abandona todas las misiones, o solo las que marques, desde el registro en un clic."
  },
  {
-  "abbr": "gr",
-  "name": "Gather Radar",
-  "repo": "GatherRadar",
-  "url": "https://www.curseforge.com/wow/addons/gather-radar",
-  "color": "#c77dff",
-  "license": 0,
-  "clients": [
-   [
-    "WoW Forever",
-    "WoW Forever"
-   ]
-  ],
-  "cat": [
-   "Professions",
-   "Profesiones"
-  ],
-  "one": [
-   "Herbs, ore and treasure on your maps",
-   "Hierbas, minerales y tesoros en tus mapas"
-  ],
-  "en": "Herbs, ore, treasure and fishing pools on the minimap and world map, with icons.",
-  "es": "Hierbas, minerales, tesoros y bancos de peces en el minimapa y el mapa del mundo."
- },
- {
   "abbr": "tk",
   "name": "HandyNotes: Trove of the Thunder King",
   "repo": "HandyNotes_Trove-Thunder-King",
@@ -228,30 +228,6 @@
   "es": "Cada tesoro Trove of the Thunder King en el mapa de la Isla del Trueno."
  },
  {
-  "abbr": "mf",
-  "name": "Map Fix Forever",
-  "repo": "MapFixForever",
-  "url": "https://www.curseforge.com/wow/addons/map-fix-forever",
-  "color": "#4aa3ff",
-  "license": 0,
-  "clients": [
-   [
-    "WoW Forever",
-    "WoW Forever"
-   ]
-  ],
-  "cat": [
-   "Map",
-   "Mapa"
-  ],
-  "one": [
-   "Fixes the green world map",
-   "Arregla el mapa del mundo verde"
-  ],
-  "en": "Fixes the green world map in non-English clients with the original map art.",
-  "es": "Arregla el mapa del mundo verde en clientes no ingleses con el arte original."
- },
- {
   "abbr": "dr",
   "name": "DR Tracker Forever",
   "repo": "DRTrackerForever",
@@ -274,6 +250,30 @@
   ],
   "en": "How long the next crowd control lasts on your target, your focus and you.",
   "es": "Cuánto dura el siguiente control de masas en tu objetivo, tu foco y en ti."
+ },
+ {
+  "abbr": "mf",
+  "name": "Map Fix Forever",
+  "repo": "MapFixForever",
+  "url": "https://www.curseforge.com/wow/addons/map-fix-forever",
+  "color": "#4aa3ff",
+  "license": 0,
+  "clients": [
+   [
+    "WoW Forever",
+    "WoW Forever"
+   ]
+  ],
+  "cat": [
+   "Map",
+   "Mapa"
+  ],
+  "one": [
+   "Fixes the green world map",
+   "Arregla el mapa del mundo verde"
+  ],
+  "en": "Fixes the green world map in non-English clients with the original map art.",
+  "es": "Arregla el mapa del mundo verde en clientes no ingleses con el arte original."
  },
  {
   "abbr": "cg",
@@ -396,34 +396,6 @@
   "es": "Muele hierbas en un clic para Inscripción. Lista las hierbas de tus bolsas."
  },
  {
-  "abbr": "ea",
-  "name": "Move Extra Action Button",
-  "repo": "MoveExtraActionButton",
-  "url": "https://www.curseforge.com/wow/addons/move-extra-action-button",
-  "color": "#1eff00",
-  "license": 0,
-  "clients": [
-   [
-    "MoP Classic",
-    "MoP Classic"
-   ],
-   [
-    "TBC Classic",
-    "TBC Classic"
-   ]
-  ],
-  "cat": [
-   "Interface",
-   "Interfaz"
-  ],
-  "one": [
-   "Move the Extra Action Button anywhere",
-   "Mueve el botón de acción extra"
-  ],
-  "en": "Move the Extra Action Button and the alternate power bar anywhere on screen.",
-  "es": "Mueve el botón de acción extra y la barra de poder alternativo donde quieras."
- },
- {
   "abbr": "vf",
   "name": "Vendor Item Filter",
   "repo": "VendorItemFilter",
@@ -452,28 +424,32 @@
   "es": "Filtra los objetos del vendedor por armadura, ranura, tipo de arma, joyería y más."
  },
  {
-  "abbr": "lg",
-  "name": "Leave Instance Group",
-  "repo": "LeaveInstanceGroup",
-  "url": "https://www.curseforge.com/wow/addons/leave-instance-group",
+  "abbr": "ea",
+  "name": "Move Extra Action Button",
+  "repo": "MoveExtraActionButton",
+  "url": "https://www.curseforge.com/wow/addons/move-extra-action-button",
   "color": "#1eff00",
   "license": 0,
   "clients": [
    [
     "MoP Classic",
     "MoP Classic"
+   ],
+   [
+    "TBC Classic",
+    "TBC Classic"
    ]
   ],
   "cat": [
-   "Utility",
-   "Utilidad"
+   "Interface",
+   "Interfaz"
   ],
   "one": [
-   "Leave instance groups from your portrait",
-   "Sal del grupo de instancia desde el retrato"
+   "Move the Extra Action Button anywhere",
+   "Mueve el botón de acción extra"
   ],
-  "en": "Adds the missing Leave Instance Group option to your portrait menu.",
-  "es": "Añade la opción que falta para salir del grupo de instancia en tu retrato."
+  "en": "Move the Extra Action Button and the alternate power bar anywhere on screen.",
+  "es": "Mueve el botón de acción extra y la barra de poder alternativo donde quieras."
  },
  {
   "abbr": "er",
@@ -498,6 +474,54 @@
   ],
   "en": "Emojis in chat and speech bubbles, plus a reaction wheel above your character.",
   "es": "Emojis en el chat y los bocadillos, y una rueda de reacciones sobre tu personaje."
+ },
+ {
+  "abbr": "lg",
+  "name": "Leave Instance Group",
+  "repo": "LeaveInstanceGroup",
+  "url": "https://www.curseforge.com/wow/addons/leave-instance-group",
+  "color": "#1eff00",
+  "license": 0,
+  "clients": [
+   [
+    "MoP Classic",
+    "MoP Classic"
+   ]
+  ],
+  "cat": [
+   "Utility",
+   "Utilidad"
+  ],
+  "one": [
+   "Leave instance groups from your portrait",
+   "Sal del grupo de instancia desde el retrato"
+  ],
+  "en": "Adds the missing Leave Instance Group option to your portrait menu.",
+  "es": "Añade la opción que falta para salir del grupo de instancia en tu retrato."
+ },
+ {
+  "abbr": "rg",
+  "name": "Rotation Guide",
+  "repo": "RotationGuide",
+  "url": "https://www.curseforge.com/wow/addons/rotation-guide",
+  "color": "#1eff00",
+  "license": 0,
+  "clients": [
+   [
+    "WoW Forever",
+    "WoW Forever"
+   ]
+  ],
+  "cat": [
+   "Combat",
+   "Combate"
+  ],
+  "one": [
+   "Your class rotation, all 27 specs",
+   "La rotación de tu clase, 27 especializaciones"
+  ],
+  "en": "Your class rotation on WoW Forever, for all 27 specs.",
+  "es": "La rotación de tu clase en WoW Forever, para las 27 especializaciones."
  },
  {
   "abbr": "lr",
@@ -622,29 +646,5 @@
   ],
   "en": "Just a chocolate bar for your experience bar, in five flavors.",
   "es": "Una tableta de chocolate como barra de experiencia, en cinco sabores."
- },
- {
-  "abbr": "rg",
-  "name": "Rotation Guide",
-  "repo": "RotationGuide",
-  "url": "https://www.curseforge.com/wow/addons/rotation-guide",
-  "color": "#1eff00",
-  "license": 0,
-  "clients": [
-   [
-    "WoW Forever",
-    "WoW Forever"
-   ]
-  ],
-  "cat": [
-   "Combat",
-   "Combate"
-  ],
-  "one": [
-   "Your class rotation, all 27 specs",
-   "La rotación de tu clase, 27 especializaciones"
-  ],
-  "en": "Your class rotation on WoW Forever, for all 27 specs.",
-  "es": "La rotación de tu clase en WoW Forever, para las 27 especializaciones."
  }
 ]

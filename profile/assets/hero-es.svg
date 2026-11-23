@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="452" viewBox="0 0 840 452" role="img" aria-label="Pirson's Addons: +22 addons, +200.087 descargas, +8 clientes del juego">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="452" viewBox="0 0 840 452" role="img" aria-label="Pirson's Addons: +22 addons, +271.388 descargas, +8 clientes del juego">
   <defs>
     <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
@@ -25,7 +25,7 @@
   <text class="l " x="128" y="130" style="animation-delay:0.6s; ">Colección de addons</text>
   <text class="l" x="806" y="130" text-anchor="end" style="animation-delay:.6s">Interfaz</text>
   <text class="l " x="128" y="164" style="animation-delay:0.80s; ">+22 addons</text>
-  <text class="l " x="128" y="188" style="animation-delay:0.95s; ">+200.087 descargas</text>
+  <text class="l " x="128" y="188" style="animation-delay:0.95s; ">+271.388 descargas</text>
   <text class="l " x="128" y="212" style="animation-delay:1.10s; ">+8 clientes del juego</text>
   <text class="l " x="128" y="254" style="animation-delay:1.40s; fill:#1eff00; ">Equipar: Una interfaz más ligera, limpia y lista para tu estilo.</text>
   <text class="l " x="128" y="278" style="animation-delay:1.60s; fill:#1eff00; ">Equipar: Retail, Classic y WoW Forever.</text>
