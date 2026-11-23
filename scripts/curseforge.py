@@ -5,6 +5,7 @@ Same layout for every addon: hero, SEO intro, video, sections with gold headings
 WoW Translator is hand-written (curseforge/wow-translator.html) and skipped unless named.
 """
 import html, json, os, re, sys
+from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CF = "https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/cf/"
@@ -13,9 +14,19 @@ SITE = "https://wow.pirson.dev"
 DISCORD = "https://discord.gg/BM3hXNZXTh"
 GOLD = "#ffd100"
 HAND_WRITTEN = {"wow-translator"}
+# link buttons (shields.io badges, like big CurseForge pages): text key -> colour, Simple Icons logo, logo colour
+BADGE = {"guide": ("ffd100", "bookstack", "black"), "discord": ("5865F2", "discord", "white"), "video": ("FF0000", "youtube", "white"),
+         "src": ("24292f", "github", "white"), "bug": ("c0392b", "github", "white"), "join": ("5865F2", "discord", "white")}
+
+
+def button(lang, key, href):
+    text = T[lang][key]
+    color, logo, logo_color = BADGE[key]
+    src = f"https://img.shields.io/badge/{quote(text.replace('-', '--').replace('_', '__').replace(' ', '_'))}-{color}?style=for-the-badge&logo={logo}&logoColor={logo_color}"
+    return f'<a href="{href}" rel="nofollow"><img src="{src}" alt="{text}"></a>'
 
 T = {
-    "en": {"other": "<em>Español más abajo</em>", "guide": "Full guide", "discord": "Discord", "video": "Video guide", "src": "Source code", "bug": "Report a bug",
+    "en": {"other": "<em>Español más abajo</em>", "guide": "Full guide", "discord": "Discord", "join": "Join the Discord", "ask": "Found a bug or have an idea? Tell me on Discord.", "video": "Video guide", "src": "Source code", "bug": "Report a bug",
            "is": "is a", "addon": "World of Warcraft addon", "for": "for", "every": "Retail, every Classic client and WoW Forever",
            "and": "and", "works": "Works on", "lic": ["MIT License", "All rights reserved"],
            "h": {"screens": "Screenshots", "what": "What it does", "rules": "Rules", "features": "Features", "usage": "How to use",
@@ -26,7 +37,7 @@ T = {
                        "Restart the game and make sure <strong>{name}</strong> is enabled in the AddOns list."],
            "support": "{name} is made in my free time. If it makes your adventures better, you can support it, or simply <strong>leave a comment, a rating or share it with your guild</strong>.",
            "coffee": "Buy me a coffee", "tip": "Tip:"},
-    "es": {"guide": "Guía completa", "discord": "Discord", "video": "Vídeo guía", "src": "Código fuente", "bug": "Informar de un fallo",
+    "es": {"guide": "Guía completa", "discord": "Discord", "join": "Únete al Discord", "ask": "¿Un bug o una idea? Cuéntamelo en Discord.", "video": "Vídeo guía", "src": "Código fuente", "bug": "Informar de un fallo",
            "is": "es un", "addon": "addon de World of Warcraft", "for": "para", "every": "Retail, todos los clientes Classic y WoW Forever",
            "and": "y", "works": "Funciona en", "lic": ["Licencia MIT", "Todos los derechos reservados"],
            "h": {"screens": "Capturas", "what": "Qué hace", "rules": "Reglas", "features": "Funciones", "usage": "Cómo se usa",
@@ -178,21 +189,16 @@ def lang_block(a, lang, folder, video):
     clients = [x[i] for x in a["clients"]]
     clients_txt = t["every"] if len(clients) >= 7 else (clients[0] if len(clients) == 1 else ", ".join(clients[:-1]) + f" {t['and']} " + clients[-1])
     tagline = a[lang]
-    links = []
-    if lang == "en":
-        links.append(f'<strong><span style="color: {GOLD};">English</span></strong>'); links.append(t["other"])
-    else:
-        links.append(f'<strong><span style="color: {GOLD};">Español</span></strong>')
     slug = a["url"].rsplit("/", 1)[1]  # same slug as the wow.pirson.dev guide
-    links.append(f'<a href="{SITE}{"/es" if lang == "es" else ""}/addons/{slug}/" rel="nofollow">{t["guide"]}</a>')
-    links.append(f'<a href="{DISCORD}" rel="nofollow">{t["discord"]}</a>')
+    buttons = [button(lang, "guide", f'{SITE}{"/es" if lang == "es" else ""}/addons/{slug}/'), button(lang, "discord", DISCORD)]
     if video:
-        links.append(f'<a href="https://www.youtube.com/watch?v={video}" rel="nofollow">{t["video"]}</a>')
+        buttons.append(button(lang, "video", f"https://www.youtube.com/watch?v={video}"))
     if a["repo"]:
-        links.append(f'<a href="{ORG}/{a["repo"]}" rel="nofollow">{t["src"]}</a>')
-        links.append(f'<a href="{ORG}/{a["repo"]}/issues" rel="nofollow">{t["bug"]}</a>')
+        buttons += [button(lang, "src", f"{ORG}/{a['repo']}"), button(lang, "bug", f"{ORG}/{a['repo']}/issues")]
+    menu = (f'<p style="text-align: center;"><strong><span style="color: {GOLD};">English</span></strong> · {t["other"]}</p>\n\n' if lang == "en" else "") \
+        + f'<p style="text-align: center;">{" ".join(buttons)}</p>'
     out = [f'<p style="text-align: center;"><img src="{CF}hero-{a["abbr"]}-{lang}.jpg" alt="{html.escape(name)}, {t["addon"]}: {html.escape(tagline)}" width="836"></p>',
-           f'<p style="text-align: center;">{" · ".join(links)}</p>',
+           menu,
            f'<p style="text-align: center;"><span style="font-size: 16px;"><strong><span style="color: {c};">{html.escape(name)}</span></strong> {t["is"]} <strong>{t["addon"]}</strong> {t["for"]} <strong>{clients_txt}</strong>. {html.escape(tagline)}</span></p>']
     if video:
         out.append(f'<p style="text-align: center;"><iframe src="https://www.youtube.com/embed/{video}" width="836" height="470" allowfullscreen="allowfullscreen"></iframe></p>')
@@ -219,6 +225,7 @@ def lang_block(a, lang, folder, video):
             out.append(shots(shot))
     out.append(h2(t["h"]["support"]))
     out.append(f'<p style="text-align: center;">{t["support"].format(name=html.escape(name))}</p>')
+    out.append(f'<p style="text-align: center;">{t["ask"]}<br>{button(lang, "join", DISCORD)}</p>')
     out.append(f'<p style="text-align: center;"><a href="https://coff.ee/franciscorb" target="_blank" rel="nofollow noopener"><img src="{CF}coffee-{lang}.png" alt="{t["coffee"]}" width="280"></a></p>')
     return "\n\n".join(out)
 
