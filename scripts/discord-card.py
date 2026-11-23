@@ -7,6 +7,7 @@ The release notes keep only the "What's new" and Spanish "Novedades" sections, a
 import datetime, json, os, re, sys, urllib.request
 
 RAW = "https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/catalog.json"
+ROLES = "https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/scripts/discord-roles.json"  # Discord role ids: one per addon + Update Alerts
 SEPARATOR = "✧ ────────── ✧ ❂ ✧ ────────── ✧"
 COLOR = 12877811  # arcane purple, as the earlier cards
 
@@ -27,7 +28,7 @@ def notes(body):
     return "\n\n".join(out)[:4000] or body[:4000]
 
 
-def card(a, repo, tag, wago_id, description, timestamp=None):
+def card(a, repo, tag, wago_id, description, timestamp=None, roles=None):
     release = f"https://github.com/{repo}/releases/tag/{tag}"
     embed = {
         "title": f"{a['name']} {tag}",
@@ -45,7 +46,10 @@ def card(a, repo, tag, wago_id, description, timestamp=None):
     if timestamp:
         embed["timestamp"] = timestamp
     # Discord draws the message text above the card, so the separator sits between this card and the one before
-    return {"content": f"{SEPARATOR}\n📢 **{a['name']} {tag}** — ya disponible / now available", "embeds": [embed], "attachments": []}
+    # ping who picked this addon in onboarding, plus Update Alerts (every release); no other mention can fire
+    ping = [r for r in ((roles or {}).get("addons", {}).get(a["abbr"]), (roles or {}).get("update_alerts")) if r]
+    content = f"{SEPARATOR}\n📢 **{a['name']} {tag}** — ya disponible / now available" + ("\n" + " ".join(f"<@&{r}>" for r in ping) if ping else "")
+    return {"content": content, "embeds": [embed], "attachments": [], "allowed_mentions": {"parse": [], "roles": ping}}
 
 
 def send(url, payload, method="POST"):
@@ -59,6 +63,7 @@ if __name__ == "__main__":
     repo, tag, wago_id, notes_file = sys.argv[1:5]
     catalog = json.load(urllib.request.urlopen(urllib.request.Request(RAW, headers={"User-Agent": "pirson-addons-release"})))
     a = addon(repo, catalog)
-    payload = card(a, repo, tag, wago_id, notes(open(notes_file, encoding="utf-8").read()))
+    roles = json.load(urllib.request.urlopen(urllib.request.Request(ROLES, headers={"User-Agent": "pirson-addons-release"})))
+    payload = card(a, repo, tag, wago_id, notes(open(notes_file, encoding="utf-8").read()), roles=roles)
     payload["embeds"][0]["timestamp"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     print(send(os.environ["DISCORD_WEBHOOK"], payload))
