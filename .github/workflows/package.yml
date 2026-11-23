@@ -1,0 +1,52 @@
+name: Package addon
+
+# Shared by every addon repo (see each repo's .github/workflows/release.yml).
+# A published GitHub release: its notes become the changelog, BigWigs packager builds the ZIP and
+# uploads it to CurseForge and Wago, and attaches it to the release. Run by hand on an existing tag
+# with targets "wago" to put an already released version on Wago only.
+on:
+  workflow_call:
+    inputs:
+      tag:
+        type: string
+        required: true
+      targets:
+        type: string # all | wago
+        default: all
+      wago-id:
+        type: string
+        required: true
+    secrets:
+      CF_API_KEY:
+        required: false
+      WAGO_API_TOKEN:
+        required: true
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 0
+
+      - name: Packaging rules from main
+        # tags released before .pkgmeta existed still need it (folder name, changelog file)
+        run: git show origin/main:.pkgmeta > .pkgmeta
+
+      - name: Changelog from the release notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release view "${{ inputs.tag }}" -R "${{ github.repository }}" --json body --jq .body > CHANGELOG.md
+
+      - uses: BigWigsMods/packager@v2
+        with:
+          args: -a ${{ inputs.wago-id }}
+        env:
+          WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
+          # only on a real release: a Wago-only run must not upload the version to CurseForge again
+          CF_API_KEY: ${{ inputs.targets == 'all' && secrets.CF_API_KEY || '' }}
+          GITHUB_OAUTH: ${{ inputs.targets == 'all' && github.token || '' }}
