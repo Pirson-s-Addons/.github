@@ -4,7 +4,7 @@ Usage: python3 scripts/curseforge.py <folder with the addon clones> [slug ...]
 Same layout for every addon: hero, SEO intro, video, sections with gold headings, support, then the Spanish block.
 WoW Translator is hand-written (curseforge/wow-translator.html) and skipped unless named.
 """
-import html, json, os, re, sys
+import html, json, os, re, sys, unicodedata
 from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,7 +22,9 @@ BADGE = {"guide": ("ffd100", "bookstack", "black"), "discord": ("5865F2", "disco
 def button(lang, key, href):
     text = T[lang][key]
     color, logo, logo_color = BADGE[key]
-    src = f"https://img.shields.io/badge/{quote(text.replace('-', '--').replace('_', '__').replace(' ', '_'))}-{color}?style=for-the-badge&logo={logo}&logoColor={logo_color}"
+    # ASCII only: CurseForge blanks image URLs with encoded accents (Guía -> GUIA; the alt keeps them)
+    ascii_text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    src = f"https://img.shields.io/badge/{quote(ascii_text.replace('-', '--').replace('_', '__').replace(' ', '_'))}-{color}?style=for-the-badge&logo={logo}&logoColor={logo_color}"
     return f'<a href="{href}" rel="nofollow"><img src="{src}" alt="{text}"></a>'
 
 T = {
