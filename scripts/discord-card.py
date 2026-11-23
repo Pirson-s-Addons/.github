@@ -39,13 +39,13 @@ def card(a, repo, tag, wago_id, description, timestamp=None):
             {"name": "📥 GitHub", "value": f"[{tag}]({release})", "inline": True},
             {"name": "📥 CurseForge", "value": f"[{a['name']}]({a['url']})", "inline": True},
             {"name": "📥 Wago", "value": f"[{a['name']}](https://addons.wago.io/addons/{wago_id})", "inline": True},
-            {"name": "​", "value": SEPARATOR, "inline": False},
         ],
         "footer": {"text": "Pirson's Addons"},
     }
     if timestamp:
         embed["timestamp"] = timestamp
-    return {"content": f"📢 **{a['name']} {tag}** — ya disponible / now available", "embeds": [embed], "attachments": []}
+    # Discord draws the message text above the card, so the separator sits between this card and the one before
+    return {"content": f"{SEPARATOR}\n📢 **{a['name']} {tag}** — ya disponible / now available", "embeds": [embed], "attachments": []}
 
 
 def send(url, payload, method="POST"):
