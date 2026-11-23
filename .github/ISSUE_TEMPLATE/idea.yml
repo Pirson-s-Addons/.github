@@ -1,0 +1,55 @@
+name: Idea or improvement · Idea o mejora
+description: Suggest a feature for an addon, or a new addon · Propón una función para un addon, o un addon nuevo
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One idea per issue. Search first: if it exists, vote with 👍.
+        Una idea por issue. Busca antes: si ya existe, vota con 👍.
+  - type: dropdown
+    id: addon
+    attributes:
+      label: Addon
+      options:
+        - "New addon · Addon nuevo"
+        - "Azeroth AI"
+        - "Azeroth Tic-Tac-Toe"
+        - "Chocolate XP Bar"
+        - "Cursor Glow RGB"
+        - "DR Tracker Forever"
+        - "Dungeon Quest Atlas"
+        - "Emoji & React"
+        - "Gather Radar"
+        - "HandyNotes: Dungeon & Raid Locations"
+        - "HandyNotes: Trove of the Thunder King"
+        - "Health Bar Text Forever"
+        - "Leave Instance Group"
+        - "Loot-A-Rang Classic"
+        - "Map Fix Forever"
+        - "Mill Helper"
+        - "Move Extra Action Button"
+        - "Prospect Helper"
+        - "Remove Questie"
+        - "Rotation Guide"
+        - "Seal Timers Forever"
+        - "Vendor Item Filter"
+        - "WoW Translator"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve · Qué problema resuelve
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea · Tu idea
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example or mockup · Ejemplo o boceto

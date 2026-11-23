@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord · Pirson's Addons
+    url: https://discord.gg/BM3hXNZXTh
+    about: Questions, help, translations and news · Dudas, ayuda, traducciones y novedades
+  - name: Guides · Guías
+    url: https://wow.pirson.dev/
+    about: What each addon does, how to install it and every command · Qué hace cada addon, cómo instalarlo y sus comandos

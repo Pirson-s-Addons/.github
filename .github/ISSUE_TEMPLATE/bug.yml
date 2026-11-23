@@ -1,0 +1,93 @@
+name: Bug report · Informar de un fallo
+description: Something in an addon does not work as it should · Algo de un addon no funciona como debe
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Search the open issues first: if your bug is there, add a 👍 and your details.
+        ¡Gracias por avisar! Busca antes en los issues abiertos: si tu fallo ya está, deja un 👍 y tus datos.
+  - type: dropdown
+    id: addon
+    attributes:
+      label: Addon
+      options:
+        - "Azeroth AI"
+        - "Azeroth Tic-Tac-Toe"
+        - "Chocolate XP Bar"
+        - "Cursor Glow RGB"
+        - "DR Tracker Forever"
+        - "Dungeon Quest Atlas"
+        - "Emoji & React"
+        - "Gather Radar"
+        - "HandyNotes: Dungeon & Raid Locations"
+        - "HandyNotes: Trove of the Thunder King"
+        - "Health Bar Text Forever"
+        - "Leave Instance Group"
+        - "Loot-A-Rang Classic"
+        - "Map Fix Forever"
+        - "Mill Helper"
+        - "Move Extra Action Button"
+        - "Prospect Helper"
+        - "Remove Questie"
+        - "Rotation Guide"
+        - "Seal Timers Forever"
+        - "Vendor Item Filter"
+        - "WoW Translator"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Addon version · Versión del addon
+      description: In the AddOns list of the game or in the addon options · En la lista de addons del juego o en sus opciones
+      placeholder: "1.06"
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: Game · Juego
+      options:
+        - "WoW Forever"
+        - "Retail"
+        - "MoP Classic"
+        - "Cataclysm Classic"
+        - "Wrath Classic"
+        - "TBC Classic"
+        - "Classic Era"
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Game language · Idioma del juego
+      placeholder: esES, enUS, deDE...
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens · Qué pasa
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected · Qué esperabas
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce · Pasos para reproducirlo
+      placeholder: |
+        1.
+        2.
+  - type: textarea
+    id: lua
+    attributes:
+      label: Lua error · Error de Lua
+      description: Copy it from BugSack/BugGrabber, or turn errors on with /console scriptErrors 1 · Cópialo de BugSack/BugGrabber o activa los errores con /console scriptErrors 1
+      render: lua
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or video · Captura o vídeo
+      description: Drag images here · Arrastra aquí las imágenes
