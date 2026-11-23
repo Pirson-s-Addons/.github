@@ -21,6 +21,8 @@ on:
         required: false
       WAGO_API_TOKEN:
         required: true
+      DISCORD_CHANGELOG_WEBHOOK:
+        required: false
 
 jobs:
   package:
@@ -50,3 +52,12 @@ jobs:
           # only on a real release: a Wago-only run must not upload the version to CurseForge again
           CF_API_KEY: ${{ inputs.targets == 'all' && secrets.CF_API_KEY || '' }}
           GITHUB_OAUTH: ${{ inputs.targets == 'all' && github.token || '' }}
+
+      - name: Changelog card in Discord
+        # the card layout lives in scripts/discord-card.py of this repo
+        if: inputs.targets == 'all'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_CHANGELOG_WEBHOOK }}
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/scripts/discord-card.py -o "$RUNNER_TEMP/discord-card.py"
+          python3 "$RUNNER_TEMP/discord-card.py" "${{ github.repository }}" "${{ inputs.tag }}" "${{ inputs.wago-id }}" CHANGELOG.md
