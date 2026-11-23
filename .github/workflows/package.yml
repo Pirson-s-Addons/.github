@@ -59,5 +59,6 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_CHANGELOG_WEBHOOK }}
         run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then echo "No DISCORD_CHANGELOG_WEBHOOK secret: card skipped"; exit 0; fi
           curl -fsSL https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/scripts/discord-card.py -o "$RUNNER_TEMP/discord-card.py"
           python3 "$RUNNER_TEMP/discord-card.py" "${{ github.repository }}" "${{ inputs.tag }}" "${{ inputs.wago-id }}" CHANGELOG.md
