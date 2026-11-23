@@ -46,7 +46,8 @@ jobs:
 
       - uses: BigWigsMods/packager@v2
         with:
-          args: -a ${{ inputs.wago-id }}
+          # file "GatherRadar-v1.06.zip", label "GatherRadar v1.06" on CurseForge and Wago
+          args: -a ${{ inputs.wago-id }} -n "{package-name}-{project-version}:{package-name} {project-version}"
         env:
           WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
           # only on a real release: a Wago-only run must not upload the version to CurseForge again
