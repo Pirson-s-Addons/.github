@@ -646,5 +646,57 @@
   ],
   "en": "Just a chocolate bar for your experience bar, in five flavors.",
   "es": "Una tableta de chocolate como barra de experiencia, en cinco sabores."
+ },
+ {
+  "abbr": "pr",
+  "name": "Profession Reagents",
+  "repo": "ProfessionReagents",
+  "url": "https://www.curseforge.com/wow/addons/profession-reagents",
+  "color": "#1eff00",
+  "license": 0,
+  "clients": [
+   [
+    "Retail",
+    "Retail"
+   ],
+   [
+    "WoW Forever",
+    "WoW Forever"
+   ],
+   [
+    "MoP Classic",
+    "MoP Classic"
+   ],
+   [
+    "Cataclysm Classic",
+    "Cataclysm Classic"
+   ],
+   [
+    "Wrath Classic",
+    "Wrath Classic"
+   ],
+   [
+    "TBC Classic",
+    "TBC Classic"
+   ],
+   [
+    "Classic Era",
+    "Classic Era"
+   ],
+   [
+    "Legacy (WoD to Shadowlands)",
+    "Legado (WoD a Shadowlands)"
+   ]
+  ],
+  "cat": [
+   "Professions",
+   "Profesiones"
+  ],
+  "one": [
+   "Which professions use each reagent",
+   "Qué profesiones usan cada componente"
+  ],
+  "en": "Which professions use each reagent and at what skill, plus disenchant results.",
+  "es": "Qué profesiones usan cada componente y en qué nivel, y qué da al desencantar."
  }
 ]

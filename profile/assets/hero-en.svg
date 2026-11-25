@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="452" viewBox="0 0 840 452" role="img" aria-label="Pirson's Addons: +22 Addons, +271,388 Downloads, +8 Game clients">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="452" viewBox="0 0 840 452" role="img" aria-label="Pirson's Addons: +23 Addons, +271,388 Downloads, +8 Game clients">
   <defs>
     <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
@@ -24,7 +24,7 @@
   <text class="l " x="128" y="106" style="animation-delay:0.45s; ">Unique-Equipped</text>
   <text class="l " x="128" y="130" style="animation-delay:0.6s; ">Addon Collection</text>
   <text class="l" x="806" y="130" text-anchor="end" style="animation-delay:.6s">Interface</text>
-  <text class="l " x="128" y="164" style="animation-delay:0.80s; ">+22 Addons</text>
+  <text class="l " x="128" y="164" style="animation-delay:0.80s; ">+23 Addons</text>
   <text class="l " x="128" y="188" style="animation-delay:0.95s; ">+271,388 Downloads</text>
   <text class="l " x="128" y="212" style="animation-delay:1.10s; ">+8 Game clients</text>
   <text class="l " x="128" y="254" style="animation-delay:1.40s; fill:#1eff00; ">Equip: A lighter, cleaner and smarter UI for every playstyle.</text>

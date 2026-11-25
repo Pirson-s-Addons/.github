@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/hero-en.svg" width="760" alt="Pirson's Addons shown as a legendary item tooltip: 22 addons, 271,388 downloads on CurseForge, 8 game clients. Retail, Classic and WoW Forever."/></p>
+<p align="center"><img src="assets/hero-en.svg" width="760" alt="Pirson's Addons shown as a legendary item tooltip: 23 addons, 271,388 downloads on CurseForge, 8 game clients. Retail, Classic and WoW Forever."/></p>
 
 <p align="center"><b>English</b> · <a href="README.es.md">Español</a></p>
 
@@ -6,7 +6,7 @@
 
 <p align="center"><img src="assets/header-achievements-en.svg" width="100%" alt="Achievements"/></p>
 
-<p align="center"><img src="assets/achievements-en.svg" width="100%" alt="250,000 Downloads: Reach 250,000 downloads on CurseForge. Fan Favorite: WoW Translator: 78,866 downloads. Collector: Publish 22 addons for 8 game clients."/></p>
+<p align="center"><img src="assets/achievements-en.svg" width="100%" alt="250,000 Downloads: Reach 250,000 downloads on CurseForge. Fan Favorite: WoW Translator: 78,866 downloads. Collector: Publish 23 addons for 8 game clients."/></p>
 
 <p align="center"><img src="assets/header-collection-en.svg" width="100%" alt="Addon Collection"/></p>
 
@@ -61,6 +61,7 @@
 </tr>
 <tr>
 <td width="50%" align="center"><img src="assets/row-mh-en.svg" width="100%" alt="Mill Helper: Mill herbs in one click for Inscription. Lists the millable herbs in your bags." title="Mill herbs in one click for Inscription. Lists the millable herbs in your bags."/><br/><a href="https://github.com/Pirson-s-Addons/MillHelper"><img src="assets/link-code-en.svg" width="120" alt="Code: Mill Helper"/></a> <a href="https://www.curseforge.com/wow/addons/mill-helper"><img src="assets/link-curseforge-en.svg" width="120" alt="CurseForge: Mill Helper"/></a></td>
+<td width="50%" align="center"><img src="assets/row-pr-en.svg" width="100%" alt="Profession Reagents: Which professions use each reagent and at what skill, plus disenchant results." title="Which professions use each reagent and at what skill, plus disenchant results."/><br/><a href="https://github.com/Pirson-s-Addons/ProfessionReagents"><img src="assets/link-code-en.svg" width="120" alt="Code: Profession Reagents"/></a> <a href="https://www.curseforge.com/wow/addons/profession-reagents"><img src="assets/link-curseforge-en.svg" width="120" alt="CurseForge: Profession Reagents"/></a></td>
 </tr>
 </table>
 
@@ -112,6 +113,7 @@
 - [Loot-A-Rang Classic](https://github.com/Pirson-s-Addons/Loot-A-Rang-Classic)
 - [Azeroth Tic-Tac-Toe](https://github.com/Pirson-s-Addons/AzerothTicTacToe)
 - [Chocolate XP Bar](https://github.com/Pirson-s-Addons/ChocolateXPBar)
+- [Profession Reagents](https://github.com/Pirson-s-Addons/ProfessionReagents)
 
 </details>
 

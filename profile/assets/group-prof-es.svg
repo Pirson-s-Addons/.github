@@ -16,6 +16,6 @@
 
   <rect x="1" y="5" width="838" height="40" rx="8" fill="url(#tip)" stroke="#4a4f6a"/>
   <path d="M16 25 l6 -6 l6 6 l-6 6 Z" fill="#ffd100"/>
-  <text class="t" x="36" y="32" style="font-size:19px; fill:url(#goldtext)">Profesiones <tspan style="font-family: Verdana, 'DejaVu Sans', Arial, sans-serif; font-size:13px; font-weight:normal; fill:#9d9d9d">·  3</tspan></text>
+  <text class="t" x="36" y="32" style="font-size:19px; fill:url(#goldtext)">Profesiones <tspan style="font-family: Verdana, 'DejaVu Sans', Arial, sans-serif; font-size:13px; font-weight:normal; fill:#9d9d9d">·  4</tspan></text>
   <line x1="186.39999999999998" y1="25" x2="820" y2="25" stroke="#ffd100" stroke-opacity=".45"/>
 </svg>

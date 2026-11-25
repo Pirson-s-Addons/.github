@@ -205,6 +205,21 @@
       "clients": [
         "forever"
       ]
+    },
+    "1831424": {
+      "downloads": 0,
+      "url": "https://www.curseforge.com/wow/addons/profession-reagents",
+      "version": "1.01",
+      "clients": [
+        "retail",
+        "forever",
+        "mop",
+        "cata",
+        "wrath",
+        "tbc",
+        "era",
+        "legacy"
+      ]
     }
   },
   "date": "2026-11-23"

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="388" viewBox="0 0 840 388" role="img" aria-label="Selección de reino: Retail 3, WoW Forever 16, MoP Classic 11, Cataclysm Classic 5, Wrath Classic 5, TBC Classic 6, Classic Era 3, Legacy (WoD to Shadowlands) 3">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="388" viewBox="0 0 840 388" role="img" aria-label="Selección de reino: Retail 4, WoW Forever 17, MoP Classic 12, Cataclysm Classic 6, Wrath Classic 6, TBC Classic 7, Classic Era 4, Legacy (WoD to Shadowlands) 4">
   <defs>
     <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11142a"/><stop offset="1" stop-color="#070812"/></linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd100" stop-opacity="0"/><stop offset=".5" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd100" stop-opacity="0"/></linearGradient>
@@ -25,57 +25,57 @@
   <g class="l" style="animation-delay:0.20s">
     <rect x="30" y="70" width="780" height="30" rx="4" fill="#ffffff12"/>
     <text x="48" y="92" style="fill:#ffd100">Retail</text>
-    <rect x="420" y="79" width="41.25" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
-    <text x="471.25" y="92">3</text>
+    <rect x="420" y="79" width="51.76470588235294" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
+    <text x="481.7647058823529" y="92">4</text>
     <text x="790" y="92" text-anchor="end" style="fill:#ff8040">Baja</text>
   </g>
   <g class="l" style="animation-delay:0.30s">
     <rect x="30" y="104" width="780" height="30" rx="4" fill="#ffffff08"/>
     <text x="48" y="126" style="fill:#ffd100">WoW Forever</text>
     <rect x="420" y="113" width="220" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
-    <text x="650" y="126">16</text>
+    <text x="650" y="126">17</text>
     <text x="790" y="126" text-anchor="end" style="fill:#1eff00">Alta</text>
   </g>
   <g class="l" style="animation-delay:0.40s">
     <rect x="30" y="138" width="780" height="30" rx="4" fill="#ffffff12"/>
     <text x="48" y="160" style="fill:#ffd100">MoP Classic</text>
-    <rect x="420" y="147" width="151.25" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
-    <text x="581.25" y="160">11</text>
+    <rect x="420" y="147" width="155.29411764705884" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
+    <text x="585.2941176470588" y="160">12</text>
     <text x="790" y="160" text-anchor="end" style="fill:#1eff00">Alta</text>
   </g>
   <g class="l" style="animation-delay:0.50s">
     <rect x="30" y="172" width="780" height="30" rx="4" fill="#ffffff08"/>
     <text x="48" y="194" style="fill:#ffd100">Cataclysm Classic</text>
-    <rect x="420" y="181" width="68.75" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
-    <text x="498.75" y="194">5</text>
+    <rect x="420" y="181" width="77.64705882352942" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
+    <text x="507.6470588235294" y="194">6</text>
     <text x="790" y="194" text-anchor="end" style="fill:#ffd100">Media</text>
   </g>
   <g class="l" style="animation-delay:0.60s">
     <rect x="30" y="206" width="780" height="30" rx="4" fill="#ffffff12"/>
     <text x="48" y="228" style="fill:#ffd100">Wrath Classic</text>
-    <rect x="420" y="215" width="68.75" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
-    <text x="498.75" y="228">5</text>
+    <rect x="420" y="215" width="77.64705882352942" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
+    <text x="507.6470588235294" y="228">6</text>
     <text x="790" y="228" text-anchor="end" style="fill:#ffd100">Media</text>
   </g>
   <g class="l" style="animation-delay:0.70s">
     <rect x="30" y="240" width="780" height="30" rx="4" fill="#ffffff08"/>
     <text x="48" y="262" style="fill:#ffd100">TBC Classic</text>
-    <rect x="420" y="249" width="82.5" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
-    <text x="512.5" y="262">6</text>
+    <rect x="420" y="249" width="90.58823529411764" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
+    <text x="520.5882352941177" y="262">7</text>
     <text x="790" y="262" text-anchor="end" style="fill:#ffd100">Media</text>
   </g>
   <g class="l" style="animation-delay:0.80s">
     <rect x="30" y="274" width="780" height="30" rx="4" fill="#ffffff12"/>
     <text x="48" y="296" style="fill:#ffd100">Classic Era</text>
-    <rect x="420" y="283" width="41.25" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
-    <text x="471.25" y="296">3</text>
+    <rect x="420" y="283" width="51.76470588235294" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
+    <text x="481.7647058823529" y="296">4</text>
     <text x="790" y="296" text-anchor="end" style="fill:#ff8040">Baja</text>
   </g>
   <g class="l" style="animation-delay:0.90s">
     <rect x="30" y="308" width="780" height="30" rx="4" fill="#ffffff08"/>
     <text x="48" y="330" style="fill:#ffd100">Legado (WoD a Shadowlands)</text>
-    <rect x="420" y="317" width="41.25" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
-    <text x="471.25" y="330">3</text>
+    <rect x="420" y="317" width="51.76470588235294" height="12" rx="3" fill="url(#goldtext)" opacity=".85"/>
+    <text x="481.7647058823529" y="330">4</text>
     <text x="790" y="330" text-anchor="end" style="fill:#ff8040">Baja</text>
   </g>
   <text x="420" y="372" text-anchor="middle" style="font-size:12px; fill:#9d9d9d">Población = cuántos de nuestros addons funcionan en ese cliente</text>

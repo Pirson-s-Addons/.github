@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/hero-es.svg" width="760" alt="Pirson's Addons como el tooltip de un objeto legendario: 22 addons, 271.388 descargas en CurseForge, 8 clientes del juego. Retail, Classic y WoW Forever."/></p>
+<p align="center"><img src="assets/hero-es.svg" width="760" alt="Pirson's Addons como el tooltip de un objeto legendario: 23 addons, 271.388 descargas en CurseForge, 8 clientes del juego. Retail, Classic y WoW Forever."/></p>
 
 <p align="center"><a href="README.md">English</a> · <b>Español</b></p>
 
@@ -6,7 +6,7 @@
 
 <p align="center"><img src="assets/header-achievements-es.svg" width="100%" alt="Logros"/></p>
 
-<p align="center"><img src="assets/achievements-es.svg" width="100%" alt="250.000 descargas: Alcanza 250.000 descargas en CurseForge. El favorito del público: WoW Translator: 78.866 descargas. Coleccionista: Publica 22 addons para 8 clientes del juego."/></p>
+<p align="center"><img src="assets/achievements-es.svg" width="100%" alt="250.000 descargas: Alcanza 250.000 descargas en CurseForge. El favorito del público: WoW Translator: 78.866 descargas. Coleccionista: Publica 23 addons para 8 clientes del juego."/></p>
 
 <p align="center"><img src="assets/header-collection-es.svg" width="100%" alt="Colección de addons"/></p>
 
@@ -61,6 +61,7 @@
 </tr>
 <tr>
 <td width="50%" align="center"><img src="assets/row-mh-es.svg" width="100%" alt="Mill Helper: Muele hierbas en un clic para Inscripción. Lista las hierbas de tus bolsas." title="Muele hierbas en un clic para Inscripción. Lista las hierbas de tus bolsas."/><br/><a href="https://github.com/Pirson-s-Addons/MillHelper"><img src="assets/link-code-es.svg" width="120" alt="Código: Mill Helper"/></a> <a href="https://www.curseforge.com/wow/addons/mill-helper"><img src="assets/link-curseforge-es.svg" width="120" alt="CurseForge: Mill Helper"/></a></td>
+<td width="50%" align="center"><img src="assets/row-pr-es.svg" width="100%" alt="Profession Reagents: Qué profesiones usan cada componente y en qué nivel, y qué da al desencantar." title="Qué profesiones usan cada componente y en qué nivel, y qué da al desencantar."/><br/><a href="https://github.com/Pirson-s-Addons/ProfessionReagents"><img src="assets/link-code-es.svg" width="120" alt="Código: Profession Reagents"/></a> <a href="https://www.curseforge.com/wow/addons/profession-reagents"><img src="assets/link-curseforge-es.svg" width="120" alt="CurseForge: Profession Reagents"/></a></td>
 </tr>
 </table>
 
@@ -112,6 +113,7 @@
 - [Loot-A-Rang Classic](https://github.com/Pirson-s-Addons/Loot-A-Rang-Classic)
 - [Azeroth Tic-Tac-Toe](https://github.com/Pirson-s-Addons/AzerothTicTacToe)
 - [Chocolate XP Bar](https://github.com/Pirson-s-Addons/ChocolateXPBar)
+- [Profession Reagents](https://github.com/Pirson-s-Addons/ProfessionReagents)
 
 </details>
 
