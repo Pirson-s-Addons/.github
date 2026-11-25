@@ -3,7 +3,7 @@ name: Package addon
 # Shared by every addon repo (see each repo's .github/workflows/release.yml).
 # A published GitHub release: its notes become the changelog, BigWigs packager builds the ZIP and
 # uploads it to CurseForge and Wago, and attaches it to the release. Run by hand on an existing tag
-# with targets "wago" to put an already released version on Wago only.
+# with targets "wago" to put an already released version on Wago only, or "discord" to only post its changelog card.
 on:
   workflow_call:
     inputs:
@@ -11,7 +11,7 @@ on:
         type: string
         required: true
       targets:
-        type: string # all | wago
+        type: string # all | wago | discord
         default: all
       wago-id:
         type: string
@@ -45,6 +45,7 @@ jobs:
         run: gh release view "${{ inputs.tag }}" -R "${{ github.repository }}" --json body --jq .body > CHANGELOG.md
 
       - uses: BigWigsMods/packager@v2
+        if: inputs.targets != 'discord'
         with:
           # file "GatherRadar-v1.06.zip", label "GatherRadar v1.06" on CurseForge and Wago
           args: -a ${{ inputs.wago-id }} -n "{package-name}-{project-version}:{package-name} {project-version}"
@@ -56,7 +57,7 @@ jobs:
 
       - name: Changelog card in Discord
         # the card layout lives in scripts/discord-card.py of this repo
-        if: inputs.targets == 'all'
+        if: inputs.targets == 'all' || inputs.targets == 'discord'
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_CHANGELOG_WEBHOOK }}
         run: |
