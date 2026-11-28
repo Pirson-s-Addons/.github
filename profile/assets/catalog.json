@@ -200,8 +200,8 @@
    "Abandon quests in bulk, in one click",
    "Abandona misiones en bloque con un clic"
   ],
-  "en": "Abandon all quests, or only the ones you tick, from the quest log in one click.",
-  "es": "Abandona todas las misiones, o solo las que marques, desde el registro en un clic."
+  "en": "Abandon or untrack quests in bulk: all, the ones you tick or a whole zone.",
+  "es": "Abandona o deja de seguir misiones: todas, las que marques o las de una zona."
  },
  {
   "abbr": "tk",

@@ -78,7 +78,7 @@
 
 <table width="100%">
 <tr>
-<td width="50%" align="center"><img src="assets/row-rq-en.svg" width="100%" alt="Remove Questie: Abandon all quests, or only the ones you tick, from the quest log in one click." title="Abandon all quests, or only the ones you tick, from the quest log in one click."/><br/><a href="https://github.com/Pirson-s-Addons/RemoveQuestie"><img src="assets/link-code-en.svg" width="120" alt="Code: Remove Questie"/></a> <a href="https://www.curseforge.com/wow/addons/remove-questie"><img src="assets/link-curseforge-en.svg" width="120" alt="CurseForge: Remove Questie"/></a></td>
+<td width="50%" align="center"><img src="assets/row-rq-en.svg" width="100%" alt="Remove Questie: Abandon or untrack quests in bulk: all, the ones you tick or a whole zone." title="Abandon or untrack quests in bulk: all, the ones you tick or a whole zone."/><br/><a href="https://github.com/Pirson-s-Addons/RemoveQuestie"><img src="assets/link-code-en.svg" width="120" alt="Code: Remove Questie"/></a> <a href="https://www.curseforge.com/wow/addons/remove-questie"><img src="assets/link-curseforge-en.svg" width="120" alt="CurseForge: Remove Questie"/></a></td>
 <td width="50%" align="center"><img src="assets/row-vf-en.svg" width="100%" alt="Vendor Item Filter: Filter vendor items by armor type, slot, weapon type, jewelry and more." title="Filter vendor items by armor type, slot, weapon type, jewelry and more."/><br/><a href="https://github.com/Pirson-s-Addons/VendorItemFilter"><img src="assets/link-code-en.svg" width="120" alt="Code: Vendor Item Filter"/></a> <a href="https://www.curseforge.com/wow/addons/vendor-item-filter"><img src="assets/link-curseforge-en.svg" width="120" alt="CurseForge: Vendor Item Filter"/></a></td>
 </tr>
 <tr>
